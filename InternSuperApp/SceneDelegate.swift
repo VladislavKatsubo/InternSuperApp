@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = CenteredViewController()
+        window.rootViewController = MockScrollViewViewController()
         self.window = window
     }
 }

@@ -12,10 +12,6 @@ struct CenteredViewResources {
 
     enum Constants {
         enum UI {
-
-        }
-
-        enum Mocks {
             static let colors: [UIColor] = .init(
                 [
                     .systemPurple,
@@ -23,6 +19,10 @@ struct CenteredViewResources {
                     .systemYellow
                 ]
             )
+        }
+
+        enum Mocks {
+
         }
     }
 }

@@ -9,7 +9,7 @@ import UIKit
 
 class CenteredViewController: UIViewController {
 
-    typealias Constants = CenteredViewResources.Constants.Mocks
+    typealias Constants = CenteredViewResources.Constants.UI
 
     private let coloredStackView = ColoredStackView()
 

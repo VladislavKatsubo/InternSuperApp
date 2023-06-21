@@ -1,5 +1,5 @@
 //
-//  MockBlockView.swift
+//  MockScrollViewBlockView.swift
 //  InternSuperApp
 //
 //  Created by Vlad Katsubo on 21.06.23.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class MockBlockView: IView {
+final class MockScrollViewBlockView: IView {
 
     private enum Constants {
-
+        static let height: CGFloat = 300.0
     }
 
     // MARK: - Lifecycle
@@ -24,9 +24,11 @@ final class MockBlockView: IView {
     }
 }
 
-private extension MockBlockView {
+private extension MockScrollViewBlockView {
     // MARK: - Private methods
     func setupItems() {
-        
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalToConstant: Constants.height),
+        ])
     }
 }
