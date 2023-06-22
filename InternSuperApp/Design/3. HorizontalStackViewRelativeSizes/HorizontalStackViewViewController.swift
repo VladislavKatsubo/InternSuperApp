@@ -44,6 +44,7 @@ private extension HorizontalStackViewViewController {
     func setupMockBlocks() {
         for (color, heightMultiplier, widthMultiplier) in Constants.colorHeightWidth {
             let mockBlock = IView()
+            
             mockBlock.backgroundColor = color
             mockBlock.translatesAutoresizingMaskIntoConstraints = false
 
