@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2120572A43720A00CCB77A /* Design. 3. Task - HorizontalStackViewRelativeSizes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2120562A43720A00CCB77A /* Design. 3. Task - HorizontalStackViewRelativeSizes.png */; };
+		0D21205B2A43724600CCB77A /* HorizontalStackViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21205A2A43724600CCB77A /* HorizontalStackViewResources.swift */; };
+		0D21205D2A43724E00CCB77A /* HorizontalStackViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21205C2A43724E00CCB77A /* HorizontalStackViewViewController.swift */; };
 		0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A91D2A41E7770062347D /* AppDelegate.swift */; };
 		0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A91F2A41E7770062347D /* SceneDelegate.swift */; };
 		0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A9212A41E7770062347D /* CenteredViewController.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2120562A43720A00CCB77A /* Design. 3. Task - HorizontalStackViewRelativeSizes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design. 3. Task - HorizontalStackViewRelativeSizes.png"; sourceTree = "<group>"; };
+		0D21205A2A43724600CCB77A /* HorizontalStackViewResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStackViewResources.swift; sourceTree = "<group>"; };
+		0D21205C2A43724E00CCB77A /* HorizontalStackViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStackViewViewController.swift; sourceTree = "<group>"; };
 		0D52A91A2A41E7770062347D /* InternSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D52A91D2A41E7770062347D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D52A91F2A41E7770062347D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D2120552A4371A800CCB77A /* 3. HorizontalStackViewRelativeSizes */ = {
+			isa = PBXGroup;
+			children = (
+				0D21205A2A43724600CCB77A /* HorizontalStackViewResources.swift */,
+				0D21205C2A43724E00CCB77A /* HorizontalStackViewViewController.swift */,
+				0D2120562A43720A00CCB77A /* Design. 3. Task - HorizontalStackViewRelativeSizes.png */,
+			);
+			path = "3. HorizontalStackViewRelativeSizes";
+			sourceTree = "<group>";
+		};
 		0D52A9112A41E7770062347D = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +114,7 @@
 			children = (
 				0D52A9322A41E8070062347D /* 1. Centering Elements */,
 				0D52A9512A42C6310062347D /* 2. ScrollView */,
+				0D2120552A4371A800CCB77A /* 3. HorizontalStackViewRelativeSizes */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -230,6 +247,7 @@
 			files = (
 				0D52A92A2A41E7790062347D /* LaunchScreen.storyboard in Resources */,
 				0D52A9272A41E7790062347D /* Assets.xcassets in Resources */,
+				0D2120572A43720A00CCB77A /* Design. 3. Task - HorizontalStackViewRelativeSizes.png in Resources */,
 				0D52A9532A42C6710062347D /* Design. 2. Task - ScrollView.png in Resources */,
 				0D52A9502A42207F0062347D /* Design. 1. Task - Centering Elements.png in Resources */,
 			);
@@ -255,8 +273,10 @@
 				0D52A93B2A4214300062347D /* IView.swift in Sources */,
 				0D52A9372A4213D40062347D /* ColoredElementView.swift in Sources */,
 				0D52A9482A42176C0062347D /* IStackView.swift in Sources */,
+				0D21205D2A43724E00CCB77A /* HorizontalStackViewViewController.swift in Sources */,
 				0D52A94B2A421A4F0062347D /* CenteredViewResources.swift in Sources */,
 				0D52A9612A430D7E0062347D /* MockScrollViewResources.swift in Sources */,
+				0D21205B2A43724600CCB77A /* HorizontalStackViewResources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
