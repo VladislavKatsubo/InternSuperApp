@@ -23,6 +23,13 @@ struct CustomLayoutResources {
                 profileImage: #imageLiteral(resourceName: "vladislav_katsubo"),
                 publishDate: .distantPast
             )
+
+            static let recommendationsCountViewModel: RecommendationsCountView.Model = .init(
+                currentAmount: 18,
+                maxAmount: 56
+            )
+
+            static let gradientTitleViewLabelText: String = "Winner of the 2023 World Car Awards"
         }
     }
 }

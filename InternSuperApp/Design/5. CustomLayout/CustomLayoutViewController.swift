@@ -14,8 +14,10 @@ final class CustomLayoutViewController: UIViewController {
 
     private let coverView = CoverView()
     private let gradientTitleView = GradientTitleView()
-    private let verticalStackView = IStackView(axis: .vertical)
+    private let verticalStackView = IStackView(axis: .vertical, distribution: .fill)
     private let iconProfileFollowView = IconProfileFollowView()
+    private let recommendationsCountView = RecommendationsCountView()
+    private let separatorLineView = SeparatorLineView()
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -31,6 +33,8 @@ private extension CustomLayoutViewController {
 //        setupGradientTitleView()
         setupStackView()
         setupIconProfileFollow()
+        setupRecommendationsCounterView()
+        setupSeparatorLineView()
     }
 
     func setupCoverView() {
@@ -49,7 +53,7 @@ private extension CustomLayoutViewController {
     func setupGradientTitleView() {
         view.addSubview(gradientTitleView)
         gradientTitleView.translatesAutoresizingMaskIntoConstraints = false
-        gradientTitleView.configure(with: "Winner of the 2023 World Car Awards")
+        gradientTitleView.configure(with: Mocks.gradientTitleViewLabelText)
 
         NSLayoutConstraint.activate([
             gradientTitleView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -62,7 +66,10 @@ private extension CustomLayoutViewController {
         view.addSubview(verticalStackView)
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
         verticalStackView.addArrangedSubview(iconProfileFollowView)
-
+        verticalStackView.setCustomSpacing(25.0, after: iconProfileFollowView)
+        verticalStackView.addArrangedSubview(recommendationsCountView)
+        verticalStackView.setCustomSpacing(10.0, after: recommendationsCountView)
+        verticalStackView.addArrangedSubview(separatorLineView)
 
         NSLayoutConstraint.activate([
             verticalStackView.topAnchor.constraint(equalTo: coverView.bottomAnchor),
@@ -75,12 +82,16 @@ private extension CustomLayoutViewController {
     func setupIconProfileFollow() {
         iconProfileFollowView.translatesAutoresizingMaskIntoConstraints = false
         iconProfileFollowView.configure(with: Mocks.iconProfileModel)
+    }
 
-//        NSLayoutConstraint.activate([
-//            iconProfileFollowView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            iconProfileFollowView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-//            iconProfileFollowView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            iconProfileFollowView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-//        ])
+    func setupRecommendationsCounterView() {
+        recommendationsCountView.configure(with: Mocks.recommendationsCountViewModel)
+    }
+
+    func setupSeparatorLineView() {
+        separatorLineView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            separatorLineView.heightAnchor.constraint(equalToConstant: 1.0)
+        ])
     }
 }
