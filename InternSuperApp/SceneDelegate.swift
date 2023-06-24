@@ -17,7 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = EyedropperViewController()
+        window.rootViewController = CustomLayoutViewController()
         self.window = window
     }
 }

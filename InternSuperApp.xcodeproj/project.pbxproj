@@ -16,6 +16,23 @@
 		0D2120692A442F3B00CCB77A /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120682A442F3B00CCB77A /* RectangleView.swift */; };
 		0D21206B2A4432D000CCB77A /* RedContainerRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21206A2A4432D000CCB77A /* RedContainerRectangleView.swift */; };
 		0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21206C2A4432F000CCB77A /* TopRightContainerRectangleView.swift */; };
+		0D2120732A444FA000CCB77A /* Design. 5. CustomLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2120722A444FA000CCB77A /* Design. 5. CustomLayout.png */; };
+		0D2120752A445F3800CCB77A /* decompose.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0D2120742A445F3800CCB77A /* decompose.rtf */; };
+		0D21207C2A44633700CCB77A /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21207B2A44633700CCB77A /* CoverView.swift */; };
+		0D2120812A4463D200CCB77A /* CoverView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D2120802A4463D200CCB77A /* CoverView.png */; };
+		0D2120842A446F9E00CCB77A /* CustomLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120832A446F9E00CCB77A /* CustomLayoutViewController.swift */; };
+		0D2120862A446FAA00CCB77A /* CustomLayoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120852A446FA900CCB77A /* CustomLayoutFactory.swift */; };
+		0D2120882A446FB100CCB77A /* CustomLayoutResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120872A446FB100CCB77A /* CustomLayoutResources.swift */; };
+		0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120892A446FB600CCB77A /* CustomLayoutViewModel.swift */; };
+		0D21208E2A44A8CB00CCB77A /* GradientTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21208D2A44A8CB00CCB77A /* GradientTitleView.swift */; };
+		0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21208F2A44B26400CCB77A /* IconProfileFollowView.swift */; };
+		0D2120942A44B32700CCB77A /* IconProfileFollowView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120932A44B32700CCB77A /* IconProfileFollowView+Model.swift */; };
+		0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120982A44B6B100CCB77A /* ICircleImageView.swift */; };
+		0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21209A2A44B76600CCB77A /* FollowButton.swift */; };
+		0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21209C2A45C46F00CCB77A /* FollowShadowButtonView.swift */; };
+		0D2120A02A45C79600CCB77A /* ViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21209F2A45C79600CCB77A /* ViewControllerPreview.swift */; };
+		0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120A12A45C87900CCB77A /* ViewPreview.swift */; };
+		0D2120A52A45CD2100CCB77A /* Day+Elapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120A42A45CD2100CCB77A /* Day+Elapsed.swift */; };
 		0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A91D2A41E7770062347D /* AppDelegate.swift */; };
 		0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A91F2A41E7770062347D /* SceneDelegate.swift */; };
 		0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52A9212A41E7770062347D /* CenteredViewController.swift */; };
@@ -47,6 +64,23 @@
 		0D2120682A442F3B00CCB77A /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		0D21206A2A4432D000CCB77A /* RedContainerRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedContainerRectangleView.swift; sourceTree = "<group>"; };
 		0D21206C2A4432F000CCB77A /* TopRightContainerRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRightContainerRectangleView.swift; sourceTree = "<group>"; };
+		0D2120722A444FA000CCB77A /* Design. 5. CustomLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design. 5. CustomLayout.png"; sourceTree = "<group>"; };
+		0D2120742A445F3800CCB77A /* decompose.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = decompose.rtf; sourceTree = "<group>"; };
+		0D21207B2A44633700CCB77A /* CoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
+		0D2120802A4463D200CCB77A /* CoverView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoverView.png; sourceTree = "<group>"; };
+		0D2120832A446F9E00CCB77A /* CustomLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewController.swift; sourceTree = "<group>"; };
+		0D2120852A446FA900CCB77A /* CustomLayoutFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutFactory.swift; sourceTree = "<group>"; };
+		0D2120872A446FB100CCB77A /* CustomLayoutResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutResources.swift; sourceTree = "<group>"; };
+		0D2120892A446FB600CCB77A /* CustomLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayoutViewModel.swift; sourceTree = "<group>"; };
+		0D21208D2A44A8CB00CCB77A /* GradientTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTitleView.swift; sourceTree = "<group>"; };
+		0D21208F2A44B26400CCB77A /* IconProfileFollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconProfileFollowView.swift; sourceTree = "<group>"; };
+		0D2120932A44B32700CCB77A /* IconProfileFollowView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconProfileFollowView+Model.swift"; sourceTree = "<group>"; };
+		0D2120982A44B6B100CCB77A /* ICircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICircleImageView.swift; sourceTree = "<group>"; };
+		0D21209A2A44B76600CCB77A /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		0D21209C2A45C46F00CCB77A /* FollowShadowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowShadowButtonView.swift; sourceTree = "<group>"; };
+		0D21209F2A45C79600CCB77A /* ViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPreview.swift; sourceTree = "<group>"; };
+		0D2120A12A45C87900CCB77A /* ViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPreview.swift; sourceTree = "<group>"; };
+		0D2120A42A45CD2100CCB77A /* Day+Elapsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+Elapsed.swift"; sourceTree = "<group>"; };
 		0D52A91A2A41E7770062347D /* InternSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D52A91D2A41E7770062347D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D52A91F2A41E7770062347D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +146,84 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0D2120712A444F8E00CCB77A /* 5. CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				0D2120762A44628F00CCB77A /* Views */,
+				0D2120852A446FA900CCB77A /* CustomLayoutFactory.swift */,
+				0D2120872A446FB100CCB77A /* CustomLayoutResources.swift */,
+				0D2120892A446FB600CCB77A /* CustomLayoutViewModel.swift */,
+				0D2120832A446F9E00CCB77A /* CustomLayoutViewController.swift */,
+				0D2120722A444FA000CCB77A /* Design. 5. CustomLayout.png */,
+				0D2120742A445F3800CCB77A /* decompose.rtf */,
+			);
+			path = "5. CustomLayout";
+			sourceTree = "<group>";
+		};
+		0D2120762A44628F00CCB77A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D21207D2A44638600CCB77A /* CoverView */,
+				0D2120912A44B30C00CCB77A /* GradientTitleView */,
+				0D2120922A44B31500CCB77A /* IconProfileView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D2120792A4462D200CCB77A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D52A9262A41E7790062347D /* Assets.xcassets */,
+				0D52A9282A41E7790062347D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D21207D2A44638600CCB77A /* CoverView */ = {
+			isa = PBXGroup;
+			children = (
+				0D21207B2A44633700CCB77A /* CoverView.swift */,
+				0D2120802A4463D200CCB77A /* CoverView.png */,
+			);
+			path = CoverView;
+			sourceTree = "<group>";
+		};
+		0D2120912A44B30C00CCB77A /* GradientTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				0D21208D2A44A8CB00CCB77A /* GradientTitleView.swift */,
+			);
+			path = GradientTitleView;
+			sourceTree = "<group>";
+		};
+		0D2120922A44B31500CCB77A /* IconProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				0D2120952A44B59000CCB77A /* Views */,
+				0D21208F2A44B26400CCB77A /* IconProfileFollowView.swift */,
+				0D2120932A44B32700CCB77A /* IconProfileFollowView+Model.swift */,
+			);
+			path = IconProfileView;
+			sourceTree = "<group>";
+		};
+		0D2120952A44B59000CCB77A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D21209A2A44B76600CCB77A /* FollowButton.swift */,
+				0D21209C2A45C46F00CCB77A /* FollowShadowButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D21209E2A45C78B00CCB77A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0D21209F2A45C79600CCB77A /* ViewControllerPreview.swift */,
+				0D2120A12A45C87900CCB77A /* ViewPreview.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0D52A9112A41E7770062347D = {
 			isa = PBXGroup;
 			children = (
@@ -135,8 +247,7 @@
 				0D52A91F2A41E7770062347D /* SceneDelegate.swift */,
 				0D52A9382A4214040062347D /* Common */,
 				0D52A9312A41E7FB0062347D /* Design */,
-				0D52A9262A41E7790062347D /* Assets.xcassets */,
-				0D52A9282A41E7790062347D /* LaunchScreen.storyboard */,
+				0D2120792A4462D200CCB77A /* Resources */,
 				0D52A92B2A41E7790062347D /* Info.plist */,
 			);
 			path = InternSuperApp;
@@ -149,6 +260,7 @@
 				0D52A9512A42C6310062347D /* 2. ScrollView */,
 				0D2120552A4371A800CCB77A /* 3. HorizontalStackViewRelativeSizes */,
 				0D21205E2A44061700CCB77A /* 4. EyeDropper */,
+				0D2120712A444F8E00CCB77A /* 5. CustomLayout */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -177,8 +289,9 @@
 		0D52A9382A4214040062347D /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				0D52A93E2A4215930062347D /* Extensions */,
 				0D52A9392A4214220062347D /* IViews */,
+				0D21209E2A45C78B00CCB77A /* Helpers */,
+				0D52A93E2A4215930062347D /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -189,6 +302,7 @@
 				0D52A9422A42166F0062347D /* IButton.swift */,
 				0D52A93A2A42142F0062347D /* IView.swift */,
 				0D52A9472A42176C0062347D /* IStackView.swift */,
+				0D2120982A44B6B100CCB77A /* ICircleImageView.swift */,
 			);
 			path = IViews;
 			sourceTree = "<group>";
@@ -197,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				0D52A93F2A42159C0062347D /* UIButton+Title.swift */,
+				0D2120A42A45CD2100CCB77A /* Day+Elapsed.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -280,10 +395,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D52A92A2A41E7790062347D /* LaunchScreen.storyboard in Resources */,
+				0D2120732A444FA000CCB77A /* Design. 5. CustomLayout.png in Resources */,
+				0D2120812A4463D200CCB77A /* CoverView.png in Resources */,
 				0D52A9272A41E7790062347D /* Assets.xcassets in Resources */,
 				0D2120602A44062E00CCB77A /* Design - 4. Eyedropper.png in Resources */,
 				0D2120572A43720A00CCB77A /* Design - 3. HorizontalStackViewRelativeSizes.png in Resources */,
 				0D52A9532A42C6710062347D /* Design - 2. ScrollView.png in Resources */,
+				0D2120752A445F3800CCB77A /* decompose.rtf in Resources */,
 				0D52A9502A42207F0062347D /* Design - 1. Centering Elements.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,14 +413,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D21208E2A44A8CB00CCB77A /* GradientTitleView.swift in Sources */,
+				0D2120942A44B32700CCB77A /* IconProfileFollowView+Model.swift in Sources */,
 				0D52A9402A42159C0062347D /* UIButton+Title.swift in Sources */,
+				0D2120A52A45CD2100CCB77A /* Day+Elapsed.swift in Sources */,
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
+				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
 				0D52A95B2A42DC670062347D /* MockScrollViewButton.swift in Sources */,
+				0D21207C2A44633700CCB77A /* CoverView.swift in Sources */,
 				0D52A9562A42CE410062347D /* MockScrollViewBlockView.swift in Sources */,
 				0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */,
 				0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */,
+				0D2120A02A45C79600CCB77A /* ViewControllerPreview.swift in Sources */,
 				0D52A95F2A430D3A0062347D /* MockScrollViewViewController.swift in Sources */,
+				0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */,
+				0D2120882A446FB100CCB77A /* CustomLayoutResources.swift in Sources */,
 				0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */,
+				0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */,
 				0D52A93D2A4215180062347D /* CenteredButton.swift in Sources */,
 				0D52A9432A42166F0062347D /* IButton.swift in Sources */,
 				0D52A9462A42174F0062347D /* ColoredStackView.swift in Sources */,
@@ -311,9 +438,14 @@
 				0D2120662A442B1100CCB77A /* EyedropperResources.swift in Sources */,
 				0D52A9482A42176C0062347D /* IStackView.swift in Sources */,
 				0D2120692A442F3B00CCB77A /* RectangleView.swift in Sources */,
+				0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */,
 				0D21205D2A43724E00CCB77A /* HorizontalStackViewViewController.swift in Sources */,
 				0D52A94B2A421A4F0062347D /* CenteredViewResources.swift in Sources */,
+				0D2120862A446FAA00CCB77A /* CustomLayoutFactory.swift in Sources */,
 				0D52A9612A430D7E0062347D /* MockScrollViewResources.swift in Sources */,
+				0D2120842A446F9E00CCB77A /* CustomLayoutViewController.swift in Sources */,
+				0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */,
+				0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */,
 				0D21206B2A4432D000CCB77A /* RedContainerRectangleView.swift in Sources */,
 				0D21205B2A43724600CCB77A /* HorizontalStackViewResources.swift in Sources */,
 				0D2120642A442AF400CCB77A /* EyedropperViewController.swift in Sources */,
