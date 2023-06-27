@@ -17,7 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
-        window.rootViewController = CustomLayoutViewController()
+
+        let vc = CustomLayoutViewController()
+        let viewModel = CustomLayoutViewModel()
+        vc.configure(with: viewModel)
+        window.rootViewController = vc
         self.window = window
     }
 }

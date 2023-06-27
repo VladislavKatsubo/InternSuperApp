@@ -7,7 +7,7 @@
 
 extension RecommendationsCountView {
     struct Model {
-        let currentAmount: Int?
         let maxAmount: Int?
+        let currentAmount: Int?
     }
 }

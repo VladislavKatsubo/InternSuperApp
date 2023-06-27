@@ -9,8 +9,8 @@ import UIKit
 
 extension IconProfileFollowView {
     struct Model {
-        let name: String
-        let profileImage: UIImage
-        let publishDate: Date
+        let name: String?
+        let profileImage: UIImage?
+        let publishDate: Date?
     }
 }

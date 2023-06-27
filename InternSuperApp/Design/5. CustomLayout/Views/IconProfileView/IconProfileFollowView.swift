@@ -11,10 +11,14 @@ final class IconProfileFollowView: IView {
 
     private enum Constants {
         static let iconSize: CGSize = .init(width: 55.0, height: 55.0)
-        static let profileNameLabelFont: UIFont = .systemFont(ofSize: 18.0, weight: .regular)
-        static let publishedDateLabelFont: UIFont = .systemFont(ofSize: 16.0, weight: .thin)
+        static let profileNameLabelFont: UIFont = .systemFont(ofSize: 16.0, weight: .regular)
+        static let publishedDateLabelFont: UIFont = .systemFont(ofSize: 14.0, weight: .thin)
 
         static let verticalStackViewLeadingOffset: CGFloat = 10.0
+
+        static let profileIconWidthMultiplier: CGFloat = 0.125
+
+        static let gradientedButtonWidthMultiplier: CGFloat = 0.33
     }
 
     private let circularProfileIconImageView = ICircleImageView()
@@ -30,9 +34,15 @@ final class IconProfileFollowView: IView {
 
     // MARK: - Configure
     func configure(with model: Model) {
-        self.circularProfileIconImageView.image = model.profileImage
-        self.profileNameLabel.text = model.name
-        self.publishedDateLabel.text = model.publishDate.daysElapsed()
+        self.circularProfileIconImageView.animateTransition { [weak self] in
+            self?.circularProfileIconImageView.image = model.profileImage
+        }
+        self.profileNameLabel.animateTransition { [weak self] in
+            self?.profileNameLabel.text = model.name
+        }
+        self.publishedDateLabel.animateTransition { [weak self] in
+            self?.publishedDateLabel.text = model.publishDate?.daysElapsed()
+        }
     }
 }
 
@@ -53,9 +63,11 @@ private extension IconProfileFollowView {
 
         NSLayoutConstraint.activate([
             circularProfileIconImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            circularProfileIconImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            circularProfileIconImageView.heightAnchor.constraint(equalToConstant: Constants.iconSize.height),
-            circularProfileIconImageView.widthAnchor.constraint(equalToConstant: Constants.iconSize.width)
+//            circularProfileIconImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            circularProfileIconImageView.topAnchor.constraint(equalTo: topAnchor),
+            circularProfileIconImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            circularProfileIconImageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: Constants.profileIconWidthMultiplier),
+            circularProfileIconImageView.heightAnchor.constraint(equalTo: circularProfileIconImageView.widthAnchor)
         ])
     }
 
@@ -90,6 +102,7 @@ private extension IconProfileFollowView {
         NSLayoutConstraint.activate([
             roundedGradientShadowedButton.centerYAnchor.constraint(equalTo: centerYAnchor),
             roundedGradientShadowedButton.trailingAnchor.constraint(equalTo: trailingAnchor),
+            roundedGradientShadowedButton.widthAnchor.constraint(equalTo: widthAnchor, multiplier: Constants.gradientedButtonWidthMultiplier),
         ])
     }
 }

@@ -11,6 +11,10 @@ final class FollowShadowButtonView: IView {
 
     private enum Constants {
         static let gradientEndColor: UIColor = UIColor.init(red: 255/255, green: 90/255, blue: 101/255, alpha: 1.0)
+
+        static let layerShadowOpacity: Float = 1.0
+        static let layerShadowRadius: CGFloat = 10.0
+        static let layerShadowOffset: CGSize = CGSize(width: 0, height: 2)
     }
 
     private let roundedGradientButton = FollowButton()
@@ -57,9 +61,9 @@ private extension FollowShadowButtonView {
         )
 
         layer.shadowColor = Constants.gradientEndColor.cgColor
-        layer.shadowOpacity = 1
-        layer.shadowRadius = 10
-        layer.shadowOffset = CGSize(width: 0, height: 2)
+        layer.shadowOpacity = Constants.layerShadowOpacity
+        layer.shadowRadius = Constants.layerShadowRadius
+        layer.shadowOffset = Constants.layerShadowOffset
 
         layer.shadowPath = shadowPath.cgPath
     }

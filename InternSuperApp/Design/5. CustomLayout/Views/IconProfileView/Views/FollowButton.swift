@@ -14,6 +14,8 @@ final class FollowButton: IButton {
         static let gradientStartColor: UIColor = UIColor.init(red: 230/255, green: 115/255, blue: 55/255, alpha: 1.0)
         static let gradientEndColor: UIColor = UIColor.init(red: 255/255, green: 90/255, blue: 101/255, alpha: 1.0)
 
+        static let buttonLabelFontSize: CGFloat = 18.0
+
         static let buttonTitle: String = "+ Follow"
     }
 
@@ -42,12 +44,8 @@ private extension FollowButton {
     func setupButton() {
         self.title = Constants.buttonTitle
         self.titleColor = .white
-        self.titleLabel?.font = .systemFont(ofSize: 22, weight: .regular)
+        self.titleLabel?.font = .systemFont(ofSize: Constants.buttonLabelFontSize, weight: .regular)
         self.clipsToBounds = true
-
-        NSLayoutConstraint.activate([
-            self.widthAnchor.constraint(equalTo: self.heightAnchor, multiplier: 3)
-        ])
     }
 
     func setupGradientLayer() {

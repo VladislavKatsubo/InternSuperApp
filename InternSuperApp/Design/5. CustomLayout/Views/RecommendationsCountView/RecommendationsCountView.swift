@@ -10,7 +10,7 @@ import UIKit
 final class RecommendationsCountView: IView {
 
     private enum Constants {
-        static let labelFont: UIFont = .systemFont(ofSize: 16.0, weight: .regular)
+        static let labelFont: UIFont = .systemFont(ofSize: 16.0, weight: .thin)
         static let labelFontColor: UIColor = .systemGray2
 
         static let recommendedLabelText: String = "Recommended by :"
@@ -34,8 +34,13 @@ final class RecommendationsCountView: IView {
             return
         }
 
-        counterLabel.text = String(currentUsersAmount) + " / " + String(maxUsersAmount) + Constants.counterLabelText
-        recommendedLabel.text = Constants.recommendedLabelText
+        self.counterLabel.animateTransition { [weak self] in
+            self?.counterLabel.text = String(currentUsersAmount) + " / " + String(maxUsersAmount) + Constants.counterLabelText
+        }
+
+        self.recommendedLabel.animateTransition { [weak self] in
+            self?.recommendedLabel.text = Constants.recommendedLabelText
+        }
     }
 }
 
@@ -62,14 +67,18 @@ private extension RecommendationsCountView {
     }
 
     func setupRecommendedLabel() {
-        recommendedLabel.font = Constants.labelFont
+//        recommendedLabel.font = Constants.labelFont
         recommendedLabel.textColor = Constants.labelFontColor
+        recommendedLabel.adjustsFontSizeToFitWidth = true
+        recommendedLabel.minimumScaleFactor = 0.3
         recommendedLabel.textAlignment = .left
     }
 
     func setupCounterLabel() {
-        counterLabel.font = Constants.labelFont
+//        counterLabel.font = Constants.labelFont
         counterLabel.textColor = Constants.labelFontColor
+        counterLabel.adjustsFontSizeToFitWidth = true
+        counterLabel.minimumScaleFactor = 0.3
         counterLabel.textAlignment = .right
     }
 }

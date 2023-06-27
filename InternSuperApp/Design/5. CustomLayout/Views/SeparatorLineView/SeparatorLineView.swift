@@ -10,7 +10,7 @@ import UIKit
 final class SeparatorLineView: IView {
 
     private enum Constants {
-
+        static let lineLayerFillColor: UIColor = .systemGray2
     }
 
     private let lineLayer = CAShapeLayer()
@@ -29,6 +29,10 @@ final class SeparatorLineView: IView {
 private extension SeparatorLineView {
     // MARK: - Private methods
     func setupItems() {
+        NSLayoutConstraint.activate([
+            self.heightAnchor.constraint(equalToConstant: 1.0)
+        ])
+
         setupLineLayer()
     }
 
@@ -43,7 +47,7 @@ private extension SeparatorLineView {
             cornerRadius: bounds.height / 2
         )
         lineLayer.path = roundedLinePath.cgPath
-        lineLayer.fillColor = UIColor.systemGray2.cgColor.copy(alpha: 0.2)
+        lineLayer.fillColor = Constants.lineLayerFillColor.cgColor.copy(alpha: 0.2)
         self.layer.addSublayer(lineLayer)
     }
 }
