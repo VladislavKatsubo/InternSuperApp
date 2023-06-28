@@ -50,7 +50,15 @@
 		0D32704F2A4BF15900735EA4 /* DynamicUIChangesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */; };
 		0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */; };
 		0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */; };
-		0D32705B2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705A2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift */; };
+		0D32705B2A4BF22200735EA4 /* DynamicUIChangesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705A2A4BF22200735EA4 /* DynamicUIChangesButton.swift */; };
+		0D32705D2A4C604C00735EA4 /* HideShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705C2A4C604C00735EA4 /* HideShowViewController.swift */; };
+		0D32705F2A4C608900735EA4 /* HideShowResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705E2A4C608900735EA4 /* HideShowResources.swift */; };
+		0D3270622A4C621200735EA4 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270612A4C621200735EA4 /* ImageManager.swift */; };
+		0D3270642A4C622100735EA4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270632A4C622100735EA4 /* NetworkManager.swift */; };
+		0D3270662A4C62B000735EA4 /* HideShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270652A4C62B000735EA4 /* HideShowViewModel.swift */; };
+		0D3270692A4C62CF00735EA4 /* HideShowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270682A4C62CF00735EA4 /* HideShowFactory.swift */; };
+		0D32706B2A4C8C0F00735EA4 /* UIView+BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32706A2A4C8C0F00735EA4 /* UIView+BlurEffect.swift */; };
+		0D32706D2A4C91BC00735EA4 /* BlurringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32706C2A4C91BC00735EA4 /* BlurringView.swift */; };
 		0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B97392A49F222006B5CC7 /* CoverView.swift */; };
 		0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */; };
 		0D3B973E2A4A0831006B5CC7 /* StatisticsView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */; };
@@ -123,7 +131,15 @@
 		0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesResources.swift; sourceTree = "<group>"; };
 		0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesFactory.swift; sourceTree = "<group>"; };
 		0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesViewModel.swift; sourceTree = "<group>"; };
-		0D32705A2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesRouterButton.swift; sourceTree = "<group>"; };
+		0D32705A2A4BF22200735EA4 /* DynamicUIChangesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesButton.swift; sourceTree = "<group>"; };
+		0D32705C2A4C604C00735EA4 /* HideShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowViewController.swift; sourceTree = "<group>"; };
+		0D32705E2A4C608900735EA4 /* HideShowResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowResources.swift; sourceTree = "<group>"; };
+		0D3270612A4C621200735EA4 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		0D3270632A4C622100735EA4 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0D3270652A4C62B000735EA4 /* HideShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowViewModel.swift; sourceTree = "<group>"; };
+		0D3270682A4C62CF00735EA4 /* HideShowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowFactory.swift; sourceTree = "<group>"; };
+		0D32706A2A4C8C0F00735EA4 /* UIView+BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+BlurEffect.swift"; sourceTree = "<group>"; };
+		0D32706C2A4C91BC00735EA4 /* BlurringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurringView.swift; sourceTree = "<group>"; };
 		0D3B97392A49F222006B5CC7 /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolTextView+Model.swift"; sourceTree = "<group>"; };
 		0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatisticsView.png; sourceTree = "<group>"; };
@@ -364,6 +380,11 @@
 		0D3270562A4BF1C600735EA4 /* HideShow */ = {
 			isa = PBXGroup;
 			children = (
+				0D3270672A4C62C500735EA4 /* Views */,
+				0D3270682A4C62CF00735EA4 /* HideShowFactory.swift */,
+				0D32705E2A4C608900735EA4 /* HideShowResources.swift */,
+				0D3270652A4C62B000735EA4 /* HideShowViewModel.swift */,
+				0D32705C2A4C604C00735EA4 /* HideShowViewController.swift */,
 			);
 			path = HideShow;
 			sourceTree = "<group>";
@@ -385,7 +406,24 @@
 		0D3270592A4BF21000735EA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0D32705A2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift */,
+				0D32705A2A4BF22200735EA4 /* DynamicUIChangesButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D3270602A4C61EA00735EA4 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				0D3270612A4C621200735EA4 /* ImageManager.swift */,
+				0D3270632A4C622100735EA4 /* NetworkManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		0D3270672A4C62C500735EA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D32706C2A4C91BC00735EA4 /* BlurringView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -468,6 +506,7 @@
 				0D52A9392A4214220062347D /* IViews */,
 				0D21209E2A45C78B00CCB77A /* Helpers */,
 				0D52A93E2A4215930062347D /* Extensions */,
+				0D3270602A4C61EA00735EA4 /* Network Layer */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -491,6 +530,7 @@
 				0D2120BB2A487E3100CCB77A /* Int+Separator.swift */,
 				0D2120BD2A48954200CCB77A /* Int+Abbreviated.swift */,
 				0D3270452A4B52A600735EA4 /* UIView+AnimatedTransition.swift */,
+				0D32706A2A4C8C0F00735EA4 /* UIView+BlurEffect.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -600,17 +640,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3270642A4C622100735EA4 /* NetworkManager.swift in Sources */,
 				0D3270462A4B52A600735EA4 /* UIView+AnimatedTransition.swift in Sources */,
 				0D2120AE2A46E55000CCB77A /* SeparatorLineView.swift in Sources */,
 				0D2120B42A46F44A00CCB77A /* IconsStackView.swift in Sources */,
 				0D2120942A44B32700CCB77A /* IconProfileFollowView+Model.swift in Sources */,
 				0D52A9402A42159C0062347D /* UIButton+Title.swift in Sources */,
 				0D2120A52A45CD2100CCB77A /* Day+Elapsed.swift in Sources */,
+				0D32705F2A4C608900735EA4 /* HideShowResources.swift in Sources */,
 				0D2120B82A482DD100CCB77A /* StatisticsView.swift in Sources */,
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
 				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
 				0D52A95B2A42DC670062347D /* MockScrollViewButton.swift in Sources */,
-				0D32705B2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift in Sources */,
+				0D32705B2A4BF22200735EA4 /* DynamicUIChangesButton.swift in Sources */,
 				0D52A9562A42CE410062347D /* MockScrollViewBlockView.swift in Sources */,
 				0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */,
 				0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */,
@@ -637,6 +679,7 @@
 				0D52A9372A4213D40062347D /* ColoredElementView.swift in Sources */,
 				0D2120662A442B1100CCB77A /* EyedropperResources.swift in Sources */,
 				0D52A9482A42176C0062347D /* IStackView.swift in Sources */,
+				0D3270692A4C62CF00735EA4 /* HideShowFactory.swift in Sources */,
 				0D2120692A442F3B00CCB77A /* RectangleView.swift in Sources */,
 				0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */,
 				0D21205D2A43724E00CCB77A /* HorizontalStackViewViewController.swift in Sources */,
@@ -650,7 +693,12 @@
 				0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */,
 				0D2120BC2A487E3100CCB77A /* Int+Separator.swift in Sources */,
 				0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */,
+				0D3270622A4C621200735EA4 /* ImageManager.swift in Sources */,
 				0D21206B2A4432D000CCB77A /* RedContainerRectangleView.swift in Sources */,
+				0D32705D2A4C604C00735EA4 /* HideShowViewController.swift in Sources */,
+				0D32706D2A4C91BC00735EA4 /* BlurringView.swift in Sources */,
+				0D32706B2A4C8C0F00735EA4 /* UIView+BlurEffect.swift in Sources */,
+				0D3270662A4C62B000735EA4 /* HideShowViewModel.swift in Sources */,
 				0D21205B2A43724600CCB77A /* HorizontalStackViewResources.swift in Sources */,
 				0D2120642A442AF400CCB77A /* EyedropperViewController.swift in Sources */,
 			);

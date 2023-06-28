@@ -18,10 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         window.makeKeyAndVisible()
 
-        let vc = CustomLayoutViewController()
-        let viewModel = CustomLayoutViewModel()
-        vc.configure(with: viewModel)
-        window.rootViewController = vc
+
+        let nvc = UINavigationController(rootViewController: DynamicUIChangesViewController())
+        window.rootViewController = nvc
         self.window = window
     }
 }
