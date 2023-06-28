@@ -44,6 +44,13 @@
 		0D3270422A4B4A8F00735EA4 /* SymbolTextView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3270412A4B4A8F00735EA4 /* SymbolTextView.png */; };
 		0D3270442A4B4AA600735EA4 /* MemberCounterView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3270432A4B4AA600735EA4 /* MemberCounterView.png */; };
 		0D3270462A4B52A600735EA4 /* UIView+AnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270452A4B52A600735EA4 /* UIView+AnimatedTransition.swift */; };
+		0D3270492A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3270482A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png */; };
+		0D32704B2A4BF14500735EA4 /* DynamicUIChangesFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32704A2A4BF14500735EA4 /* DynamicUIChangesFlow.swift */; };
+		0D32704D2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32704C2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift */; };
+		0D32704F2A4BF15900735EA4 /* DynamicUIChangesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */; };
+		0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */; };
+		0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */; };
+		0D32705B2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705A2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift */; };
 		0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B97392A49F222006B5CC7 /* CoverView.swift */; };
 		0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */; };
 		0D3B973E2A4A0831006B5CC7 /* StatisticsView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */; };
@@ -110,6 +117,13 @@
 		0D3270412A4B4A8F00735EA4 /* SymbolTextView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SymbolTextView.png; sourceTree = "<group>"; };
 		0D3270432A4B4AA600735EA4 /* MemberCounterView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MemberCounterView.png; sourceTree = "<group>"; };
 		0D3270452A4B52A600735EA4 /* UIView+AnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AnimatedTransition.swift"; sourceTree = "<group>"; };
+		0D3270482A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design. 6. DynamicUIChanges.png"; sourceTree = "<group>"; };
+		0D32704A2A4BF14500735EA4 /* DynamicUIChangesFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesFlow.swift; sourceTree = "<group>"; };
+		0D32704C2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesViewController.swift; sourceTree = "<group>"; };
+		0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesResources.swift; sourceTree = "<group>"; };
+		0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesFactory.swift; sourceTree = "<group>"; };
+		0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesViewModel.swift; sourceTree = "<group>"; };
+		0D32705A2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesRouterButton.swift; sourceTree = "<group>"; };
 		0D3B97392A49F222006B5CC7 /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolTextView+Model.swift"; sourceTree = "<group>"; };
 		0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatisticsView.png; sourceTree = "<group>"; };
@@ -314,6 +328,68 @@
 			path = SymbolTextView;
 			sourceTree = "<group>";
 		};
+		0D3270472A4BF0E000735EA4 /* 6. DynamicUIChanges */ = {
+			isa = PBXGroup;
+			children = (
+				0D3270552A4BF1B400735EA4 /* DynamicUIChangesFlow */,
+				0D32704A2A4BF14500735EA4 /* DynamicUIChangesFlow.swift */,
+				0D3270482A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png */,
+			);
+			path = "6. DynamicUIChanges";
+			sourceTree = "<group>";
+		};
+		0D3270522A4BF16400735EA4 /* SubModules */ = {
+			isa = PBXGroup;
+			children = (
+				0D3270592A4BF21000735EA4 /* Views */,
+				0D3270562A4BF1C600735EA4 /* HideShow */,
+				0D3270572A4BF1EB00735EA4 /* AddRemove */,
+				0D3270582A4BF1F000735EA4 /* AlphaAddRemove */,
+				0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */,
+				0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */,
+				0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */,
+				0D32704C2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift */,
+			);
+			path = SubModules;
+			sourceTree = "<group>";
+		};
+		0D3270552A4BF1B400735EA4 /* DynamicUIChangesFlow */ = {
+			isa = PBXGroup;
+			children = (
+				0D3270522A4BF16400735EA4 /* SubModules */,
+			);
+			path = DynamicUIChangesFlow;
+			sourceTree = "<group>";
+		};
+		0D3270562A4BF1C600735EA4 /* HideShow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HideShow;
+			sourceTree = "<group>";
+		};
+		0D3270572A4BF1EB00735EA4 /* AddRemove */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddRemove;
+			sourceTree = "<group>";
+		};
+		0D3270582A4BF1F000735EA4 /* AlphaAddRemove */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AlphaAddRemove;
+			sourceTree = "<group>";
+		};
+		0D3270592A4BF21000735EA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D32705A2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0D3B97382A49F219006B5CC7 /* CoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +436,7 @@
 				0D2120552A4371A800CCB77A /* 3. HorizontalStackViewRelativeSizes */,
 				0D21205E2A44061700CCB77A /* 4. EyeDropper */,
 				0D2120712A444F8E00CCB77A /* 5. CustomLayout */,
+				0D3270472A4BF0E000735EA4 /* 6. DynamicUIChanges */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -499,6 +576,7 @@
 				0D3B97422A4A088B006B5CC7 /* IconProfileFollowView.png in Resources */,
 				0D52A92A2A41E7790062347D /* LaunchScreen.storyboard in Resources */,
 				0D3270402A4B4A6900735EA4 /* IconsStackView.png in Resources */,
+				0D3270492A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png in Resources */,
 				0D2120732A444FA000CCB77A /* Design. 5. CustomLayout.png in Resources */,
 				0D3B97402A4A085F006B5CC7 /* CoverView.png in Resources */,
 				0D52A9272A41E7790062347D /* Assets.xcassets in Resources */,
@@ -532,6 +610,7 @@
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
 				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
 				0D52A95B2A42DC670062347D /* MockScrollViewButton.swift in Sources */,
+				0D32705B2A4BF22200735EA4 /* DynamicUIChangesRouterButton.swift in Sources */,
 				0D52A9562A42CE410062347D /* MockScrollViewBlockView.swift in Sources */,
 				0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */,
 				0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */,
@@ -547,7 +626,9 @@
 				0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */,
 				0D52A93D2A4215180062347D /* CenteredButton.swift in Sources */,
 				0D2120BA2A482DEC00CCB77A /* StatisticsView+Model.swift in Sources */,
+				0D32704B2A4BF14500735EA4 /* DynamicUIChangesFlow.swift in Sources */,
 				0D52A9432A42166F0062347D /* IButton.swift in Sources */,
+				0D32704F2A4BF15900735EA4 /* DynamicUIChangesResources.swift in Sources */,
 				0D52A9462A42174F0062347D /* ColoredStackView.swift in Sources */,
 				0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */,
 				0D2120AB2A46B53B00CCB77A /* RecommendationsCountView+Model.swift in Sources */,
@@ -562,8 +643,11 @@
 				0D52A94B2A421A4F0062347D /* CenteredViewResources.swift in Sources */,
 				0D2120862A446FAA00CCB77A /* CustomLayoutFactory.swift in Sources */,
 				0D52A9612A430D7E0062347D /* MockScrollViewResources.swift in Sources */,
+				0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */,
 				0D2120842A446F9E00CCB77A /* CustomLayoutViewController.swift in Sources */,
+				0D32704D2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift in Sources */,
 				0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */,
+				0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */,
 				0D2120BC2A487E3100CCB77A /* Int+Separator.swift in Sources */,
 				0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */,
 				0D21206B2A4432D000CCB77A /* RedContainerRectangleView.swift in Sources */,
