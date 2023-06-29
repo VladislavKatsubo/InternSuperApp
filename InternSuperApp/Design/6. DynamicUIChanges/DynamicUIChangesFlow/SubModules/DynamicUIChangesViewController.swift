@@ -11,7 +11,7 @@ final class DynamicUIChangesViewController: UIViewController {
 
     typealias Constants = DynamicUIChangesResources.Constants.UI
 
-    private let button = DynamicUIChangesButton()
+    private let button = AnimatedGradientButton()
 
     // MARK: - Init
     override func viewDidLoad() {
@@ -25,10 +25,10 @@ private extension DynamicUIChangesViewController {
     func setupItems() {
         view.backgroundColor = .systemBackground
 
-        setupFirstButton()
+        setupHideShowButton()
     }
 
-    func setupFirstButton() {
+    func setupHideShowButton() {
         view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.configure(with: "Hide/Show")

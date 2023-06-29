@@ -1,5 +1,5 @@
 //
-//  DynamicUIChangesButton.swift
+//  AnimatedGradientButton.swift
 //  InternSuperApp
 //
 //  Created by Vlad Katsubo on 28.06.23.
@@ -7,18 +7,23 @@
 
 import UIKit
 
-final class DynamicUIChangesButton: IButton {
+final class AnimatedGradientButton: IButton {
 
     private enum Constants {
         static let cornerRadius: CGFloat = 10.0
-        static let visualEffectAlpha: CGFloat = 1
+        static let visualEffectAlpha: CGFloat = 0.8
 
         static let labelFont: UIFont = .systemFont(ofSize: 18.0, weight: .regular)
-        static let labelFontColor: UIColor = .black
+        static let labelFontColor: UIColor = .white
     }
 
     private let visualEffectView = UIVisualEffectView()
     private let gradientLayer = CAGradientLayer()
+
+    private var gradientSet = [[CGColor]]()
+    private var currentGradient: Int = 0
+
+    private var isGradientLayerSet: Bool = false
 
     // MARK: - Configure
     func configure(with text: String) {
@@ -33,12 +38,16 @@ final class DynamicUIChangesButton: IButton {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        setupGradientLayer()
-        setupAnimationForGradient()
+        if !isGradientLayerSet {
+            setupGradient()
+            setupGradientLayer()
+            animateGradientLayer()
+            isGradientLayerSet = true
+        }
     }
 }
 
-private extension DynamicUIChangesButton {
+private extension AnimatedGradientButton {
     // MARK: - Private methods
     func setupItems() {
         setupButton()
@@ -75,29 +84,47 @@ private extension DynamicUIChangesButton {
         ])
     }
 
+    func setupGradient() {
+        let gradientOne = UIColor.systemBlue.cgColor
+        let gradientTwo = UIColor.systemRed.cgColor
+        let gradientThree = UIColor.systemGreen.cgColor
+
+        gradientSet.append([gradientOne, gradientTwo])
+        gradientSet.append([gradientTwo, gradientThree])
+        gradientSet.append([gradientThree, gradientOne])
+    }
+
     func setupGradientLayer() {
         gradientLayer.frame = bounds
-        gradientLayer.colors = [
-            UIColor.systemBlue.cgColor,
-            UIColor.systemRed.cgColor,
-            UIColor.systemGreen.cgColor,
-            UIColor.systemRed.cgColor,
-            UIColor.systemBlue.cgColor,
-        ]
-
-        gradientLayer.locations = [0.0, 0.25, 0.5, 0.75, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradientLayer.colors = gradientSet[currentGradient]
+        gradientLayer.startPoint = CGPoint(x:0, y:0)
+        gradientLayer.endPoint = CGPoint(x:1, y:1)
+        gradientLayer.drawsAsynchronously = true
         visualEffectView.layer.insertSublayer(gradientLayer, at: 0)
     }
 
-    func setupAnimationForGradient() {
-        let animation = CABasicAnimation(keyPath: "locations")
-        animation.fromValue = [-1.0, -0.5, 0.0, 0.5, 1.0]
-        animation.toValue = [1.0, 1.5, 2.0, 2.5, 3.0]
-        animation.duration = 10
-        animation.repeatCount = .infinity
+    func animateGradientLayer() {
+        if currentGradient < gradientSet.count - 1 {
+            currentGradient += 1
+        } else {
+            currentGradient = 0
+        }
 
-        gradientLayer.add(animation, forKey: "loadingAnimation")
+        let gradientChangeAnimation = CABasicAnimation(keyPath: "colors")
+        gradientChangeAnimation.duration = 5.0
+        gradientChangeAnimation.toValue = gradientSet[currentGradient]
+        gradientChangeAnimation.fillMode = CAMediaTimingFillMode.forwards
+        gradientChangeAnimation.isRemovedOnCompletion = false
+        gradientChangeAnimation.delegate = self
+        gradientLayer.add(gradientChangeAnimation, forKey: "colors")
+    }
+}
+
+extension AnimatedGradientButton: CAAnimationDelegate {
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            gradientLayer.colors = gradientSet[currentGradient]
+            animateGradientLayer()
+        }
     }
 }

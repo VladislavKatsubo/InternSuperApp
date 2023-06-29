@@ -13,8 +13,8 @@ final class HideShowViewController: UIViewController {
 
     private let stackView = IStackView(axis: .vertical, spacing: 16.0)
     private let imageView = UIImageView()
-    private let showButton = DynamicUIChangesButton()
-    private let hideButton = DynamicUIChangesButton()
+    private let showButton = AnimatedGradientButton()
+    private let hideButton = AnimatedGradientButton()
 
     private var viewModel: HideShowViewModelProtocol?
 
@@ -99,6 +99,12 @@ private extension HideShowViewController {
 
     func addBlurringView(to view: UIView?) {
         guard let view = view else { return }
+
+        let isAlreadyHidden = view.subviews.compactMap({
+            $0 as? BlurringView
+        }).isEmpty
+
+        guard isAlreadyHidden else { return }
 
         let blurringView = BlurringView()
         blurringView.frame = view.bounds

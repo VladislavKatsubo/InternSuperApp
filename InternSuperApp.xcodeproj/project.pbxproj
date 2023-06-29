@@ -50,7 +50,7 @@
 		0D32704F2A4BF15900735EA4 /* DynamicUIChangesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */; };
 		0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */; };
 		0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */; };
-		0D32705B2A4BF22200735EA4 /* DynamicUIChangesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705A2A4BF22200735EA4 /* DynamicUIChangesButton.swift */; };
+		0D32705B2A4BF22200735EA4 /* AnimatedGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705A2A4BF22200735EA4 /* AnimatedGradientButton.swift */; };
 		0D32705D2A4C604C00735EA4 /* HideShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705C2A4C604C00735EA4 /* HideShowViewController.swift */; };
 		0D32705F2A4C608900735EA4 /* HideShowResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32705E2A4C608900735EA4 /* HideShowResources.swift */; };
 		0D3270622A4C621200735EA4 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270612A4C621200735EA4 /* ImageManager.swift */; };
@@ -131,7 +131,7 @@
 		0D32704E2A4BF15900735EA4 /* DynamicUIChangesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesResources.swift; sourceTree = "<group>"; };
 		0D3270502A4BF16000735EA4 /* DynamicUIChangesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesFactory.swift; sourceTree = "<group>"; };
 		0D3270532A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesViewModel.swift; sourceTree = "<group>"; };
-		0D32705A2A4BF22200735EA4 /* DynamicUIChangesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesButton.swift; sourceTree = "<group>"; };
+		0D32705A2A4BF22200735EA4 /* AnimatedGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedGradientButton.swift; sourceTree = "<group>"; };
 		0D32705C2A4C604C00735EA4 /* HideShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowViewController.swift; sourceTree = "<group>"; };
 		0D32705E2A4C608900735EA4 /* HideShowResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideShowResources.swift; sourceTree = "<group>"; };
 		0D3270612A4C621200735EA4 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 		0D3270592A4BF21000735EA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0D32705A2A4BF22200735EA4 /* DynamicUIChangesButton.swift */,
+				0D32705A2A4BF22200735EA4 /* AnimatedGradientButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -652,7 +652,7 @@
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
 				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
 				0D52A95B2A42DC670062347D /* MockScrollViewButton.swift in Sources */,
-				0D32705B2A4BF22200735EA4 /* DynamicUIChangesButton.swift in Sources */,
+				0D32705B2A4BF22200735EA4 /* AnimatedGradientButton.swift in Sources */,
 				0D52A9562A42CE410062347D /* MockScrollViewBlockView.swift in Sources */,
 				0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */,
 				0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */,
