@@ -11,7 +11,10 @@ final class DynamicUIChangesViewController: UIViewController {
 
     typealias Constants = DynamicUIChangesResources.Constants.UI
 
-    private let button = AnimatedGradientButton()
+    private let stackView = IStackView(axis: .vertical, spacing: Constants.stackViewSpacing)
+    private let hideShowButton = AnimatedGradientButton()
+    private let addRemoveButton = AnimatedGradientButton()
+    private let alphaAddRemoveButton = AnimatedGradientButton()
 
     // MARK: - Init
     override func viewDidLoad() {
@@ -25,25 +28,51 @@ private extension DynamicUIChangesViewController {
     func setupItems() {
         view.backgroundColor = .systemBackground
 
+        setupStackView()
         setupHideShowButton()
+        setupAddRemoveButton()
+    }
+
+    func setupStackView() {
+        view.addSubview(stackView)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+
+        stackView.addArrangedSubview(hideShowButton)
+        stackView.addArrangedSubview(addRemoveButton)
+
+        NSLayoutConstraint.activate([
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        ])
     }
 
     func setupHideShowButton() {
-        view.addSubview(button)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.configure(with: "Hide/Show")
+        hideShowButton.configure(with: "Hide/Show")
 
-        button.onTap = { [weak self] in
+        NSLayoutConstraint.activate([
+            hideShowButton.widthAnchor.constraint(equalToConstant: 150.0),
+            hideShowButton.heightAnchor.constraint(equalToConstant: 50.0)
+        ])
+
+        hideShowButton.onTap = { [weak self] in
             let vc = HideShowFactory().createController()
             
             self?.navigationController?.pushViewController(vc, animated: true)
         }
+    }
+
+    func setupAddRemoveButton() {
+        addRemoveButton.configure(with: "Add/Remove")
 
         NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            button.widthAnchor.constraint(equalToConstant: 150.0),
-            button.heightAnchor.constraint(equalToConstant: 50.0),
+            addRemoveButton.widthAnchor.constraint(equalToConstant: 150.0),
+            addRemoveButton.heightAnchor.constraint(equalToConstant: 50.0)
         ])
+
+        addRemoveButton.onTap = { [weak self] in
+            let vc = AddRemoveFactory().createController()
+
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

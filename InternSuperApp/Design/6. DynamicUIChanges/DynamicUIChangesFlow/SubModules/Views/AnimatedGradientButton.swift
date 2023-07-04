@@ -97,8 +97,8 @@ private extension AnimatedGradientButton {
     func setupGradientLayer() {
         gradientLayer.frame = bounds
         gradientLayer.colors = gradientSet[currentGradient]
-        gradientLayer.startPoint = CGPoint(x:0, y:0)
-        gradientLayer.endPoint = CGPoint(x:1, y:1)
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         gradientLayer.drawsAsynchronously = true
         visualEffectView.layer.insertSublayer(gradientLayer, at: 0)
     }

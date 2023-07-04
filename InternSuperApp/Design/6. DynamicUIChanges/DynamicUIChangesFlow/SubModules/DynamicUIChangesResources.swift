@@ -23,7 +23,7 @@ struct DynamicUIChangesResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
-
+            static let stackViewSpacing: CGFloat = 15.0
         }
 
         enum Mocks {
