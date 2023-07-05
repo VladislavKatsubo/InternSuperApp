@@ -29,16 +29,12 @@ private extension DynamicUIChangesViewController {
         view.backgroundColor = .systemBackground
 
         setupStackView()
-        setupHideShowButton()
-        setupAddRemoveButton()
+        setupButtons()
     }
 
     func setupStackView() {
         view.addSubview(stackView)
         stackView.translatesAutoresizingMaskIntoConstraints = false
-
-        stackView.addArrangedSubview(hideShowButton)
-        stackView.addArrangedSubview(addRemoveButton)
 
         NSLayoutConstraint.activate([
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -46,33 +42,21 @@ private extension DynamicUIChangesViewController {
         ])
     }
 
-    func setupHideShowButton() {
-        hideShowButton.configure(with: "Hide/Show")
+    func setupButtons() {
+        Constants.Buttons.allCases.forEach({ btn in
+            let button = AnimatedGradientButton()
+            button.configure(with: btn.title)
 
-        NSLayoutConstraint.activate([
-            hideShowButton.widthAnchor.constraint(equalToConstant: 150.0),
-            hideShowButton.heightAnchor.constraint(equalToConstant: 50.0)
-        ])
+            stackView.addArrangedSubview(button)
 
-        hideShowButton.onTap = { [weak self] in
-            let vc = HideShowFactory().createController()
-            
-            self?.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
+            button.onTap = { [weak self] in
+                self?.navigationController?.pushViewController(btn.vc, animated: true)
+            }
 
-    func setupAddRemoveButton() {
-        addRemoveButton.configure(with: "Add/Remove")
-
-        NSLayoutConstraint.activate([
-            addRemoveButton.widthAnchor.constraint(equalToConstant: 150.0),
-            addRemoveButton.heightAnchor.constraint(equalToConstant: 50.0)
-        ])
-
-        addRemoveButton.onTap = { [weak self] in
-            let vc = AddRemoveFactory().createController()
-
-            self?.navigationController?.pushViewController(vc, animated: true)
-        }
+            NSLayoutConstraint.activate([
+                button.widthAnchor.constraint(equalToConstant: btn.width),
+                button.heightAnchor.constraint(equalToConstant: btn.height)
+            ])
+        })
     }
 }

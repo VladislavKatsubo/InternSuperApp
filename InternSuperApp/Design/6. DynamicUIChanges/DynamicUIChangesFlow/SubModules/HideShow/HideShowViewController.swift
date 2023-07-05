@@ -7,14 +7,9 @@
 
 import UIKit
 
-final class HideShowViewController: UIViewController {
+final class HideShowViewController: DynamicUIChangesTaskViewController {
 
     typealias Constants = HideShowResources.Constants.UI
-
-    private let stackView = IStackView(axis: .vertical, spacing: 16.0)
-    private let imageView = UIImageView()
-    private let showButton = AnimatedGradientButton()
-    private let hideButton = AnimatedGradientButton()
 
     private var viewModel: HideShowViewModelProtocol?
 
@@ -39,61 +34,21 @@ private extension HideShowViewController {
 
             switch state {
             case .onImageView(let image):
-                self.imageView.image = image
+                self.setupImageView(with: image)
             }
         }
         viewModel?.launch()
     }
 
     func setupItems() {
-        view.backgroundColor = .systemBackground
-
-        setupImageView()
-        setupStackView()
-        setupHideButton()
-        setupShowButton()
-    }
-
-    func setupStackView() {
-        view.addSubview(stackView)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-
-        stackView.addArrangedSubview(hideButton)
-        stackView.addArrangedSubview(showButton)
-
-        NSLayoutConstraint.activate([
-            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16.0),
-            stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16.0),
-            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16.0)
-        ])
-    }
-
-    func setupImageView() {
-        view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleToFill
-
-        NSLayoutConstraint.activate([
-            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: Constants.imageViewSize.width),
-            imageView.heightAnchor.constraint(equalToConstant: Constants.imageViewSize.height),
-        ])
-    }
-
-    func setupHideButton() {
-        hideButton.configure(with: Constants.hideButtonText)
-        hideButton.onTap = { [weak self] in
-            self?.addBlurringView(to: self?.imageView)
-        }
-    }
-
-    func setupShowButton() {
-        showButton.configure(with: Constants.showButtonText)
-        showButton.onTap = { [weak self] in
-            self?.imageView.subviews.forEach({
+        self.setupPositiveActionButton(with: Constants.showButtonText) { [weak self] in
+            self?.initialImageView.subviews.forEach({
                 $0.removeFromSuperview()
             })
+        }
+
+        self.setupNegativeActionButton(with: Constants.hideButtonText) { [weak self] in
+            self?.addBlurringView(to: self?.initialImageView)
         }
     }
 
@@ -104,7 +59,11 @@ private extension HideShowViewController {
             $0 as? BlurringView
         }).isEmpty
 
-        guard isAlreadyHidden else { return }
+        guard isAlreadyHidden else {
+            // TODO: Alert
+            print("It is already hidden...Stop pressing that button!")
+            return
+        }
 
         let blurringView = BlurringView()
         blurringView.frame = view.bounds

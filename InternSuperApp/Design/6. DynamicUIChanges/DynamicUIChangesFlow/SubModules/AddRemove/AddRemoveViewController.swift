@@ -7,16 +7,15 @@
 
 import UIKit
 
-// TODO: - Create common VC for this task with buttons and imageView
 final class AddRemoveViewController: UIViewController {
 
     typealias Constants = AddRemoveResources.Constants.UI
 
     private let scrollView = UIScrollView(frame: .zero)
-    private let horizontalStackView = IStackView(axis: .horizontal, spacing: 10.0)
-    private let initialImageView = UIImageView()
+    private let horizontalStackView = IStackView(axis: .horizontal, spacing: Constants.horizontalStackViewSpacing)
+    private let initialImageView = DynamicUIChangesImageView()
 
-    private let verticalStackView = IStackView(axis: .vertical, spacing: 16.0)
+    private let verticalStackView = IStackView(axis: .vertical, spacing: Constants.verticalStackViewSpacing)
     private let addButton = AnimatedGradientButton()
     private let removeButton = AnimatedGradientButton()
 
@@ -43,7 +42,7 @@ private extension AddRemoveViewController {
 
             switch state {
             case .onImageView(let image):
-                self.initialImageView.image = image
+                self.initialImageView.configure(with: image)
             case .onAddImage(let image):
                 self.appendImage(image)
             case .onRemoveImage:
@@ -57,7 +56,6 @@ private extension AddRemoveViewController {
         view.backgroundColor = .systemBackground
 
         setupScrollView()
-        setupInitialImageView()
         setupHorizontalStackView()
         setupVerticalStackView()
         setupAddButton()
@@ -70,9 +68,8 @@ private extension AddRemoveViewController {
         scrollView.showsVerticalScrollIndicator = false
 
         NSLayoutConstraint.activate([
-            scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             scrollView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.scrollViewLeadingOffset),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.heightAnchor.constraint(equalToConstant: Constants.imageViewSize.height),
         ])
@@ -93,15 +90,6 @@ private extension AddRemoveViewController {
         ])
     }
 
-    func setupInitialImageView() {
-        initialImageView.contentMode = .scaleToFill
-
-        NSLayoutConstraint.activate([
-            initialImageView.widthAnchor.constraint(equalToConstant: Constants.imageViewSize.width),
-            initialImageView.heightAnchor.constraint(equalToConstant: Constants.imageViewSize.height),
-        ])
-    }
-
     func setupVerticalStackView() {
         view.addSubview(verticalStackView)
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -110,9 +98,9 @@ private extension AddRemoveViewController {
         verticalStackView.addArrangedSubview(removeButton)
 
         NSLayoutConstraint.activate([
-            verticalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16.0),
-            verticalStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16.0),
-            verticalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16.0)
+            verticalStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.verticalStackViewLeadingOffset),
+            verticalStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: Constants.verticalStackViewTrailingInset),
+            verticalStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Constants.verticalStackViewBottomInset)
         ])
     }
 
@@ -131,10 +119,10 @@ private extension AddRemoveViewController {
     }
 
     func appendImage(_ image: UIImage?) {
-        let nextImageView = UIImageView()
-        nextImageView.image = image
-        nextImageView.contentMode = .scaleToFill
+        let nextImageView = DynamicUIChangesImageView()
+        nextImageView.configure(with: image)
         nextImageView.translatesAutoresizingMaskIntoConstraints = false
+        nextImageView.alpha = .zero
 
         NSLayoutConstraint.activate([
             nextImageView.widthAnchor.constraint(equalToConstant: Constants.imageViewSize.width),
@@ -142,16 +130,25 @@ private extension AddRemoveViewController {
         ])
 
         horizontalStackView.addArrangedSubview(nextImageView)
+
+        UIView.animate(withDuration: Constants.animationDuration, animations: {
+            nextImageView.alpha = 1.0
+        })
     }
 
     func removeLastImage() {
         guard horizontalStackView.subviews.count > 1 else {
+            // TODO: Alert
             print("Removing initial image view is not allowed!")
             return
         }
         guard let lastAddedView = horizontalStackView.subviews.last else { return }
 
-        horizontalStackView.removeArrangedSubview(lastAddedView)
-        lastAddedView.removeFromSuperview()
+        UIView.animate(withDuration: Constants.animationDuration, animations: {
+            lastAddedView.alpha = .zero
+        }, completion: { _ in
+            self.horizontalStackView.removeArrangedSubview(lastAddedView)
+            lastAddedView.removeFromSuperview()
+        })
     }
 }

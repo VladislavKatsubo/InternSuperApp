@@ -34,10 +34,7 @@ final class AddRemoveViewModel: AddRemoveViewModelProtocol {
     }
 
     func didTapAddButton() {
-        guard let imageData = self.fetchImageData() else { return }
-        let image = UIImage(data: imageData)
-
-        onStateChange?(.onAddImage(image))
+        self.fetchImage()
     }
 
     func didTapRemoveButton() {
@@ -52,7 +49,7 @@ private extension AddRemoveViewModel {
     }
 
     func setupImageView() {
-        imageManager.fetchImageData(url: Constants.randomImageURL) { [weak self] result in
+        imageManager.fetchImageData(url: Constants.randomImageUrl()) { [weak self] result in
             switch result {
             case .success(let imageData):
                 DispatchQueue.main.async {
@@ -65,19 +62,17 @@ private extension AddRemoveViewModel {
         }?.resume()
     }
 
-    func fetchImageData() -> Data? {
-        var imageData: Data?
-
-        imageManager.fetchImageData(url: Constants.randomImageURL, completion: { result in
+    func fetchImage() {
+        imageManager.fetchImageData(url: Constants.randomImageUrl(), completion: { [weak self] result in
             switch result {
-            case .success(let success):
-                imageData = success
+            case .success(let imageData):
+                DispatchQueue.main.async {
+                    let image = UIImage(data: imageData)
+                    self?.onStateChange?(.onAddImage(image))
+                }
             case .failure(let failure):
                 print(failure)
             }
         })?.resume()
-
-        return imageData
     }
 }
-

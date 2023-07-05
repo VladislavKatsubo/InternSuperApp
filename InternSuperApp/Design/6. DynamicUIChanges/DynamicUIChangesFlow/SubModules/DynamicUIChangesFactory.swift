@@ -5,4 +5,16 @@
 //  Created by Vlad Katsubo on 28.06.23.
 //
 
-import Foundation
+import UIKit
+
+final class DynamicUIChangesFactory {
+    func createController() -> UIViewController {
+
+//        let viewModel = AlphaAddRemoveViewModel(imageManager: imageManager)
+        let viewController = DynamicUIChangesViewController()
+
+//        viewController.configure(with: viewModel)
+
+        return viewController
+    }
+}

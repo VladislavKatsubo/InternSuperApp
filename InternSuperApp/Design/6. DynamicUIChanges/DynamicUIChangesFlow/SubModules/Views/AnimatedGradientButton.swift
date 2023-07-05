@@ -26,7 +26,7 @@ final class AnimatedGradientButton: IButton {
     private var isGradientLayerSet: Bool = false
 
     // MARK: - Configure
-    func configure(with text: String) {
+    func configure(with text: String?) {
         self.title = text
     }
 
@@ -39,11 +39,15 @@ final class AnimatedGradientButton: IButton {
     override func layoutSubviews() {
         super.layoutSubviews()
         if !isGradientLayerSet {
-            setupGradient()
             setupGradientLayer()
             animateGradientLayer()
             isGradientLayerSet = true
         }
+    }
+
+    deinit {
+        gradientLayer.delegate = nil
+        gradientLayer.removeAllAnimations()
     }
 }
 
@@ -52,6 +56,7 @@ private extension AnimatedGradientButton {
     func setupItems() {
         setupButton()
         setupVisualEffect()
+        setupGradient()
     }
 
     func setupButton() {
@@ -114,7 +119,7 @@ private extension AnimatedGradientButton {
         gradientChangeAnimation.duration = 5.0
         gradientChangeAnimation.toValue = gradientSet[currentGradient]
         gradientChangeAnimation.fillMode = CAMediaTimingFillMode.forwards
-        gradientChangeAnimation.isRemovedOnCompletion = false
+        gradientChangeAnimation.isRemovedOnCompletion = true
         gradientChangeAnimation.delegate = self
         gradientLayer.add(gradientChangeAnimation, forKey: "colors")
     }

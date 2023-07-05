@@ -63,6 +63,12 @@
 		0D3270712A50F8D500735EA4 /* AddRemoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270702A50F8D500735EA4 /* AddRemoveViewModel.swift */; };
 		0D3270732A50F8DC00735EA4 /* AddRemoveFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270722A50F8DC00735EA4 /* AddRemoveFactory.swift */; };
 		0D3270752A50F8E700735EA4 /* AddRemoveResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270742A50F8E700735EA4 /* AddRemoveResources.swift */; };
+		0D3270772A55320400735EA4 /* DynamicUIChangesTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270762A55320400735EA4 /* DynamicUIChangesTaskViewController.swift */; };
+		0D3270792A553D0E00735EA4 /* AlphaAddRemoveFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270782A553D0E00735EA4 /* AlphaAddRemoveFactory.swift */; };
+		0D32707B2A553D2300735EA4 /* AlphaAddRemoveResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32707A2A553D2300735EA4 /* AlphaAddRemoveResources.swift */; };
+		0D32707D2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32707C2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift */; };
+		0D32707F2A553D3000735EA4 /* AlphaAddRemoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32707E2A553D3000735EA4 /* AlphaAddRemoveViewController.swift */; };
+		0D3270812A557B8D00735EA4 /* DynamicUIChangesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270802A557B8D00735EA4 /* DynamicUIChangesImageView.swift */; };
 		0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B97392A49F222006B5CC7 /* CoverView.swift */; };
 		0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */; };
 		0D3B973E2A4A0831006B5CC7 /* StatisticsView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */; };
@@ -148,6 +154,12 @@
 		0D3270702A50F8D500735EA4 /* AddRemoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemoveViewModel.swift; sourceTree = "<group>"; };
 		0D3270722A50F8DC00735EA4 /* AddRemoveFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemoveFactory.swift; sourceTree = "<group>"; };
 		0D3270742A50F8E700735EA4 /* AddRemoveResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRemoveResources.swift; sourceTree = "<group>"; };
+		0D3270762A55320400735EA4 /* DynamicUIChangesTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesTaskViewController.swift; sourceTree = "<group>"; };
+		0D3270782A553D0E00735EA4 /* AlphaAddRemoveFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAddRemoveFactory.swift; sourceTree = "<group>"; };
+		0D32707A2A553D2300735EA4 /* AlphaAddRemoveResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAddRemoveResources.swift; sourceTree = "<group>"; };
+		0D32707C2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAddRemoveViewModel.swift; sourceTree = "<group>"; };
+		0D32707E2A553D3000735EA4 /* AlphaAddRemoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAddRemoveViewController.swift; sourceTree = "<group>"; };
+		0D3270802A557B8D00735EA4 /* DynamicUIChangesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesImageView.swift; sourceTree = "<group>"; };
 		0D3B97392A49F222006B5CC7 /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolTextView+Model.swift"; sourceTree = "<group>"; };
 		0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatisticsView.png; sourceTree = "<group>"; };
@@ -411,6 +423,10 @@
 		0D3270582A4BF1F000735EA4 /* AlphaAddRemove */ = {
 			isa = PBXGroup;
 			children = (
+				0D3270782A553D0E00735EA4 /* AlphaAddRemoveFactory.swift */,
+				0D32707A2A553D2300735EA4 /* AlphaAddRemoveResources.swift */,
+				0D32707C2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift */,
+				0D32707E2A553D3000735EA4 /* AlphaAddRemoveViewController.swift */,
 			);
 			path = AlphaAddRemove;
 			sourceTree = "<group>";
@@ -419,6 +435,8 @@
 			isa = PBXGroup;
 			children = (
 				0D32705A2A4BF22200735EA4 /* AnimatedGradientButton.swift */,
+				0D3270802A557B8D00735EA4 /* DynamicUIChangesImageView.swift */,
+				0D3270762A55320400735EA4 /* DynamicUIChangesTaskViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -662,6 +680,7 @@
 				0D52A9402A42159C0062347D /* UIButton+Title.swift in Sources */,
 				0D2120A52A45CD2100CCB77A /* Day+Elapsed.swift in Sources */,
 				0D32705F2A4C608900735EA4 /* HideShowResources.swift in Sources */,
+				0D3270812A557B8D00735EA4 /* DynamicUIChangesImageView.swift in Sources */,
 				0D2120B82A482DD100CCB77A /* StatisticsView.swift in Sources */,
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
 				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
@@ -669,16 +688,20 @@
 				0D32705B2A4BF22200735EA4 /* AnimatedGradientButton.swift in Sources */,
 				0D52A9562A42CE410062347D /* MockScrollViewBlockView.swift in Sources */,
 				0D52A91E2A41E7770062347D /* AppDelegate.swift in Sources */,
+				0D32707F2A553D3000735EA4 /* AlphaAddRemoveViewController.swift in Sources */,
+				0D3270772A55320400735EA4 /* DynamicUIChangesTaskViewController.swift in Sources */,
 				0D3270712A50F8D500735EA4 /* AddRemoveViewModel.swift in Sources */,
 				0D52A9202A41E7770062347D /* SceneDelegate.swift in Sources */,
 				0D2120A02A45C79600CCB77A /* ViewControllerPreview.swift in Sources */,
 				0D52A95F2A430D3A0062347D /* MockScrollViewViewController.swift in Sources */,
 				0D2120B62A482C8E00CCB77A /* MembersCounterView.swift in Sources */,
 				0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */,
+				0D32707B2A553D2300735EA4 /* AlphaAddRemoveResources.swift in Sources */,
 				0D2120882A446FB100CCB77A /* CustomLayoutResources.swift in Sources */,
 				0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */,
 				0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */,
 				0D2120BE2A48954200CCB77A /* Int+Abbreviated.swift in Sources */,
+				0D3270792A553D0E00735EA4 /* AlphaAddRemoveFactory.swift in Sources */,
 				0D2120A92A46B47400CCB77A /* RecommendationsCountView.swift in Sources */,
 				0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */,
 				0D52A93D2A4215180062347D /* CenteredButton.swift in Sources */,
@@ -698,6 +721,7 @@
 				0D2120692A442F3B00CCB77A /* RectangleView.swift in Sources */,
 				0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */,
 				0D21205D2A43724E00CCB77A /* HorizontalStackViewViewController.swift in Sources */,
+				0D32707D2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift in Sources */,
 				0D3270752A50F8E700735EA4 /* AddRemoveResources.swift in Sources */,
 				0D52A94B2A421A4F0062347D /* CenteredViewResources.swift in Sources */,
 				0D2120862A446FAA00CCB77A /* CustomLayoutFactory.swift in Sources */,
