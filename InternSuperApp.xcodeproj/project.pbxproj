@@ -78,6 +78,13 @@
 		0D3270932A56A25200735EA4 /* ColorSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270922A56A25200735EA4 /* ColorSwitchButton.swift */; };
 		0D3270952A56B00C00735EA4 /* ColorSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270942A56B00C00735EA4 /* ColorSwitcherView.swift */; };
 		0D3270972A57440800735EA4 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270962A57440700735EA4 /* UIColor+Hex.swift */; };
+		0D32709A2A57DED200735EA4 /* Desing. 8. CircularProgressBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3270992A57DED200735EA4 /* Desing. 8. CircularProgressBar.png */; };
+		0D32709D2A57DEEC00735EA4 /* CircularProgressBarFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32709C2A57DEEC00735EA4 /* CircularProgressBarFactory.swift */; };
+		0D32709F2A57DEF400735EA4 /* CircularProgressBarResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32709E2A57DEF400735EA4 /* CircularProgressBarResources.swift */; };
+		0D3270A12A57DEFA00735EA4 /* CircularProgressBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A02A57DEFA00735EA4 /* CircularProgressBarViewModel.swift */; };
+		0D3270A32A57DEFF00735EA4 /* CircularProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A22A57DEFF00735EA4 /* CircularProgressBarViewController.swift */; };
+		0D3270A52A57E32300735EA4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A42A57E32300735EA4 /* CircleView.swift */; };
+		0D3270A72A57E32F00735EA4 /* AnimateCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A62A57E32F00735EA4 /* AnimateCircleButton.swift */; };
 		0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B97392A49F222006B5CC7 /* CoverView.swift */; };
 		0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */; };
 		0D3B973E2A4A0831006B5CC7 /* StatisticsView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */; };
@@ -178,6 +185,13 @@
 		0D3270922A56A25200735EA4 /* ColorSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchButton.swift; sourceTree = "<group>"; };
 		0D3270942A56B00C00735EA4 /* ColorSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitcherView.swift; sourceTree = "<group>"; };
 		0D3270962A57440700735EA4 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		0D3270992A57DED200735EA4 /* Desing. 8. CircularProgressBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Desing. 8. CircularProgressBar.png"; sourceTree = "<group>"; };
+		0D32709C2A57DEEC00735EA4 /* CircularProgressBarFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarFactory.swift; sourceTree = "<group>"; };
+		0D32709E2A57DEF400735EA4 /* CircularProgressBarResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarResources.swift; sourceTree = "<group>"; };
+		0D3270A02A57DEFA00735EA4 /* CircularProgressBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarViewModel.swift; sourceTree = "<group>"; };
+		0D3270A22A57DEFF00735EA4 /* CircularProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarViewController.swift; sourceTree = "<group>"; };
+		0D3270A42A57E32300735EA4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		0D3270A62A57E32F00735EA4 /* AnimateCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateCircleButton.swift; sourceTree = "<group>"; };
 		0D3B97392A49F222006B5CC7 /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolTextView+Model.swift"; sourceTree = "<group>"; };
 		0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatisticsView.png; sourceTree = "<group>"; };
@@ -499,6 +513,28 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0D3270982A57DE4D00735EA4 /* 8. CircularProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				0D32709B2A57DEDA00735EA4 /* Views */,
+				0D32709C2A57DEEC00735EA4 /* CircularProgressBarFactory.swift */,
+				0D32709E2A57DEF400735EA4 /* CircularProgressBarResources.swift */,
+				0D3270A02A57DEFA00735EA4 /* CircularProgressBarViewModel.swift */,
+				0D3270A22A57DEFF00735EA4 /* CircularProgressBarViewController.swift */,
+				0D3270992A57DED200735EA4 /* Desing. 8. CircularProgressBar.png */,
+			);
+			path = "8. CircularProgressBar";
+			sourceTree = "<group>";
+		};
+		0D32709B2A57DEDA00735EA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D3270A42A57E32300735EA4 /* CircleView.swift */,
+				0D3270A62A57E32F00735EA4 /* AnimateCircleButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0D3B97382A49F219006B5CC7 /* CoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +583,7 @@
 				0D2120712A444F8E00CCB77A /* 5. CustomLayout */,
 				0D3270472A4BF0E000735EA4 /* 6. DynamicUIChanges */,
 				0D3270832A55A33200735EA4 /* 7. CompoundView */,
+				0D3270982A57DE4D00735EA4 /* 8. CircularProgressBar */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -687,6 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3B97422A4A088B006B5CC7 /* IconProfileFollowView.png in Resources */,
+				0D32709A2A57DED200735EA4 /* Desing. 8. CircularProgressBar.png in Resources */,
 				0D3270852A55A36800735EA4 /* Design. 7. CompoundView.png in Resources */,
 				0D52A92A2A41E7790062347D /* LaunchScreen.storyboard in Resources */,
 				0D3270402A4B4A6900735EA4 /* IconsStackView.png in Resources */,
@@ -720,11 +758,13 @@
 				0D32706F2A50F8CF00735EA4 /* AddRemoveViewController.swift in Sources */,
 				0D3270872A55A38700735EA4 /* CompoundViewFactory.swift in Sources */,
 				0D2120AE2A46E55000CCB77A /* SeparatorLineView.swift in Sources */,
+				0D3270A12A57DEFA00735EA4 /* CircularProgressBarViewModel.swift in Sources */,
 				0D2120B42A46F44A00CCB77A /* IconsStackView.swift in Sources */,
 				0D2120942A44B32700CCB77A /* IconProfileFollowView+Model.swift in Sources */,
 				0D52A9402A42159C0062347D /* UIButton+Title.swift in Sources */,
 				0D2120A52A45CD2100CCB77A /* Day+Elapsed.swift in Sources */,
 				0D32705F2A4C608900735EA4 /* HideShowResources.swift in Sources */,
+				0D3270A52A57E32300735EA4 /* CircleView.swift in Sources */,
 				0D3270812A557B8D00735EA4 /* DynamicUIChangesImageView.swift in Sources */,
 				0D2120B82A482DD100CCB77A /* StatisticsView.swift in Sources */,
 				0D3270892A55A3B300735EA4 /* CompoundViewResources.swift in Sources */,
@@ -745,6 +785,7 @@
 				0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */,
 				0D32708B2A55A3C000735EA4 /* CompoundViewViewModel.swift in Sources */,
 				0D32707B2A553D2300735EA4 /* AlphaAddRemoveResources.swift in Sources */,
+				0D3270A72A57E32F00735EA4 /* AnimateCircleButton.swift in Sources */,
 				0D2120882A446FB100CCB77A /* CustomLayoutResources.swift in Sources */,
 				0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */,
 				0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */,
@@ -754,6 +795,7 @@
 				0D3270902A55A60900735EA4 /* ColorSwitchView.swift in Sources */,
 				0D3270932A56A25200735EA4 /* ColorSwitchButton.swift in Sources */,
 				0D2120A92A46B47400CCB77A /* RecommendationsCountView.swift in Sources */,
+				0D3270A32A57DEFF00735EA4 /* CircularProgressBarViewController.swift in Sources */,
 				0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */,
 				0D52A93D2A4215180062347D /* CenteredButton.swift in Sources */,
 				0D2120BA2A482DEC00CCB77A /* StatisticsView+Model.swift in Sources */,
@@ -768,6 +810,7 @@
 				0D52A9372A4213D40062347D /* ColoredElementView.swift in Sources */,
 				0D2120662A442B1100CCB77A /* EyedropperResources.swift in Sources */,
 				0D52A9482A42176C0062347D /* IStackView.swift in Sources */,
+				0D32709F2A57DEF400735EA4 /* CircularProgressBarResources.swift in Sources */,
 				0D3270692A4C62CF00735EA4 /* HideShowFactory.swift in Sources */,
 				0D2120692A442F3B00CCB77A /* RectangleView.swift in Sources */,
 				0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */,
@@ -782,6 +825,7 @@
 				0D2120842A446F9E00CCB77A /* CustomLayoutViewController.swift in Sources */,
 				0D32704D2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift in Sources */,
 				0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */,
+				0D32709D2A57DEEC00735EA4 /* CircularProgressBarFactory.swift in Sources */,
 				0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */,
 				0D2120BC2A487E3100CCB77A /* Int+Separator.swift in Sources */,
 				0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */,
