@@ -13,6 +13,7 @@ final class BlurringView: IView {
         static let labelFont: UIFont = .systemFont(ofSize: 18.0, weight: .regular)
         static let labelFontColor: UIColor = .white
         static let labelText: String = "Hidden"
+        static let eyeImage: UIImage? = UIImage(systemName: "eye.slash.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
     }
 
     private let visualEffectView = UIVisualEffectView()
@@ -24,11 +25,6 @@ final class BlurringView: IView {
     override func didLoad() {
         setupItems()
     }
-
-    // MARK: - Configure
-    //    func configure(with : ) {
-    //
-    //    }
 }
 
 private extension BlurringView {
@@ -68,7 +64,7 @@ private extension BlurringView {
     }
 
     func setupImageView() {
-        imageView.image = UIImage(systemName: "eye.slash.fill")?.withTintColor(.white, renderingMode: .alwaysOriginal)
+        imageView.image = Constants.eyeImage
         imageView.contentMode = .scaleToFill
     }
 

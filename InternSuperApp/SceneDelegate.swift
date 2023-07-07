@@ -19,8 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
 
 
-        let nvc = UINavigationController(rootViewController: DynamicUIChangesViewController())
-        window.rootViewController = nvc
+//        let nvc = UINavigationController(rootViewController: DynamicUIChangesViewController())
+
+        let vc = CompoundViewFactory().createController()
+        
+        window.rootViewController = vc
         self.window = window
     }
 }

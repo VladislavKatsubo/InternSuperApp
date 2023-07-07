@@ -10,9 +10,7 @@ import UIKit
 struct DynamicUIChangesResources {
     // MARK: - Handlers
     struct Handlers {
-        var onHideShow: () -> Void
-        var onAddRemove: () -> Void
-        var onAlphaAddRemove: () -> Void
+        
     }
 
     // MARK: - States

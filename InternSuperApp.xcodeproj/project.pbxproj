@@ -69,6 +69,15 @@
 		0D32707D2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32707C2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift */; };
 		0D32707F2A553D3000735EA4 /* AlphaAddRemoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32707E2A553D3000735EA4 /* AlphaAddRemoveViewController.swift */; };
 		0D3270812A557B8D00735EA4 /* DynamicUIChangesImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270802A557B8D00735EA4 /* DynamicUIChangesImageView.swift */; };
+		0D3270852A55A36800735EA4 /* Design. 7. CompoundView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3270842A55A36800735EA4 /* Design. 7. CompoundView.png */; };
+		0D3270872A55A38700735EA4 /* CompoundViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270862A55A38700735EA4 /* CompoundViewFactory.swift */; };
+		0D3270892A55A3B300735EA4 /* CompoundViewResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270882A55A3B300735EA4 /* CompoundViewResources.swift */; };
+		0D32708B2A55A3C000735EA4 /* CompoundViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32708A2A55A3C000735EA4 /* CompoundViewViewModel.swift */; };
+		0D32708D2A55A3C700735EA4 /* CompoundViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32708C2A55A3C700735EA4 /* CompoundViewViewController.swift */; };
+		0D3270902A55A60900735EA4 /* ColorSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32708F2A55A60900735EA4 /* ColorSwitchView.swift */; };
+		0D3270932A56A25200735EA4 /* ColorSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270922A56A25200735EA4 /* ColorSwitchButton.swift */; };
+		0D3270952A56B00C00735EA4 /* ColorSwitcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270942A56B00C00735EA4 /* ColorSwitcherView.swift */; };
+		0D3270972A57440800735EA4 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270962A57440700735EA4 /* UIColor+Hex.swift */; };
 		0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B97392A49F222006B5CC7 /* CoverView.swift */; };
 		0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */; };
 		0D3B973E2A4A0831006B5CC7 /* StatisticsView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */; };
@@ -160,6 +169,15 @@
 		0D32707C2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAddRemoveViewModel.swift; sourceTree = "<group>"; };
 		0D32707E2A553D3000735EA4 /* AlphaAddRemoveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaAddRemoveViewController.swift; sourceTree = "<group>"; };
 		0D3270802A557B8D00735EA4 /* DynamicUIChangesImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicUIChangesImageView.swift; sourceTree = "<group>"; };
+		0D3270842A55A36800735EA4 /* Design. 7. CompoundView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design. 7. CompoundView.png"; sourceTree = "<group>"; };
+		0D3270862A55A38700735EA4 /* CompoundViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundViewFactory.swift; sourceTree = "<group>"; };
+		0D3270882A55A3B300735EA4 /* CompoundViewResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundViewResources.swift; sourceTree = "<group>"; };
+		0D32708A2A55A3C000735EA4 /* CompoundViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundViewViewModel.swift; sourceTree = "<group>"; };
+		0D32708C2A55A3C700735EA4 /* CompoundViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundViewViewController.swift; sourceTree = "<group>"; };
+		0D32708F2A55A60900735EA4 /* ColorSwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchView.swift; sourceTree = "<group>"; };
+		0D3270922A56A25200735EA4 /* ColorSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchButton.swift; sourceTree = "<group>"; };
+		0D3270942A56B00C00735EA4 /* ColorSwitcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitcherView.swift; sourceTree = "<group>"; };
+		0D3270962A57440700735EA4 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		0D3B97392A49F222006B5CC7 /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolTextView+Model.swift"; sourceTree = "<group>"; };
 		0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatisticsView.png; sourceTree = "<group>"; };
@@ -458,6 +476,29 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0D3270832A55A33200735EA4 /* 7. CompoundView */ = {
+			isa = PBXGroup;
+			children = (
+				0D32708E2A55A60000735EA4 /* Views */,
+				0D3270862A55A38700735EA4 /* CompoundViewFactory.swift */,
+				0D3270882A55A3B300735EA4 /* CompoundViewResources.swift */,
+				0D32708A2A55A3C000735EA4 /* CompoundViewViewModel.swift */,
+				0D32708C2A55A3C700735EA4 /* CompoundViewViewController.swift */,
+				0D3270842A55A36800735EA4 /* Design. 7. CompoundView.png */,
+			);
+			path = "7. CompoundView";
+			sourceTree = "<group>";
+		};
+		0D32708E2A55A60000735EA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D32708F2A55A60900735EA4 /* ColorSwitchView.swift */,
+				0D3270922A56A25200735EA4 /* ColorSwitchButton.swift */,
+				0D3270942A56B00C00735EA4 /* ColorSwitcherView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0D3B97382A49F219006B5CC7 /* CoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +546,7 @@
 				0D21205E2A44061700CCB77A /* 4. EyeDropper */,
 				0D2120712A444F8E00CCB77A /* 5. CustomLayout */,
 				0D3270472A4BF0E000735EA4 /* 6. DynamicUIChanges */,
+				0D3270832A55A33200735EA4 /* 7. CompoundView */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -561,6 +603,7 @@
 				0D2120BD2A48954200CCB77A /* Int+Abbreviated.swift */,
 				0D3270452A4B52A600735EA4 /* UIView+AnimatedTransition.swift */,
 				0D32706A2A4C8C0F00735EA4 /* UIView+BlurEffect.swift */,
+				0D3270962A57440700735EA4 /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -644,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3B97422A4A088B006B5CC7 /* IconProfileFollowView.png in Resources */,
+				0D3270852A55A36800735EA4 /* Design. 7. CompoundView.png in Resources */,
 				0D52A92A2A41E7790062347D /* LaunchScreen.storyboard in Resources */,
 				0D3270402A4B4A6900735EA4 /* IconsStackView.png in Resources */,
 				0D3270492A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png in Resources */,
@@ -674,6 +718,7 @@
 				0D3270642A4C622100735EA4 /* NetworkManager.swift in Sources */,
 				0D3270462A4B52A600735EA4 /* UIView+AnimatedTransition.swift in Sources */,
 				0D32706F2A50F8CF00735EA4 /* AddRemoveViewController.swift in Sources */,
+				0D3270872A55A38700735EA4 /* CompoundViewFactory.swift in Sources */,
 				0D2120AE2A46E55000CCB77A /* SeparatorLineView.swift in Sources */,
 				0D2120B42A46F44A00CCB77A /* IconsStackView.swift in Sources */,
 				0D2120942A44B32700CCB77A /* IconProfileFollowView+Model.swift in Sources */,
@@ -682,6 +727,8 @@
 				0D32705F2A4C608900735EA4 /* HideShowResources.swift in Sources */,
 				0D3270812A557B8D00735EA4 /* DynamicUIChangesImageView.swift in Sources */,
 				0D2120B82A482DD100CCB77A /* StatisticsView.swift in Sources */,
+				0D3270892A55A3B300735EA4 /* CompoundViewResources.swift in Sources */,
+				0D32708D2A55A3C700735EA4 /* CompoundViewViewController.swift in Sources */,
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
 				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
 				0D52A95B2A42DC670062347D /* MockScrollViewButton.swift in Sources */,
@@ -696,12 +743,16 @@
 				0D52A95F2A430D3A0062347D /* MockScrollViewViewController.swift in Sources */,
 				0D2120B62A482C8E00CCB77A /* MembersCounterView.swift in Sources */,
 				0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */,
+				0D32708B2A55A3C000735EA4 /* CompoundViewViewModel.swift in Sources */,
 				0D32707B2A553D2300735EA4 /* AlphaAddRemoveResources.swift in Sources */,
 				0D2120882A446FB100CCB77A /* CustomLayoutResources.swift in Sources */,
 				0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */,
 				0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */,
 				0D2120BE2A48954200CCB77A /* Int+Abbreviated.swift in Sources */,
+				0D3270972A57440800735EA4 /* UIColor+Hex.swift in Sources */,
 				0D3270792A553D0E00735EA4 /* AlphaAddRemoveFactory.swift in Sources */,
+				0D3270902A55A60900735EA4 /* ColorSwitchView.swift in Sources */,
+				0D3270932A56A25200735EA4 /* ColorSwitchButton.swift in Sources */,
 				0D2120A92A46B47400CCB77A /* RecommendationsCountView.swift in Sources */,
 				0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */,
 				0D52A93D2A4215180062347D /* CenteredButton.swift in Sources */,
@@ -727,6 +778,7 @@
 				0D2120862A446FAA00CCB77A /* CustomLayoutFactory.swift in Sources */,
 				0D52A9612A430D7E0062347D /* MockScrollViewResources.swift in Sources */,
 				0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */,
+				0D3270952A56B00C00735EA4 /* ColorSwitcherView.swift in Sources */,
 				0D2120842A446F9E00CCB77A /* CustomLayoutViewController.swift in Sources */,
 				0D32704D2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift in Sources */,
 				0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */,
