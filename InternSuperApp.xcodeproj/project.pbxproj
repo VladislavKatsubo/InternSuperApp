@@ -84,7 +84,7 @@
 		0D3270A12A57DEFA00735EA4 /* CircularProgressBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A02A57DEFA00735EA4 /* CircularProgressBarViewModel.swift */; };
 		0D3270A32A57DEFF00735EA4 /* CircularProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A22A57DEFF00735EA4 /* CircularProgressBarViewController.swift */; };
 		0D3270A52A57E32300735EA4 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A42A57E32300735EA4 /* CircleView.swift */; };
-		0D3270A72A57E32F00735EA4 /* AnimateCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A62A57E32F00735EA4 /* AnimateCircleButton.swift */; };
+		0D3270A72A57E32F00735EA4 /* AnimateProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3270A62A57E32F00735EA4 /* AnimateProgressButton.swift */; };
 		0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B97392A49F222006B5CC7 /* CoverView.swift */; };
 		0D3B973C2A4A072B006B5CC7 /* SymbolTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */; };
 		0D3B973E2A4A0831006B5CC7 /* StatisticsView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */; };
@@ -191,7 +191,7 @@
 		0D3270A02A57DEFA00735EA4 /* CircularProgressBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarViewModel.swift; sourceTree = "<group>"; };
 		0D3270A22A57DEFF00735EA4 /* CircularProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarViewController.swift; sourceTree = "<group>"; };
 		0D3270A42A57E32300735EA4 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		0D3270A62A57E32F00735EA4 /* AnimateCircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateCircleButton.swift; sourceTree = "<group>"; };
+		0D3270A62A57E32F00735EA4 /* AnimateProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateProgressButton.swift; sourceTree = "<group>"; };
 		0D3B97392A49F222006B5CC7 /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
 		0D3B973B2A4A072B006B5CC7 /* SymbolTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SymbolTextView+Model.swift"; sourceTree = "<group>"; };
 		0D3B973D2A4A0831006B5CC7 /* StatisticsView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatisticsView.png; sourceTree = "<group>"; };
@@ -530,7 +530,7 @@
 			isa = PBXGroup;
 			children = (
 				0D3270A42A57E32300735EA4 /* CircleView.swift */,
-				0D3270A62A57E32F00735EA4 /* AnimateCircleButton.swift */,
+				0D3270A62A57E32F00735EA4 /* AnimateProgressButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -785,7 +785,7 @@
 				0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */,
 				0D32708B2A55A3C000735EA4 /* CompoundViewViewModel.swift in Sources */,
 				0D32707B2A553D2300735EA4 /* AlphaAddRemoveResources.swift in Sources */,
-				0D3270A72A57E32F00735EA4 /* AnimateCircleButton.swift in Sources */,
+				0D3270A72A57E32F00735EA4 /* AnimateProgressButton.swift in Sources */,
 				0D2120882A446FB100CCB77A /* CustomLayoutResources.swift in Sources */,
 				0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */,
 				0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */,

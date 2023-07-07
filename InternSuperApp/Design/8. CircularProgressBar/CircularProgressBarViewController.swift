@@ -12,6 +12,11 @@ final class CircularProgressBarViewController: UIViewController {
     typealias Constants = CircularProgressBarResources.Constants.UI
 
     private let circleView = CircleView()
+    private let verticalStackView = IStackView(axis: .vertical, spacing: Constants.verticalStackViewSpacing)
+    private let smoothAnimateProgressButton = AnimateProgressButton()
+    private let smoothSubtitle = UILabel()
+    private let zeroBasedAnimateProgressButton = AnimateProgressButton()
+    private let zeroBasedSubtitle = UILabel()
 
     private var viewModel: CircularProgressBarViewModelProtocol?
 
@@ -43,9 +48,13 @@ private extension CircularProgressBarViewController {
     func setupItems() {
         self.view.backgroundColor = .systemBackground
 
+
         setupCircleView()
+        setupVerticalStackView()
         setupSmoothAnimateProgressButton()
+        setupSmoothSubtitle()
         setupFromZeroAnimateProgressButton()
+        setupZeroBasedSubtitle()
     }
 
     func setupCircleView() {
@@ -60,51 +69,58 @@ private extension CircularProgressBarViewController {
         ])
     }
 
-    func setupSmoothAnimateProgressButton() {
-        let button = IButton()
-        button.title = Constants.smoothProgressAnimateButtonText
-        button.titleColor = Constants.progressAnimateButtonBackgroundColor.withAlphaComponent(0.8)
-        button.titleLabel?.font = .systemFont(ofSize: 16.0, weight: .semibold)
-        button.backgroundColor = .clear
-        button.layer.cornerRadius = 20.0
-        button.layer.borderWidth = 3.0
-        button.layer.borderColor = Constants.progressAnimateButtonBackgroundColor.cgColor
-        button.onTap = { [weak self] in
-            self?.viewModel?.didTapAnimateProgressButton(fromZero: false)
-        }
+    func setupVerticalStackView() {
+        view.addSubview(verticalStackView)
+        verticalStackView.translatesAutoresizingMaskIntoConstraints = false
 
-        view.addSubview(button)
-        button.translatesAutoresizingMaskIntoConstraints = false
+        verticalStackView.addArrangedSubview(smoothAnimateProgressButton)
+        verticalStackView.addArrangedSubview(smoothSubtitle)
+        verticalStackView.setCustomSpacing(Constants.spacingAfterSmoothSubtitle, after: smoothSubtitle)
+
+        verticalStackView.addArrangedSubview(zeroBasedAnimateProgressButton)
+        verticalStackView.addArrangedSubview(zeroBasedSubtitle)
 
         NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: circleView.bottomAnchor, constant: 30.0),
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.widthAnchor.constraint(equalToConstant: 320.0),
-            button.heightAnchor.constraint(equalToConstant: 50.0)
+            verticalStackView.topAnchor.constraint(equalTo: circleView.bottomAnchor, constant: Constants.verticalStackViewTopOffset),
+            verticalStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 
+    func setupSmoothAnimateProgressButton() {
+        smoothAnimateProgressButton.configure(with: Constants.smoothProgressAnimateButtonText)
+
+        smoothAnimateProgressButton.onTap = { [weak self] in
+            self?.viewModel?.didTapAnimateProgressButton(fromZero: false)
+        }
+
+        NSLayoutConstraint.activate([
+            smoothAnimateProgressButton.widthAnchor.constraint(equalToConstant: Constants.progressAnimateButtonWidth),
+            smoothAnimateProgressButton.heightAnchor.constraint(equalToConstant: Constants.progressAnimateButtonHeight)
+        ])
+    }
+
+    func setupSmoothSubtitle() {
+        smoothSubtitle.text = Constants.smoothAnimateProgressSubtitleText
+        smoothSubtitle.font = Constants.subtitleLabelFont
+        smoothSubtitle.textColor = Constants.subtitleLabelFontColor
+    }
+
     func setupFromZeroAnimateProgressButton() {
-        let button = IButton()
-        button.title = Constants.zeroBasedProgressAnimateButtonText
-        button.titleColor = Constants.progressAnimateButtonBackgroundColor.withAlphaComponent(0.8)
-        button.titleLabel?.font = .systemFont(ofSize: 16.0, weight: .semibold)
-        button.backgroundColor = .clear
-        button.layer.cornerRadius = 20.0
-        button.layer.borderWidth = 3.0
-        button.layer.borderColor = Constants.progressAnimateButtonBackgroundColor.cgColor
-        button.onTap = { [weak self] in
+        zeroBasedAnimateProgressButton.configure(with: Constants.zeroBasedProgressAnimateButtonText)
+
+        zeroBasedAnimateProgressButton.onTap = { [weak self] in
             self?.viewModel?.didTapAnimateProgressButton(fromZero: true)
         }
 
-        view.addSubview(button)
-        button.translatesAutoresizingMaskIntoConstraints = false
-
         NSLayoutConstraint.activate([
-            button.topAnchor.constraint(equalTo: circleView.bottomAnchor, constant: 100.0),
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.widthAnchor.constraint(equalToConstant: 320.0),
-            button.heightAnchor.constraint(equalToConstant: 50.0)
+            zeroBasedAnimateProgressButton.widthAnchor.constraint(equalToConstant: Constants.progressAnimateButtonWidth),
+            zeroBasedAnimateProgressButton.heightAnchor.constraint(equalToConstant: Constants.progressAnimateButtonHeight)
         ])
+    }
+
+    func setupZeroBasedSubtitle() {
+        zeroBasedSubtitle.text = Constants.zeroBasedAnimateProgressSubtitleText
+        zeroBasedSubtitle.font = Constants.subtitleLabelFont
+        zeroBasedSubtitle.textColor = Constants.subtitleLabelFontColor
     }
 }
