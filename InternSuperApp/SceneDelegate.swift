@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 //        let nvc = UINavigationController(rootViewController: DynamicUIChangesViewController())
 
-        let vc = CompoundViewFactory().createController()
+        let vc = CircularProgressBarFactory().createController()
         
         window.rootViewController = vc
         self.window = window
