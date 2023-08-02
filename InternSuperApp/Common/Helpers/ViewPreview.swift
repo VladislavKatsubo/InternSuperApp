@@ -20,6 +20,6 @@ struct ViewPreview: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: UIViewType, context: Context) {
-        // Not needed
+        
     }
 }

@@ -7,14 +7,28 @@
 
 import UIKit
 
+protocol AppDelegateProtocol {
+    var context: AppContext! { get }
+    var window: UIWindow? { get }
+}
+
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, AppDelegateProtocol {
+    static let shared: AppDelegateProtocol = UIApplication.shared.delegate as! AppDelegateProtocol
+
+    var context: AppContext!
+    var mainFlow: MainFlow!
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        return true
-    }
 
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        context = AppContext.makeContext()
+
+        mainFlow = MainFlow(navigator: MainFlowNavigator())
+        guard mainFlow.makeStartFlow(with: window) else { return false }
+
+        return true
     }
 }

@@ -8,6 +8,8 @@
 import UIKit
 
 class ICircleImageView: UIImageView {
+
+    // MARK: - Lifecycle
     override func layoutSubviews() {
         super.layoutSubviews()
         layer.backgroundColor = UIColor.white.cgColor
