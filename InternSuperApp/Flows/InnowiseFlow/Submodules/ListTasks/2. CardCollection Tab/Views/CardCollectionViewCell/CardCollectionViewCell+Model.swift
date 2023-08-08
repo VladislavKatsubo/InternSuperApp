@@ -9,9 +9,11 @@ import Foundation
 
 extension CardCollectionViewCell {
     struct Model {
-        let name: String?
+        let firstName: String?
+        let lastName: String?
         let age: Int?
         let description: String?
-        let sex: User.Sex
+        let sex: User.Sex?
+        let avatarImageURL: URL?
     }
 }

@@ -15,7 +15,7 @@ struct CardCollectionResources {
 
     // MARK: - States
     enum State {
-
+        case onCardCollectionView([CardCollectionViewCell.Model], ImageManagerProtocol)
     }
 
     // MARK: - Constants

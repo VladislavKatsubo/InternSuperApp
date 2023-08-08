@@ -166,7 +166,7 @@
 		0DFB99342A815F8100747FBE /* CardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB99302A815F8100747FBE /* CardCollectionViewController.swift */; };
 		0DFB99352A815F8100747FBE /* CardCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB99312A815F8100747FBE /* CardCollectionViewModel.swift */; };
 		0DFB99382A81609C00747FBE /* Lists 2. CardCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DFB99372A81609C00747FBE /* Lists 2. CardCell.png */; };
-		0DFB993A2A8160DA00747FBE /* CardCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DFB99392A8160DA00747FBE /* CardCell.png */; };
+		0DFB993A2A8160DA00747FBE /* CardCollectionViewCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DFB99392A8160DA00747FBE /* CardCollectionViewCell.png */; };
 		0DFB993C2A81612900747FBE /* CardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB993B2A81612900747FBE /* CardCollectionView.swift */; };
 		0DFB993F2A81621B00747FBE /* ICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB993E2A81621B00747FBE /* ICollectionView.swift */; };
 		0DFB99422A81624400747FBE /* ICollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB99412A81624400747FBE /* ICollectionCell.swift */; };
@@ -337,7 +337,7 @@
 		0DFB99302A815F8100747FBE /* CardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewController.swift; sourceTree = "<group>"; };
 		0DFB99312A815F8100747FBE /* CardCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewModel.swift; sourceTree = "<group>"; };
 		0DFB99372A81609C00747FBE /* Lists 2. CardCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lists 2. CardCell.png"; sourceTree = "<group>"; };
-		0DFB99392A8160DA00747FBE /* CardCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardCell.png; sourceTree = "<group>"; };
+		0DFB99392A8160DA00747FBE /* CardCollectionViewCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CardCollectionViewCell.png; sourceTree = "<group>"; };
 		0DFB993B2A81612900747FBE /* CardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionView.swift; sourceTree = "<group>"; };
 		0DFB993E2A81621B00747FBE /* ICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICollectionView.swift; sourceTree = "<group>"; };
 		0DFB99412A81624400747FBE /* ICollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICollectionCell.swift; sourceTree = "<group>"; };
@@ -659,7 +659,7 @@
 				0D49D49A2A7A2CB800EAF97E /* Views */,
 				0D3270AC2A58887500735EA4 /* 0. UserStruct */,
 				0D49D4992A7A2CAB00EAF97E /* 1. Two-Line Cell Tab */,
-				0DFB992D2A815F5800747FBE /* 2. CardCollection */,
+				0DFB992D2A815F5800747FBE /* 2. CardCollection Tab */,
 				0D49D4932A7A229700EAF97E /* ListTasksFlow.swift */,
 				0D49D4952A7A229E00EAF97E /* ListTasksFlowNavigator.swift */,
 			);
@@ -1041,7 +1041,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0DFB992D2A815F5800747FBE /* 2. CardCollection */ = {
+		0DFB992D2A815F5800747FBE /* 2. CardCollection Tab */ = {
 			isa = PBXGroup;
 			children = (
 				0DFB99362A815FC300747FBE /* Views */,
@@ -1051,7 +1051,7 @@
 				0DFB99302A815F8100747FBE /* CardCollectionViewController.swift */,
 				0DFB99372A81609C00747FBE /* Lists 2. CardCell.png */,
 			);
-			path = "2. CardCollection";
+			path = "2. CardCollection Tab";
 			sourceTree = "<group>";
 		};
 		0DFB99362A815FC300747FBE /* Views */ = {
@@ -1059,7 +1059,7 @@
 			children = (
 				0DFB99432A8165D500747FBE /* CardCollectionViewCell */,
 				0DFB993B2A81612900747FBE /* CardCollectionView.swift */,
-				0DFB99392A8160DA00747FBE /* CardCell.png */,
+				0DFB99392A8160DA00747FBE /* CardCollectionViewCell.png */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1158,7 +1158,7 @@
 				0D3270402A4B4A6900735EA4 /* IconsStackView.png in Resources */,
 				0D3270492A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png in Resources */,
 				0D2120732A444FA000CCB77A /* Design. 5. CustomLayout.png in Resources */,
-				0DFB993A2A8160DA00747FBE /* CardCell.png in Resources */,
+				0DFB993A2A8160DA00747FBE /* CardCollectionViewCell.png in Resources */,
 				0D3B97402A4A085F006B5CC7 /* CoverView.png in Resources */,
 				0D52A9272A41E7790062347D /* Assets.xcassets in Resources */,
 				0D3270B12A5888AA00735EA4 /* Lists. 1. UserStruct&TabViewController.png in Resources */,

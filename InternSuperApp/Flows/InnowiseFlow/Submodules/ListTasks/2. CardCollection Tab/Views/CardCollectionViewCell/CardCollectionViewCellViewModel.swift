@@ -75,4 +75,3 @@ private extension CardCollectionViewCellViewModel {
         onUserInfo?(model)
     }
 }
-

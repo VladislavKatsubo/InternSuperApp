@@ -11,6 +11,8 @@ final class CardCollectionViewController: UIViewController {
 
     typealias Constants = CardCollectionResources.Constants.UI
 
+    private let collectionView = CardCollectionView()
+
     private var viewModel: CardCollectionViewModelProtocol?
 
     // MARK: - LifeCycle
@@ -33,7 +35,8 @@ private extension CardCollectionViewController {
             guard let self = self else { return }
 
             switch state {
-
+            case .onCardCollectionView(let models, let imageManager):
+                self.collectionView.configure(with: models, imageManager: imageManager)
             }
         }
         viewModel?.launch()
@@ -42,5 +45,18 @@ private extension CardCollectionViewController {
     func setupItems() {
         view.backgroundColor = .systemBackground
 
+        setupCardCollectionView()
+    }
+
+    func setupCardCollectionView() {
+        view.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
     }
 }
