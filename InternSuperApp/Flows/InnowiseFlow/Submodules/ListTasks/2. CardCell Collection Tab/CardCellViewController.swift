@@ -1,5 +1,5 @@
 //
-//  CardCollectionViewController.swift
+//  CardCellViewController.swift
 //  InternSuperApp
 //
 //  Created by Vlad Katsubo on 7.08.23.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-final class CardCollectionViewController: UIViewController {
+final class CardCellViewController: UIViewController {
 
-    typealias Constants = CardCollectionResources.Constants.UI
+    typealias Constants = CardCellResources.Constants.UI
 
     private let collectionView = CardCollectionView()
 
-    private var viewModel: CardCollectionViewModelProtocol?
+    private var viewModel: CardCellViewModelProtocol?
 
     // MARK: - LifeCycle
     override func viewDidLoad() {
@@ -23,12 +23,12 @@ final class CardCollectionViewController: UIViewController {
     }
 
     // MARK: - Configure
-    func configure(viewModel: CardCollectionViewModelProtocol) {
+    func configure(viewModel: CardCellViewModelProtocol) {
         self.viewModel = viewModel
     }
 }
 
-private extension CardCollectionViewController {
+private extension CardCellViewController {
     // MARK: - Private methods
     func setupViewModel() {
         viewModel?.onStateChange = { [weak self] state in

@@ -19,14 +19,17 @@ final class ListTasksFlow {
         let twoLineViewControllerHandlers = TwoLineResources.Handlers.init()
         let twoLineViewController = TwoLineFactory().createController(handlers: twoLineViewControllerHandlers)
 
-        let cardCollectionViewHandlers = CardCollectionResources.Handlers.init()
-        let cardCollectionViewController = CardCollectionFactory().createController(handlers: cardCollectionViewHandlers)
+        let cardCollectionViewHandlers = CardCellResources.Handlers.init()
+        let cardCollectionViewController = CardCellFactory().createController(handlers: cardCollectionViewHandlers)
+
+        let coloredCardCollectionViewHandlers = ColoredCardCellResources.Handlers.init()
+        let coloredCardCollectionViewController = ColoredCardCellFactory().createController(handlers: coloredCardCollectionViewHandlers)
 
         let items = ListsTabBarResources.ItemController(
 
             usersTableView: twoLineViewController,
             usersCollectionView: cardCollectionViewController,
-            twoColumnUsersCollectionView: .init(),
+            twoColumnUsersCollectionView: coloredCardCollectionViewController,
             variousCellsTableView: .init(),
             mockLoadingTableView: .init()
         )

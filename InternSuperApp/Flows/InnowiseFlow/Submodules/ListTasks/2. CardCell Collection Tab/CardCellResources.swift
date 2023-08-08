@@ -1,5 +1,5 @@
 //
-//  CardCollectionResources.swift
+//  CardCellResources.swift
 //  InternSuperApp
 //
 //  Created by Vlad Katsubo on 7.08.23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct CardCollectionResources {
+struct CardCellResources {
     // MARK: - Handlers
     struct Handlers {
 

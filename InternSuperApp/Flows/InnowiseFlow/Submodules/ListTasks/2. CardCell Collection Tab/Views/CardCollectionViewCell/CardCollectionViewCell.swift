@@ -141,7 +141,7 @@ private extension CardCollectionViewCell {
         NSLayoutConstraint.activate([
             verticalStackView.topAnchor.constraint(equalTo: avatarImageView.topAnchor),
             verticalStackView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: Constants.verticalStackViewLeadingOffset),
-            verticalStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: Constants.verticalStackViewBottomInset)
+            verticalStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: Constants.verticalStackViewBottomInset)
         ])
     }
 
