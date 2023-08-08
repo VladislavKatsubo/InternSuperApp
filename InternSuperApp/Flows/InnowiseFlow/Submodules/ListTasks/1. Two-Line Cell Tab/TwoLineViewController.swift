@@ -22,18 +22,6 @@ final class TwoLineViewController: UIViewController {
         setupViewModel()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        navigationController?.navigationBar.prefersLargeTitles = false
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
-
     // MARK: - Configure
     func configure(viewModel: TwoLineViewModelProtocol) {
         self.viewModel = viewModel
@@ -48,8 +36,8 @@ private extension TwoLineViewController {
 
             switch state {
 
-            case .onTwoLineTableView(let models):
-                self.tableView.configure(with: models)
+            case .onTwoLineTableView(let models, let imageManager):
+                self.tableView.configure(with: models, imageManager: imageManager)
             }
         }
         viewModel?.launch()

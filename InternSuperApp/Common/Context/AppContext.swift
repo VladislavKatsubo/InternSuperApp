@@ -9,8 +9,17 @@ import Foundation
 
 struct AppContext {
 
+    let networkManager: NetworkManagerProtocol
+    let imageManager: ImageManagerProtocol
 
     static func makeContext() -> AppContext {
-        return .init()
+        let urlSession = URLSession(configuration: .default)
+        let networkManager = NetworkManager(session: urlSession)
+        let imageManager = ImageManager(networkManager: networkManager)
+
+        return AppContext(
+            networkManager: networkManager,
+            imageManager: imageManager
+        )
     }
 }

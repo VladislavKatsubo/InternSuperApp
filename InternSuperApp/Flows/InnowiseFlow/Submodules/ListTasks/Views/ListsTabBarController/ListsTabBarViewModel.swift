@@ -26,7 +26,7 @@ final class ListsTabBarViewModel {
         if let usersTableViewController = items.usersTableView {
             let usersTableView = UINavigationController(rootViewController: usersTableViewController)
             usersTableView.tabBarItem = UITabBarItem(
-                title: "usersTableView",
+                title: nil,
                 image: UIImage(systemName: "sun.min"),
                 selectedImage: UIImage(systemName: "sun.min.fill")
             )
@@ -37,7 +37,7 @@ final class ListsTabBarViewModel {
         if let usersCollectionViewController = items.usersCollectionView {
             let usersCollectionView = UINavigationController(rootViewController: usersCollectionViewController)
             usersCollectionView.tabBarItem = UITabBarItem(
-                title: "usersCollectionView",
+                title: nil,
                 image: UIImage(systemName: "sun.min"),
                 selectedImage: UIImage(systemName: "sun.min.fill")
             )
@@ -48,7 +48,7 @@ final class ListsTabBarViewModel {
         if let twoColumnUsersCollectionViewController = items.twoColumnUsersCollectionView {
             let twoColumnUsersCollectionView = UINavigationController(rootViewController: twoColumnUsersCollectionViewController)
             twoColumnUsersCollectionView.tabBarItem = UITabBarItem(
-                title: "twoColumnUsersCollectionView",
+                title: nil,
                 image: UIImage(systemName: "sun.min"),
                 selectedImage: UIImage(systemName: "sun.min.fill")
             )
@@ -59,7 +59,7 @@ final class ListsTabBarViewModel {
         if let variousCellsTableViewController = items.variousCellsTableView {
             let variousCellsTableView = UINavigationController(rootViewController: variousCellsTableViewController)
             variousCellsTableView.tabBarItem = UITabBarItem(
-                title: "variousCellsTableView",
+                title: nil,
                 image: UIImage(systemName: "sun.min"),
                 selectedImage: UIImage(systemName: "sun.min.fill")
             )
@@ -70,7 +70,7 @@ final class ListsTabBarViewModel {
         if let mockLoadingTableViewController = items.mockLoadingTableView {
             let mockLoadingTableView = UINavigationController(rootViewController: mockLoadingTableViewController)
             mockLoadingTableView.tabBarItem = UITabBarItem(
-                title: "mockLoadingTableView",
+                title: nil,
                 image: UIImage(systemName: "sun.min"),
                 selectedImage: UIImage(systemName: "sun.min.fill")
             )

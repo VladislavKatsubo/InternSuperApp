@@ -13,6 +13,6 @@ extension TwoLineTableViewCell {
         let firstName: String?
         let lastName: String?
         let age: Int?
-        let avatarImage: UIImage?
+        let avatarImageURL: URL?
     }
 }

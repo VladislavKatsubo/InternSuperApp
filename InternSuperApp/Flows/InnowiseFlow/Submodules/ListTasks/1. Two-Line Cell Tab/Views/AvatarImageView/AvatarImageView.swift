@@ -14,6 +14,7 @@ final class AvatarImageView: IImageView {
     }
 
     private let imageView = UIImageView()
+    private let activityIndicator = UIActivityIndicatorView(style: .medium)
     private var shape: Shape = .round {
         didSet {
             updateShape()
@@ -27,8 +28,9 @@ final class AvatarImageView: IImageView {
     }
 
     // MARK: - Configure
-    func configure(with imageData: UIImage, shape: Shape) {
-        self.imageView.image = imageData
+    func configure(with imageData: Data, shape: Shape) {
+        self.imageView.image = UIImage(data: imageData)
+        self.activityIndicator.stopAnimating()
         self.shape = shape
     }
 
@@ -37,12 +39,19 @@ final class AvatarImageView: IImageView {
         super.layoutSubviews()
         updateShape()
     }
+
+    // MARK: - Public methods
+    func reset() {
+        self.imageView.image = nil
+        self.activityIndicator.startAnimating()
+    }
 }
 
 private extension AvatarImageView {
     // MARK: - Private methods
     func setupItems() {
         setupImageView()
+        setupActivityIndicator()
     }
 
     func setupImageView() {
@@ -54,6 +63,17 @@ private extension AvatarImageView {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        ])
+    }
+
+    func setupActivityIndicator() {
+        addSubview(activityIndicator)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.startAnimating()
+
+        NSLayoutConstraint.activate([
+            activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor),
+            activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
     }
 

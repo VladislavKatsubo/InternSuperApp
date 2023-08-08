@@ -5,7 +5,7 @@
 //  Created by Vlad Katsubo on 7.07.23.
 //
 
-import Foundation
+import UIKit
 
 struct User {
     let firstName: String?
@@ -18,5 +18,12 @@ struct User {
     enum Sex: Equatable, CaseIterable {
         case female
         case male
+
+        var userSexIcon: Character? {
+            switch self {
+            case .male: return "💃🏽"
+            case .female: return "🕺"
+            }
+        }
     }
 }

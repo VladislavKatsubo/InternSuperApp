@@ -15,7 +15,7 @@ struct TwoLineResources {
 
     // MARK: - States
     enum State {
-        case onTwoLineTableView([TwoLineTableViewCell.Model])
+        case onTwoLineTableView([TwoLineTableViewCell.Model], ImageManagerProtocol)
     }
 
     // MARK: - Constants

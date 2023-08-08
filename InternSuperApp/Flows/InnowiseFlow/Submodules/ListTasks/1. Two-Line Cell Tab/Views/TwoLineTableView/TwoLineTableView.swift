@@ -10,10 +10,11 @@ import UIKit
 final class TwoLineTableView: IView {
 
     private enum Constants {
-        static let rowHeight: CGFloat = 72.0
+        static let rowHeight: CGFloat = 112.0
     }
 
     private let tableView = ITableView(style: .plain)
+    private var imageManager: ImageManagerProtocol?
 
     var userModels: [TwoLineTableViewCell.Model] = []
 
@@ -23,8 +24,9 @@ final class TwoLineTableView: IView {
     }
 
     // MARK: - Configure
-    func configure(with models: [TwoLineTableViewCell.Model]) {
+    func configure(with models: [TwoLineTableViewCell.Model], imageManager: ImageManagerProtocol) {
         self.userModels = models
+        self.imageManager = imageManager
         self.tableView.reloadData()
     }
 }
@@ -37,6 +39,8 @@ private extension TwoLineTableView {
         tableView.registerCells([TwoLineTableViewCell.self])
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorColor = .clear
+        tableView.backgroundColor = .systemGroupedBackground
 
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: topAnchor),
@@ -54,13 +58,17 @@ extension TwoLineTableView: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TwoLineTableViewCell.reuseID, for: indexPath) as? TwoLineTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TwoLineTableViewCell.reuseID, for: indexPath) as? TwoLineTableViewCell, let imageManager = imageManager else {
             return .init()
         }
         
         let model = self.userModels[indexPath.row]
+        let viewModel = TwoLineTableViewCellViewModel(
+            model: model,
+            imageManager: imageManager
+        )
 
-        cell.configure(with: model)
+        cell.configure(with: viewModel)
 
         return cell
     }

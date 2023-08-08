@@ -27,7 +27,7 @@ struct UserFactory {
         ]
 
         static let avatars: [URL?] = [
-            URL(string: "https://scontent-fra5-2.cdninstagram.com/v/t51.2885-15/345294398_916512722798769_6920767354151100899_n.heic?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=scontent-fra5-2.cdninstagram.com&_nc_cat=109&_nc_ohc=-MtHPNdoTwEAX-Mvzjh&edm=AP_V10EBAAAA&ccb=7-5&oh=00_AfDnLMudvuVlV1iZwdFEn6oLAzNlEb8rmXvXSYcWPWscPw&oe=64AE0154&_nc_sid=2999b8"
+            URL(string: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/964px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
                ),
             URL(string: "https://image.cnbcfm.com/api/v1/image/105773423-1551716977818rtx6p9yw.jpg?v=1551717428&w=700&h=700")
         ]
