@@ -161,6 +161,15 @@
 		0DA8408F2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8408E2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift */; };
 		0DA840942A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA840932A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift */; };
 		0DA840962A6EAAF700BA8F03 /* UINavigationController+Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA840952A6EAAF700BA8F03 /* UINavigationController+Animated.swift */; };
+		0DCDAC4F2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */; };
+		0DCDAC502A8A297F00F4A29B /* AsimmetricCollectionResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */; };
+		0DCDAC512A8A297F00F4A29B /* AsimmetricCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */; };
+		0DCDAC522A8A297F00F4A29B /* AsimmetricCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4E2A8A297F00F4A29B /* AsimmetricCollectionViewModel.swift */; };
+		0DCDAC542A8A29B600F4A29B /* AsimmetricCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC532A8A29B600F4A29B /* AsimmetricCollectionView.swift */; };
+		0DCDAC572A8A40F800F4A29B /* AsimmetricCollectionView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC562A8A40F800F4A29B /* AsimmetricCollectionView+Model.swift */; };
+		0DCDAC632A8A42C000F4A29B /* UIView+EdgesBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC622A8A42C000F4A29B /* UIView+EdgesBorder.swift */; };
+		0DCDAC672A8B55D000F4A29B /* AsimmetricCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC662A8B55D000F4A29B /* AsimmetricCollectionCell.swift */; };
+		0DCDAC692A8B565D00F4A29B /* AsimmetricCollectionCell+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC682A8B565D00F4A29B /* AsimmetricCollectionCell+Model.swift */; };
 		0DFB99322A815F8100747FBE /* CardCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB992E2A815F8100747FBE /* CardCellFactory.swift */; };
 		0DFB99332A815F8100747FBE /* CardCellResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB992F2A815F8100747FBE /* CardCellResources.swift */; };
 		0DFB99342A815F8100747FBE /* CardCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB99302A815F8100747FBE /* CardCellViewController.swift */; };
@@ -342,6 +351,15 @@
 		0DA8408E2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSectionsTableViewCell.swift; sourceTree = "<group>"; };
 		0DA840932A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIChangedRootControllerPublisher.swift; sourceTree = "<group>"; };
 		0DA840952A6EAAF700BA8F03 /* UINavigationController+Animated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Animated.swift"; sourceTree = "<group>"; };
+		0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionFactory.swift; sourceTree = "<group>"; };
+		0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionResources.swift; sourceTree = "<group>"; };
+		0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionViewController.swift; sourceTree = "<group>"; };
+		0DCDAC4E2A8A297F00F4A29B /* AsimmetricCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionViewModel.swift; sourceTree = "<group>"; };
+		0DCDAC532A8A29B600F4A29B /* AsimmetricCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionView.swift; sourceTree = "<group>"; };
+		0DCDAC562A8A40F800F4A29B /* AsimmetricCollectionView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsimmetricCollectionView+Model.swift"; sourceTree = "<group>"; };
+		0DCDAC622A8A42C000F4A29B /* UIView+EdgesBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EdgesBorder.swift"; sourceTree = "<group>"; };
+		0DCDAC662A8B55D000F4A29B /* AsimmetricCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionCell.swift; sourceTree = "<group>"; };
+		0DCDAC682A8B565D00F4A29B /* AsimmetricCollectionCell+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsimmetricCollectionCell+Model.swift"; sourceTree = "<group>"; };
 		0DFB992E2A815F8100747FBE /* CardCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellFactory.swift; sourceTree = "<group>"; };
 		0DFB992F2A815F8100747FBE /* CardCellResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellResources.swift; sourceTree = "<group>"; };
 		0DFB99302A815F8100747FBE /* CardCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellViewController.swift; sourceTree = "<group>"; };
@@ -377,7 +395,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D2120552A4371A800CCB77A /* 3. HorizontalStackViewRelativeSizes */ = {
+		0D2120552A4371A800CCB77A /* 3. Horizontal StackView with relative size */ = {
 			isa = PBXGroup;
 			children = (
 				0DA840722A6D1DC800BA8F03 /* HorizontalStackViewFactory.swift */,
@@ -385,10 +403,10 @@
 				0D21205C2A43724E00CCB77A /* HorizontalStackViewViewController.swift */,
 				0D2120562A43720A00CCB77A /* Design - 3. HorizontalStackViewRelativeSizes.png */,
 			);
-			path = "3. HorizontalStackViewRelativeSizes";
+			path = "3. Horizontal StackView with relative size";
 			sourceTree = "<group>";
 		};
-		0D21205E2A44061700CCB77A /* 4. EyeDropper */ = {
+		0D21205E2A44061700CCB77A /* 4. Eyedropper */ = {
 			isa = PBXGroup;
 			children = (
 				0D2120672A442F3300CCB77A /* Views */,
@@ -397,7 +415,7 @@
 				0D2120632A442AF400CCB77A /* EyedropperViewController.swift */,
 				0D21205F2A44062E00CCB77A /* Design - 4. Eyedropper.png */,
 			);
-			path = "4. EyeDropper";
+			path = "4. Eyedropper";
 			sourceTree = "<group>";
 		};
 		0D2120672A442F3300CCB77A /* Views */ = {
@@ -410,7 +428,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0D2120712A444F8E00CCB77A /* 5. CustomLayout */ = {
+		0D2120712A444F8E00CCB77A /* 5. Custom layout */ = {
 			isa = PBXGroup;
 			children = (
 				0D2120762A44628F00CCB77A /* Views */,
@@ -420,7 +438,7 @@
 				0D2120832A446F9E00CCB77A /* CustomLayoutViewController.swift */,
 				0D2120722A444FA000CCB77A /* Design. 5. CustomLayout.png */,
 			);
-			path = "5. CustomLayout";
+			path = "5. Custom layout";
 			sourceTree = "<group>";
 		};
 		0D2120762A44628F00CCB77A /* Views */ = {
@@ -541,7 +559,7 @@
 			path = SymbolTextView;
 			sourceTree = "<group>";
 		};
-		0D3270472A4BF0E000735EA4 /* 6. DynamicUIChanges */ = {
+		0D3270472A4BF0E000735EA4 /* 6. Dynamic UI changes */ = {
 			isa = PBXGroup;
 			children = (
 				0D3270522A4BF16400735EA4 /* Submodules */,
@@ -549,7 +567,7 @@
 				0DA840762A6D256000BA8F03 /* DynamicUIChangesFlowNavigator.swift */,
 				0D3270482A4BF10D00735EA4 /* Design. 6. DynamicUIChanges.png */,
 			);
-			path = "6. DynamicUIChanges";
+			path = "6. Dynamic UI changes";
 			sourceTree = "<group>";
 		};
 		0D3270522A4BF16400735EA4 /* Submodules */ = {
@@ -628,7 +646,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0D3270832A55A33200735EA4 /* 7. CompoundView */ = {
+		0D3270832A55A33200735EA4 /* 7. Compound view */ = {
 			isa = PBXGroup;
 			children = (
 				0D32708E2A55A60000735EA4 /* Views */,
@@ -638,7 +656,7 @@
 				0D32708C2A55A3C700735EA4 /* CompoundViewViewController.swift */,
 				0D3270842A55A36800735EA4 /* Design. 7. CompoundView.png */,
 			);
-			path = "7. CompoundView";
+			path = "7. Compound view";
 			sourceTree = "<group>";
 		};
 		0D32708E2A55A60000735EA4 /* Views */ = {
@@ -651,7 +669,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0D3270982A57DE4D00735EA4 /* 8. CircularProgressBar */ = {
+		0D3270982A57DE4D00735EA4 /* 8. Circular progress bar */ = {
 			isa = PBXGroup;
 			children = (
 				0D32709B2A57DEDA00735EA4 /* Views */,
@@ -661,7 +679,7 @@
 				0D3270A22A57DEFF00735EA4 /* CircularProgressBarViewController.swift */,
 				0D3270992A57DED200735EA4 /* Desing. 8. CircularProgressBar.png */,
 			);
-			path = "8. CircularProgressBar";
+			path = "8. Circular progress bar";
 			sourceTree = "<group>";
 		};
 		0D32709B2A57DEDA00735EA4 /* Views */ = {
@@ -681,6 +699,8 @@
 				0D49D4992A7A2CAB00EAF97E /* 1. Two-Line Cell Table Tab */,
 				0DFB992D2A815F5800747FBE /* 2. CardCell Collection Tab */,
 				0DFB994A2A8228C200747FBE /* 3. ColoredCardCell Collection Tab */,
+				0DCDAC482A8A293400F4A29B /* 4. Assimetric CollectionView */,
+				0DCDAC6A2A8B792800F4A29B /* 5. Progress view */,
 				0D49D4932A7A229700EAF97E /* ListTasksFlow.swift */,
 				0D49D4952A7A229E00EAF97E /* ListTasksFlowNavigator.swift */,
 			);
@@ -816,19 +836,19 @@
 		0D52A9312A41E7FB0062347D /* DesignTasks */ = {
 			isa = PBXGroup;
 			children = (
-				0D52A9322A41E8070062347D /* 1. Centering Elements */,
-				0D52A9512A42C6310062347D /* 2. ScrollViewWithPinnedButton */,
-				0D2120552A4371A800CCB77A /* 3. HorizontalStackViewRelativeSizes */,
-				0D21205E2A44061700CCB77A /* 4. EyeDropper */,
-				0D2120712A444F8E00CCB77A /* 5. CustomLayout */,
-				0D3270472A4BF0E000735EA4 /* 6. DynamicUIChanges */,
-				0D3270832A55A33200735EA4 /* 7. CompoundView */,
-				0D3270982A57DE4D00735EA4 /* 8. CircularProgressBar */,
+				0D52A9322A41E8070062347D /* 1. Centering elements */,
+				0D52A9512A42C6310062347D /* 2. ScrollView with PinnedButton */,
+				0D2120552A4371A800CCB77A /* 3. Horizontal StackView with relative size */,
+				0D21205E2A44061700CCB77A /* 4. Eyedropper */,
+				0D2120712A444F8E00CCB77A /* 5. Custom layout */,
+				0D3270472A4BF0E000735EA4 /* 6. Dynamic UI changes */,
+				0D3270832A55A33200735EA4 /* 7. Compound view */,
+				0D3270982A57DE4D00735EA4 /* 8. Circular progress bar */,
 			);
 			path = DesignTasks;
 			sourceTree = "<group>";
 		};
-		0D52A9322A41E8070062347D /* 1. Centering Elements */ = {
+		0D52A9322A41E8070062347D /* 1. Centering elements */ = {
 			isa = PBXGroup;
 			children = (
 				0D52A9342A42139C0062347D /* Views */,
@@ -837,7 +857,7 @@
 				0D52A9212A41E7770062347D /* CenteredViewController.swift */,
 				0D52A94F2A42207F0062347D /* Design - 1. Centering Elements.png */,
 			);
-			path = "1. Centering Elements";
+			path = "1. Centering elements";
 			sourceTree = "<group>";
 		};
 		0D52A9342A42139C0062347D /* Views */ = {
@@ -887,12 +907,13 @@
 				0D2120BD2A48954200CCB77A /* Int+Abbreviated.swift */,
 				0D3270452A4B52A600735EA4 /* UIView+AnimatedTransition.swift */,
 				0D32706A2A4C8C0F00735EA4 /* UIView+BlurEffect.swift */,
+				0DCDAC622A8A42C000F4A29B /* UIView+EdgesBorder.swift */,
 				0D3270962A57440700735EA4 /* UIColor+Hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0D52A9512A42C6310062347D /* 2. ScrollViewWithPinnedButton */ = {
+		0D52A9512A42C6310062347D /* 2. ScrollView with PinnedButton */ = {
 			isa = PBXGroup;
 			children = (
 				0D52A9542A42CE220062347D /* Views */,
@@ -901,7 +922,7 @@
 				0D52A95E2A430D3A0062347D /* ScrollViewWithPinnedButtonViewController.swift */,
 				0D52A9522A42C6710062347D /* Design - 2. ScrollView.png */,
 			);
-			path = "2. ScrollViewWithPinnedButton";
+			path = "2. ScrollView with PinnedButton";
 			sourceTree = "<group>";
 		};
 		0D52A9542A42CE220062347D /* Views */ = {
@@ -1061,6 +1082,52 @@
 				0DA840952A6EAAF700BA8F03 /* UINavigationController+Animated.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DCDAC482A8A293400F4A29B /* 4. Assimetric CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAC492A8A294500F4A29B /* Views */,
+				0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */,
+				0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */,
+				0DCDAC4E2A8A297F00F4A29B /* AsimmetricCollectionViewModel.swift */,
+				0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */,
+			);
+			path = "4. Assimetric CollectionView";
+			sourceTree = "<group>";
+		};
+		0DCDAC492A8A294500F4A29B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAC4A2A8A294700F4A29B /* AsimmetricCollectionView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DCDAC4A2A8A294700F4A29B /* AsimmetricCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAC552A8A40E900F4A29B /* Cell */,
+				0DCDAC532A8A29B600F4A29B /* AsimmetricCollectionView.swift */,
+				0DCDAC562A8A40F800F4A29B /* AsimmetricCollectionView+Model.swift */,
+			);
+			path = AsimmetricCollectionView;
+			sourceTree = "<group>";
+		};
+		0DCDAC552A8A40E900F4A29B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAC662A8B55D000F4A29B /* AsimmetricCollectionCell.swift */,
+				0DCDAC682A8B565D00F4A29B /* AsimmetricCollectionCell+Model.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0DCDAC6A2A8B792800F4A29B /* 5. Progress view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "5. Progress view";
 			sourceTree = "<group>";
 		};
 		0DFB992D2A815F5800747FBE /* 2. CardCell Collection Tab */ = {
@@ -1300,6 +1367,7 @@
 				0D21206D2A4432F000CCB77A /* TopRightContainerRectangleView.swift in Sources */,
 				0D2120902A44B26400CCB77A /* IconProfileFollowView.swift in Sources */,
 				0D2120BE2A48954200CCB77A /* Int+Abbreviated.swift in Sources */,
+				0DCDAC4F2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift in Sources */,
 				0DFB99622A822E0F00747FBE /* ColoredCardCellResources.swift in Sources */,
 				0D3270972A57440800735EA4 /* UIColor+Hex.swift in Sources */,
 				0D49D4A02A7A2D0900EAF97E /* TwoLineFactory.swift in Sources */,
@@ -1332,6 +1400,7 @@
 				0D52A9462A42174F0062347D /* ColoredStackView.swift in Sources */,
 				0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */,
 				0D49D4A12A7A2D0900EAF97E /* TwoLineResources.swift in Sources */,
+				0DCDAC632A8A42C000F4A29B /* UIView+EdgesBorder.swift in Sources */,
 				0DA840392A69779800BA8F03 /* UINavigator.swift in Sources */,
 				0D2120AB2A46B53B00CCB77A /* RecommendationsCountView+Model.swift in Sources */,
 				0DA840702A6D1D4200BA8F03 /* ScrollViewWithPinnedButtonFactory.swift in Sources */,
@@ -1339,6 +1408,7 @@
 				0DA840502A6C136800BA8F03 /* TakeHomeTestsFlowNavigator.swift in Sources */,
 				0DA840882A6D40DD00BA8F03 /* IDesignTask.swift in Sources */,
 				0D2120B22A46F43C00CCB77A /* SymbolTextView.swift in Sources */,
+				0DCDAC542A8A29B600F4A29B /* AsimmetricCollectionView.swift in Sources */,
 				0DFB99452A8165E100747FBE /* CardCollectionViewCell.swift in Sources */,
 				0D52A93B2A4214300062347D /* IView.swift in Sources */,
 				0D52A9372A4213D40062347D /* ColoredElementView.swift in Sources */,
@@ -1346,6 +1416,7 @@
 				0D49D4862A74E59200EAF97E /* TaskSectionsTableViewSectionHeader.swift in Sources */,
 				0DFB995A2A822D9100747FBE /* ColoredCardCell+Model.swift in Sources */,
 				0D52A9482A42176C0062347D /* IStackView.swift in Sources */,
+				0DCDAC522A8A297F00F4A29B /* AsimmetricCollectionViewModel.swift in Sources */,
 				0D32709F2A57DEF400735EA4 /* CircularProgressBarResources.swift in Sources */,
 				0D3270692A4C62CF00735EA4 /* HideShowFactory.swift in Sources */,
 				0D2120692A442F3B00CCB77A /* RectangleView.swift in Sources */,
@@ -1354,6 +1425,7 @@
 				0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */,
 				0DA840372A69650D00BA8F03 /* MainFlowNavigatorProtocol.swift in Sources */,
 				0D21205D2A43724E00CCB77A /* HorizontalStackViewViewController.swift in Sources */,
+				0DCDAC512A8A297F00F4A29B /* AsimmetricCollectionViewController.swift in Sources */,
 				0DA8408F2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift in Sources */,
 				0D32707D2A553D2900735EA4 /* AlphaAddRemoveViewModel.swift in Sources */,
 				0DFB99632A822E0F00747FBE /* ColoredCardCellViewController.swift in Sources */,
@@ -1367,13 +1439,17 @@
 				0D52A9612A430D7E0062347D /* ScrollViewWithPinnedButtonResources.swift in Sources */,
 				0DFB99492A8165F000747FBE /* CardCollectionViewCellViewModel.swift in Sources */,
 				0DA8406D2A6D1C7800BA8F03 /* CenteredViewFactory.swift in Sources */,
+				0DCDAC502A8A297F00F4A29B /* AsimmetricCollectionResources.swift in Sources */,
+				0DCDAC672A8B55D000F4A29B /* AsimmetricCollectionCell.swift in Sources */,
 				0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */,
+				0DCDAC692A8B565D00F4A29B /* AsimmetricCollectionCell+Model.swift in Sources */,
 				0D3270952A56B00C00735EA4 /* ColorSwitcherView.swift in Sources */,
 				0D2120842A446F9E00CCB77A /* CustomLayoutViewController.swift in Sources */,
 				0D32704D2A4BF14E00735EA4 /* DynamicUIChangesViewController.swift in Sources */,
 				0D49D4A62A7A2D4B00EAF97E /* TwoLineTableView.swift in Sources */,
 				0DA8407F2A6D39F700BA8F03 /* InnowiseTasksViewController.swift in Sources */,
 				0D49D48E2A74FEE600EAF97E /* ListsTabBarResources.swift in Sources */,
+				0DCDAC572A8A40F800F4A29B /* AsimmetricCollectionView+Model.swift in Sources */,
 				0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */,
 				0D32709D2A57DEEC00735EA4 /* CircularProgressBarFactory.swift in Sources */,
 				0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */,

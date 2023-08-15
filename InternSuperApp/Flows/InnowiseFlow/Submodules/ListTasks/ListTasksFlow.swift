@@ -25,12 +25,15 @@ final class ListTasksFlow {
         let coloredCardCollectionViewHandlers = ColoredCardCellResources.Handlers.init()
         let coloredCardCollectionViewController = ColoredCardCellFactory().createController(handlers: coloredCardCollectionViewHandlers)
 
+        let asimmetricCollectionViewHandlers = AsimmetricCollectionResources.Handlers.init()
+        let asimmetricCollectionViewController = AsimmetricCollectionFactory().createController(handlers: asimmetricCollectionViewHandlers)
+
         let items = ListsTabBarResources.ItemController(
 
             usersTableView: twoLineViewController,
             usersCollectionView: cardCollectionViewController,
             twoColumnUsersCollectionView: coloredCardCollectionViewController,
-            variousCellsTableView: .init(),
+            variousCellsTableView: asimmetricCollectionViewController,
             mockLoadingTableView: .init()
         )
 
