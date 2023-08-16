@@ -7,12 +7,12 @@
 
 enum IListTask: InnowiseTaskProtocol, Equatable, CaseIterable {
 
-    case initialTask
+    case tabBarTask
 
     var title: String {
         switch self {
             
-        case .initialTask: return "TabBarController w/ Lists"
+        case .tabBarTask: return "TabBarController w/ Lists"
         }
     }
 }

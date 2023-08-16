@@ -23,6 +23,9 @@ struct InnowiseTasksResources {
         struct Lists {
             let onTabBarController: () -> Void
         }
+        struct AppLifecycle {
+            let onCounterView: () -> Void
+        }
     }
 
     // MARK: - States

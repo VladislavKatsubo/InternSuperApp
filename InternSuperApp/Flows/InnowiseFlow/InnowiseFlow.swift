@@ -12,12 +12,14 @@ final class InnowiseFlow {
 
     private let dynamicUIChangesFlow: DynamicUIChangesFlow
     private let listTasksFlow: ListTasksFlow
+    private let appLifeCycleFlow: AppLifecycleFlow
 
     init(navigator: InnowiseFlowNavigatorProtocol) {
         self.navigator = navigator
 
         self.dynamicUIChangesFlow = DynamicUIChangesFlow(navigator: DynamicUIChangesFlowNavigator())
         self.listTasksFlow = ListTasksFlow(navigator: ListTasksFlowNavigator())
+        self.appLifeCycleFlow = AppLifecycleFlow(navigator: AppLifecycleFlowNavigator())
     }
 
     func makeStartFlow() -> UIViewController {
@@ -81,9 +83,19 @@ final class InnowiseFlow {
             }
         )
 
+        let appLifecycleHandlers = InnowiseTasksResources.Handlers.AppLifecycle(
+            onCounterView: { [weak self] in
+                guard let self = self else { return }
+
+                let viewController = self.appLifeCycleFlow.makeStartFlow()
+                self.navigator.push(viewController, animated: true, completion: nil)
+            }
+        )
+
         let innowiseTasksViewController = InnowiseTasksFactory().createController(
             designHandlers: designHandlers,
-            listHandlers: listHandlers
+            listHandlers: listHandlers,
+            appLifecycleHandlers: appLifecycleHandlers
         )
 
         return UINavigationController(rootViewController: innowiseTasksViewController)

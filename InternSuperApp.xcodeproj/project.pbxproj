@@ -26,8 +26,6 @@
 		0D2120992A44B6B100CCB77A /* ICircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120982A44B6B100CCB77A /* ICircleImageView.swift */; };
 		0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21209A2A44B76600CCB77A /* FollowButton.swift */; };
 		0D21209D2A45C46F00CCB77A /* FollowShadowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21209C2A45C46F00CCB77A /* FollowShadowButtonView.swift */; };
-		0D2120A02A45C79600CCB77A /* ViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21209F2A45C79600CCB77A /* ViewControllerPreview.swift */; };
-		0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120A12A45C87900CCB77A /* ViewPreview.swift */; };
 		0D2120A52A45CD2100CCB77A /* Day+Elapsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120A42A45CD2100CCB77A /* Day+Elapsed.swift */; };
 		0D2120A92A46B47400CCB77A /* RecommendationsCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120A82A46B47400CCB77A /* RecommendationsCountView.swift */; };
 		0D2120AB2A46B53B00CCB77A /* RecommendationsCountView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2120AA2A46B53B00CCB77A /* RecommendationsCountView+Model.swift */; };
@@ -161,6 +159,10 @@
 		0DA8408F2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8408E2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift */; };
 		0DA840942A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA840932A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift */; };
 		0DA840962A6EAAF700BA8F03 /* UINavigationController+Animated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA840952A6EAAF700BA8F03 /* UINavigationController+Animated.swift */; };
+		0DAC673E2A8CF4D000FC88B4 /* UpdateCounterViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC673D2A8CF4D000FC88B4 /* UpdateCounterViewButton.swift */; };
+		0DAC67402A8CFE9F00FC88B4 /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC673F2A8CFE9F00FC88B4 /* AppDataService.swift */; };
+		0DAC67442A8CFF1A00FC88B4 /* AppDataService+Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC67432A8CFF1A00FC88B4 /* AppDataService+Counter.swift */; };
+		0DAC67462A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC67452A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png */; };
 		0DCDAC4F2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */; };
 		0DCDAC502A8A297F00F4A29B /* AsimmetricCollectionResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */; };
 		0DCDAC512A8A297F00F4A29B /* AsimmetricCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */; };
@@ -183,6 +185,20 @@
 		0DCDAC8B2A8BFBBA00F4A29B /* UserDataRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC8A2A8BFBBA00F4A29B /* UserDataRefreshControl.swift */; };
 		0DCDAC8D2A8C8D1600F4A29B /* Lists 4. Asimmetric Collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDAC8C2A8C8D1600F4A29B /* Lists 4. Asimmetric Collection.png */; };
 		0DCDAC8F2A8C8D4B00F4A29B /* Lists 5. Progress View.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDAC8E2A8C8D4B00F4A29B /* Lists 5. Progress View.png */; };
+		0DCDAC932A8CCA7700F4A29B /* IAppLifecycleTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC922A8CCA7700F4A29B /* IAppLifecycleTask.swift */; };
+		0DCDAC9E2A8CCBB300F4A29B /* AppLifecycle 1. CounterView.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDAC9D2A8CCBB300F4A29B /* AppLifecycle 1. CounterView.png */; };
+		0DCDACA52A8CCBED00F4A29B /* UpdateCounterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACA12A8CCBED00F4A29B /* UpdateCounterFactory.swift */; };
+		0DCDACA62A8CCBED00F4A29B /* UpdateCounterResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACA22A8CCBED00F4A29B /* UpdateCounterResources.swift */; };
+		0DCDACA72A8CCBED00F4A29B /* UpdateCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACA32A8CCBED00F4A29B /* UpdateCounterViewController.swift */; };
+		0DCDACA82A8CCBED00F4A29B /* UpdateCounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACA42A8CCBED00F4A29B /* UpdateCounterViewModel.swift */; };
+		0DCDACAB2A8CD7E800F4A29B /* AppLifecycleFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACAA2A8CD7E800F4A29B /* AppLifecycleFlow.swift */; };
+		0DCDACAD2A8CD81B00F4A29B /* AppLifecycleFlowNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACAC2A8CD81B00F4A29B /* AppLifecycleFlowNavigator.swift */; };
+		0DCDACC42A8CD96800F4A29B /* CounterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACC02A8CD96800F4A29B /* CounterFactory.swift */; };
+		0DCDACC52A8CD96800F4A29B /* CounterResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACC12A8CD96800F4A29B /* CounterResources.swift */; };
+		0DCDACC62A8CD96800F4A29B /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACC22A8CD96800F4A29B /* CounterViewController.swift */; };
+		0DCDACC72A8CD96800F4A29B /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACC32A8CD96800F4A29B /* CounterViewModel.swift */; };
+		0DCDACCA2A8CDA6100F4A29B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACC92A8CDA6100F4A29B /* CounterView.swift */; };
+		0DCDACCD2A8CDD1700F4A29B /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDACCC2A8CDD1700F4A29B /* UserDefaultsService.swift */; };
 		0DFB99322A815F8100747FBE /* CardCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB992E2A815F8100747FBE /* CardCellFactory.swift */; };
 		0DFB99332A815F8100747FBE /* CardCellResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB992F2A815F8100747FBE /* CardCellResources.swift */; };
 		0DFB99342A815F8100747FBE /* CardCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFB99302A815F8100747FBE /* CardCellViewController.swift */; };
@@ -227,8 +243,6 @@
 		0D2120982A44B6B100CCB77A /* ICircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICircleImageView.swift; sourceTree = "<group>"; };
 		0D21209A2A44B76600CCB77A /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
 		0D21209C2A45C46F00CCB77A /* FollowShadowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowShadowButtonView.swift; sourceTree = "<group>"; };
-		0D21209F2A45C79600CCB77A /* ViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPreview.swift; sourceTree = "<group>"; };
-		0D2120A12A45C87900CCB77A /* ViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPreview.swift; sourceTree = "<group>"; };
 		0D2120A42A45CD2100CCB77A /* Day+Elapsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+Elapsed.swift"; sourceTree = "<group>"; };
 		0D2120A82A46B47400CCB77A /* RecommendationsCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsCountView.swift; sourceTree = "<group>"; };
 		0D2120AA2A46B53B00CCB77A /* RecommendationsCountView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecommendationsCountView+Model.swift"; sourceTree = "<group>"; };
@@ -364,6 +378,10 @@
 		0DA8408E2A6D439900BA8F03 /* TaskSectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSectionsTableViewCell.swift; sourceTree = "<group>"; };
 		0DA840932A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIChangedRootControllerPublisher.swift; sourceTree = "<group>"; };
 		0DA840952A6EAAF700BA8F03 /* UINavigationController+Animated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Animated.swift"; sourceTree = "<group>"; };
+		0DAC673D2A8CF4D000FC88B4 /* UpdateCounterViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCounterViewButton.swift; sourceTree = "<group>"; };
+		0DAC673F2A8CFE9F00FC88B4 /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
+		0DAC67432A8CFF1A00FC88B4 /* AppDataService+Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDataService+Counter.swift"; sourceTree = "<group>"; };
+		0DAC67452A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppLifecycle 2. AppDelegate Updates.png"; sourceTree = "<group>"; };
 		0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionFactory.swift; sourceTree = "<group>"; };
 		0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionResources.swift; sourceTree = "<group>"; };
 		0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionViewController.swift; sourceTree = "<group>"; };
@@ -386,6 +404,20 @@
 		0DCDAC8A2A8BFBBA00F4A29B /* UserDataRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRefreshControl.swift; sourceTree = "<group>"; };
 		0DCDAC8C2A8C8D1600F4A29B /* Lists 4. Asimmetric Collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lists 4. Asimmetric Collection.png"; sourceTree = "<group>"; };
 		0DCDAC8E2A8C8D4B00F4A29B /* Lists 5. Progress View.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lists 5. Progress View.png"; sourceTree = "<group>"; };
+		0DCDAC922A8CCA7700F4A29B /* IAppLifecycleTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppLifecycleTask.swift; sourceTree = "<group>"; };
+		0DCDAC9D2A8CCBB300F4A29B /* AppLifecycle 1. CounterView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppLifecycle 1. CounterView.png"; sourceTree = "<group>"; };
+		0DCDACA12A8CCBED00F4A29B /* UpdateCounterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCounterFactory.swift; sourceTree = "<group>"; };
+		0DCDACA22A8CCBED00F4A29B /* UpdateCounterResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCounterResources.swift; sourceTree = "<group>"; };
+		0DCDACA32A8CCBED00F4A29B /* UpdateCounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCounterViewController.swift; sourceTree = "<group>"; };
+		0DCDACA42A8CCBED00F4A29B /* UpdateCounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCounterViewModel.swift; sourceTree = "<group>"; };
+		0DCDACAA2A8CD7E800F4A29B /* AppLifecycleFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLifecycleFlow.swift; sourceTree = "<group>"; };
+		0DCDACAC2A8CD81B00F4A29B /* AppLifecycleFlowNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLifecycleFlowNavigator.swift; sourceTree = "<group>"; };
+		0DCDACC02A8CD96800F4A29B /* CounterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFactory.swift; sourceTree = "<group>"; };
+		0DCDACC12A8CD96800F4A29B /* CounterResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterResources.swift; sourceTree = "<group>"; };
+		0DCDACC22A8CD96800F4A29B /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		0DCDACC32A8CD96800F4A29B /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		0DCDACC92A8CDA6100F4A29B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		0DCDACCC2A8CDD1700F4A29B /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		0DFB992E2A815F8100747FBE /* CardCellFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellFactory.swift; sourceTree = "<group>"; };
 		0DFB992F2A815F8100747FBE /* CardCellResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellResources.swift; sourceTree = "<group>"; };
 		0DFB99302A815F8100747FBE /* CardCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellViewController.swift; sourceTree = "<group>"; };
@@ -511,8 +543,6 @@
 		0D21209E2A45C78B00CCB77A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				0D21209F2A45C79600CCB77A /* ViewControllerPreview.swift */,
-				0D2120A12A45C87900CCB77A /* ViewPreview.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -904,6 +934,7 @@
 				0D21209E2A45C78B00CCB77A /* Helpers */,
 				0D52A93E2A4215930062347D /* Extensions */,
 				0D3270602A4C61EA00735EA4 /* Network Layer */,
+				0DCDACCB2A8CDC3C00F4A29B /* Services */,
 				0DA8402F2A69000300BA8F03 /* Context */,
 				0DA840302A69000D00BA8F03 /* Navigator */,
 			);
@@ -1065,6 +1096,7 @@
 				0DA8403D2A6BB0BE00BA8F03 /* Views */,
 				0D52A9312A41E7FB0062347D /* DesignTasks */,
 				0D3270AA2A58886500735EA4 /* ListTasks */,
+				0DCDAC912A8CCA3B00F4A29B /* AppLifecycleTasks */,
 				0DA840792A6D39F700BA8F03 /* InnowiseTasksFactory.swift */,
 				0DA8407A2A6D39F700BA8F03 /* InnowiseTasksResources.swift */,
 				0DA8407C2A6D39F700BA8F03 /* InnowiseTasksViewModel.swift */,
@@ -1087,6 +1119,7 @@
 				0DA840892A6D413800BA8F03 /* IInnowiseTaskSection.swift */,
 				0DA840872A6D40DD00BA8F03 /* IDesignTask.swift */,
 				0D2BAF402A7295070015A5A5 /* IListTask.swift */,
+				0DCDAC922A8CCA7700F4A29B /* IAppLifecycleTask.swift */,
 				0D2BAF422A7391C20015A5A5 /* InnowiseTask.swift */,
 				0DFB99672A82355B00747FBE /* ListTasks */,
 			);
@@ -1106,6 +1139,23 @@
 			children = (
 				0DA840932A6EAAD600BA8F03 /* UIChangedRootControllerPublisher.swift */,
 				0DA840952A6EAAF700BA8F03 /* UINavigationController+Animated.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0DAC67412A8CFF0200FC88B4 /* AppDataService */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC67422A8CFF0D00FC88B4 /* Extensions */,
+				0DAC673F2A8CFE9F00FC88B4 /* AppDataService.swift */,
+			);
+			path = AppDataService;
+			sourceTree = "<group>";
+		};
+		0DAC67422A8CFF0D00FC88B4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC67432A8CFF1A00FC88B4 /* AppDataService+Counter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1215,6 +1265,68 @@
 				0DCDAC8A2A8BFBBA00F4A29B /* UserDataRefreshControl.swift */,
 			);
 			path = UserDataRefreshControl;
+			sourceTree = "<group>";
+		};
+		0DCDAC912A8CCA3B00F4A29B /* AppLifecycleTasks */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAC9F2A8CCBD700F4A29B /* Submodules */,
+				0DCDACAA2A8CD7E800F4A29B /* AppLifecycleFlow.swift */,
+				0DCDACAC2A8CD81B00F4A29B /* AppLifecycleFlowNavigator.swift */,
+				0DCDAC9D2A8CCBB300F4A29B /* AppLifecycle 1. CounterView.png */,
+				0DAC67452A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png */,
+			);
+			path = AppLifecycleTasks;
+			sourceTree = "<group>";
+		};
+		0DCDAC9C2A8CCB8700F4A29B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDACC92A8CDA6100F4A29B /* CounterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DCDAC9F2A8CCBD700F4A29B /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAC9C2A8CCB8700F4A29B /* Views */,
+				0DCDACA02A8CCBDF00F4A29B /* UpdateCounter */,
+				0DCDACC02A8CD96800F4A29B /* CounterFactory.swift */,
+				0DCDACC12A8CD96800F4A29B /* CounterResources.swift */,
+				0DCDACC32A8CD96800F4A29B /* CounterViewModel.swift */,
+				0DCDACC22A8CD96800F4A29B /* CounterViewController.swift */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		0DCDACA02A8CCBDF00F4A29B /* UpdateCounter */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDACA92A8CCBF100F4A29B /* Views */,
+				0DCDACA12A8CCBED00F4A29B /* UpdateCounterFactory.swift */,
+				0DCDACA22A8CCBED00F4A29B /* UpdateCounterResources.swift */,
+				0DCDACA42A8CCBED00F4A29B /* UpdateCounterViewModel.swift */,
+				0DCDACA32A8CCBED00F4A29B /* UpdateCounterViewController.swift */,
+			);
+			path = UpdateCounter;
+			sourceTree = "<group>";
+		};
+		0DCDACA92A8CCBF100F4A29B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC673D2A8CF4D000FC88B4 /* UpdateCounterViewButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0DCDACCB2A8CDC3C00F4A29B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC67412A8CFF0200FC88B4 /* AppDataService */,
+				0DCDACCC2A8CDD1700F4A29B /* UserDefaultsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0DFB992D2A815F5800747FBE /* 2. CardCell Collection Tab */ = {
@@ -1365,6 +1477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCDAC9E2A8CCBB300F4A29B /* AppLifecycle 1. CounterView.png in Resources */,
 				0D49D4982A7A2CA600EAF97E /* List 1. Two-Line Cell.png in Resources */,
 				0D3B97422A4A088B006B5CC7 /* IconProfileFollowView.png in Resources */,
 				0DFB99382A81609C00747FBE /* Lists 2. CardCell.png in Resources */,
@@ -1386,6 +1499,7 @@
 				0D3270422A4B4A8F00735EA4 /* SymbolTextView.png in Resources */,
 				0DCDAC8F2A8C8D4B00F4A29B /* Lists 5. Progress View.png in Resources */,
 				0D2120602A44062E00CCB77A /* Design - 4. Eyedropper.png in Resources */,
+				0DAC67462A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png in Resources */,
 				0D2120572A43720A00CCB77A /* Design - 3. HorizontalStackViewRelativeSizes.png in Resources */,
 				0D49D4AE2A7A300600EAF97E /* TwoLineTableViewCell.png in Resources */,
 				0D3270442A4B4AA600735EA4 /* MemberCounterView.png in Resources */,
@@ -1423,9 +1537,12 @@
 				0DCDAC832A8B9EA900F4A29B /* ContentUnavailableView.swift in Sources */,
 				0D3270812A557B8D00735EA4 /* DynamicUIChangesImageView.swift in Sources */,
 				0DA8404E2A6C12ED00BA8F03 /* TakeHomeTestsFlow.swift in Sources */,
+				0DCDACA72A8CCBED00F4A29B /* UpdateCounterViewController.swift in Sources */,
 				0DFB99422A81624400747FBE /* ICollectionCell.swift in Sources */,
 				0DFB99352A815F8100747FBE /* CardCellViewModel.swift in Sources */,
+				0DCDACA62A8CCBED00F4A29B /* UpdateCounterResources.swift in Sources */,
 				0DFB99342A815F8100747FBE /* CardCellViewController.swift in Sources */,
+				0DCDACC52A8CD96800F4A29B /* CounterResources.swift in Sources */,
 				0D2120B82A482DD100CCB77A /* StatisticsView.swift in Sources */,
 				0DA8408C2A6D41EA00BA8F03 /* TaskSectionsTableView.swift in Sources */,
 				0D49D4902A74FF0800EAF97E /* ListsTabBarViewModel.swift in Sources */,
@@ -1434,7 +1551,6 @@
 				0D32708D2A55A3C700735EA4 /* CompoundViewViewController.swift in Sources */,
 				0D52A9222A41E7770062347D /* CenteredViewController.swift in Sources */,
 				0DCDAC702A8B7ADE00F4A29B /* ProgressViewFactory.swift in Sources */,
-				0D2120A22A45C87A00CCB77A /* ViewPreview.swift in Sources */,
 				0D52A95B2A42DC670062347D /* ScrollViewButton.swift in Sources */,
 				0D32705B2A4BF22200735EA4 /* AnimatedGradientButton.swift in Sources */,
 				0D52A9562A42CE410062347D /* ScrollViewBlockView.swift in Sources */,
@@ -1447,7 +1563,6 @@
 				0D3270772A55320400735EA4 /* DynamicUIChangesTaskViewController.swift in Sources */,
 				0D3270712A50F8D500735EA4 /* AddRemoveViewModel.swift in Sources */,
 				0DCDAC782A8B7BCB00F4A29B /* ProgressViewTableViewCell.swift in Sources */,
-				0D2120A02A45C79600CCB77A /* ViewControllerPreview.swift in Sources */,
 				0D52A95F2A430D3A0062347D /* ScrollViewWithPinnedButtonViewController.swift in Sources */,
 				0D2120B62A482C8E00CCB77A /* MembersCounterView.swift in Sources */,
 				0D49D4962A7A229E00EAF97E /* ListTasksFlowNavigator.swift in Sources */,
@@ -1466,11 +1581,14 @@
 				0DCDAC4F2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift in Sources */,
 				0DFB99622A822E0F00747FBE /* ColoredCardCellResources.swift in Sources */,
 				0D3270972A57440800735EA4 /* UIColor+Hex.swift in Sources */,
+				0DCDACA52A8CCBED00F4A29B /* UpdateCounterFactory.swift in Sources */,
 				0D49D4A02A7A2D0900EAF97E /* TwoLineFactory.swift in Sources */,
+				0DCDACA82A8CCBED00F4A29B /* UpdateCounterViewModel.swift in Sources */,
 				0D49D4B12A7A31EB00EAF97E /* AvatarImageView.swift in Sources */,
 				0DA840642A6C4A9500BA8F03 /* ITableViewCell.swift in Sources */,
 				0D3270792A553D0E00735EA4 /* AlphaAddRemoveFactory.swift in Sources */,
 				0D3270902A55A60900735EA4 /* ColorSwitchView.swift in Sources */,
+				0DCDACCA2A8CDA6100F4A29B /* CounterView.swift in Sources */,
 				0DFB99692A82359300747FBE /* GroceryCategory.swift in Sources */,
 				0D3270932A56A25200735EA4 /* ColorSwitchButton.swift in Sources */,
 				0D3270AF2A58888E00735EA4 /* User.swift in Sources */,
@@ -1484,12 +1602,14 @@
 				0D52A93D2A4215180062347D /* CenteredButton.swift in Sources */,
 				0DFB99332A815F8100747FBE /* CardCellResources.swift in Sources */,
 				0DA8403F2A6BB0C900BA8F03 /* InnowiseFlow.swift in Sources */,
+				0DCDACC42A8CD96800F4A29B /* CounterFactory.swift in Sources */,
 				0D2120BA2A482DEC00CCB77A /* StatisticsView+Model.swift in Sources */,
 				0D32704B2A4BF14500735EA4 /* DynamicUIChangesFlow.swift in Sources */,
 				0D49D4A32A7A2D0900EAF97E /* TwoLineViewModel.swift in Sources */,
 				0DFB99322A815F8100747FBE /* CardCellFactory.swift in Sources */,
 				0DFB99642A822E0F00747FBE /* ColoredCardCellViewModel.swift in Sources */,
 				0DCDAC8B2A8BFBBA00F4A29B /* UserDataRefreshControl.swift in Sources */,
+				0DAC673E2A8CF4D000FC88B4 /* UpdateCounterViewButton.swift in Sources */,
 				0D3270B32A59954000735EA4 /* UserFactory.swift in Sources */,
 				0D52A9432A42166F0062347D /* IButton.swift in Sources */,
 				0D49D4B62A7BB48F00EAF97E /* TwoLineTableViewCellViewModel.swift in Sources */,
@@ -1498,9 +1618,11 @@
 				0D3B973A2A49F222006B5CC7 /* CoverView.swift in Sources */,
 				0D49D4A12A7A2D0900EAF97E /* TwoLineResources.swift in Sources */,
 				0DCDAC632A8A42C000F4A29B /* UIView+EdgesBorder.swift in Sources */,
+				0DCDACAD2A8CD81B00F4A29B /* AppLifecycleFlowNavigator.swift in Sources */,
 				0DA840392A69779800BA8F03 /* UINavigator.swift in Sources */,
 				0D2120AB2A46B53B00CCB77A /* RecommendationsCountView+Model.swift in Sources */,
 				0DA840702A6D1D4200BA8F03 /* ScrollViewWithPinnedButtonFactory.swift in Sources */,
+				0DAC67402A8CFE9F00FC88B4 /* AppDataService.swift in Sources */,
 				0D49D4A22A7A2D0900EAF97E /* TwoLineViewController.swift in Sources */,
 				0DA840502A6C136800BA8F03 /* TakeHomeTestsFlowNavigator.swift in Sources */,
 				0DA840882A6D40DD00BA8F03 /* IDesignTask.swift in Sources */,
@@ -1511,6 +1633,7 @@
 				0D52A9372A4213D40062347D /* ColoredElementView.swift in Sources */,
 				0D2120662A442B1100CCB77A /* EyedropperResources.swift in Sources */,
 				0D49D4862A74E59200EAF97E /* TaskSectionsTableViewSectionHeader.swift in Sources */,
+				0DCDAC932A8CCA7700F4A29B /* IAppLifecycleTask.swift in Sources */,
 				0DFB995A2A822D9100747FBE /* ColoredCardCell+Model.swift in Sources */,
 				0D52A9482A42176C0062347D /* IStackView.swift in Sources */,
 				0DCDAC522A8A297F00F4A29B /* AsimmetricCollectionViewModel.swift in Sources */,
@@ -1536,7 +1659,9 @@
 				0D52A9612A430D7E0062347D /* ScrollViewWithPinnedButtonResources.swift in Sources */,
 				0DFB99492A8165F000747FBE /* CardCollectionViewCellViewModel.swift in Sources */,
 				0DA8406D2A6D1C7800BA8F03 /* CenteredViewFactory.swift in Sources */,
+				0DCDACCD2A8CDD1700F4A29B /* UserDefaultsService.swift in Sources */,
 				0DCDAC502A8A297F00F4A29B /* AsimmetricCollectionResources.swift in Sources */,
+				0DCDACC72A8CD96800F4A29B /* CounterViewModel.swift in Sources */,
 				0DCDAC672A8B55D000F4A29B /* AsimmetricCollectionCell.swift in Sources */,
 				0D3270512A4BF16000735EA4 /* DynamicUIChangesFactory.swift in Sources */,
 				0DCDAC692A8B565D00F4A29B /* AsimmetricCollectionCell+Model.swift in Sources */,
@@ -1549,6 +1674,7 @@
 				0D49D48E2A74FEE600EAF97E /* ListsTabBarResources.swift in Sources */,
 				0DCDAC572A8A40F800F4A29B /* AsimmetricCollectionView+Model.swift in Sources */,
 				0D21208A2A446FB600CCB77A /* CustomLayoutViewModel.swift in Sources */,
+				0DCDACAB2A8CD7E800F4A29B /* AppLifecycleFlow.swift in Sources */,
 				0D32709D2A57DEEC00735EA4 /* CircularProgressBarFactory.swift in Sources */,
 				0D3270542A4BF17B00735EA4 /* DynamicUIChangesViewModel.swift in Sources */,
 				0D2120BC2A487E3100CCB77A /* Int+Separator.swift in Sources */,
@@ -1557,8 +1683,10 @@
 				0DA840612A6C4A6400BA8F03 /* ITableView.swift in Sources */,
 				0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */,
 				0D49D4AC2A7A2D9D00EAF97E /* TwoLineTableViewCell+Model.swift in Sources */,
+				0DAC67442A8CFF1A00FC88B4 /* AppDataService+Counter.swift in Sources */,
 				0D3270622A4C621200735EA4 /* ImageManager.swift in Sources */,
 				0D21206B2A4432D000CCB77A /* RedContainerRectangleView.swift in Sources */,
+				0DCDACC62A8CD96800F4A29B /* CounterViewController.swift in Sources */,
 				0D32705D2A4C604C00735EA4 /* HideShowViewController.swift in Sources */,
 				0D32706D2A4C91BC00735EA4 /* BlurringView.swift in Sources */,
 				0DCDAC722A8B7ADE00F4A29B /* ProgressViewViewController.swift in Sources */,

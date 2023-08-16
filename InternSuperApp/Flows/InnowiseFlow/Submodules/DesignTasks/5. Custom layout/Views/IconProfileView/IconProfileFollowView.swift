@@ -63,7 +63,6 @@ private extension IconProfileFollowView {
 
         NSLayoutConstraint.activate([
             circularProfileIconImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-//            circularProfileIconImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             circularProfileIconImageView.topAnchor.constraint(equalTo: topAnchor),
             circularProfileIconImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
             circularProfileIconImageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: Constants.profileIconWidthMultiplier),

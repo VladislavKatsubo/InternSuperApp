@@ -8,9 +8,18 @@
 import UIKit
 
 final class InnowiseTasksFactory {
-    func createController(designHandlers: InnowiseTasksResources.Handlers.Design, listHandlers: InnowiseTasksResources.Handlers.Lists) -> UIViewController {
+    func createController(
+        designHandlers: InnowiseTasksResources.Handlers.Design,
+        listHandlers: InnowiseTasksResources.Handlers.Lists,
+        appLifecycleHandlers: InnowiseTasksResources.Handlers.AppLifecycle
+    ) -> UIViewController {
         let context: AppContext = AppDelegate.shared.context
-        let viewModel = InnowiseTasksViewModel(context: context, designHandlers: designHandlers, listHandlers: listHandlers)
+        let viewModel = InnowiseTasksViewModel(
+            context: context,
+            designHandlers: designHandlers,
+            listHandlers: listHandlers,
+            appLifecycleHandlers: appLifecycleHandlers
+        )
         let viewController = InnowiseTasksViewController()
 
         viewController.configure(viewModel: viewModel)

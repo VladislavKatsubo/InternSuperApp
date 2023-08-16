@@ -22,17 +22,20 @@ final class InnowiseTasksViewModel: InnowiseTasksViewModelProtocol {
     private let context: AppContext
     private let designHandlers: InnowiseTasksResources.Handlers.Design
     private let listHandlers: InnowiseTasksResources.Handlers.Lists
+    private let appLifecycleHandlers: InnowiseTasksResources.Handlers.AppLifecycle
 
     var onStateChange: ((InnowiseTasksResources.State) -> Void)?
 
     // MARK: - Init
     init(context: AppContext,
          designHandlers: InnowiseTasksResources.Handlers.Design,
-         listHandlers: InnowiseTasksResources.Handlers.Lists
+         listHandlers: InnowiseTasksResources.Handlers.Lists,
+         appLifecycleHandlers: InnowiseTasksResources.Handlers.AppLifecycle
     ) {
         self.context = context
         self.designHandlers = designHandlers
         self.listHandlers = listHandlers
+        self.appLifecycleHandlers = appLifecycleHandlers
     }
 
     // MARK: - Public methods
@@ -53,7 +56,11 @@ final class InnowiseTasksViewModel: InnowiseTasksViewModelProtocol {
         case .none: break
         }
         switch task as? IListTask {
-        case .initialTask: self.listHandlers.onTabBarController()
+        case .tabBarTask: self.listHandlers.onTabBarController()
+        case .none: break
+        }
+        switch task as? IAppLifecycleTask {
+        case .countViewTask: self.appLifecycleHandlers.onCounterView()
         case .none: break
         }
     }
@@ -68,8 +75,10 @@ private extension InnowiseTasksViewModel {
     func setupTaskSectionsTableView() {
         let sectionsWithTasks: [IInnowiseTaskSection] = [
             .designSection(tasks: IDesignTask.allCases),
-            .listsSection(tasks: IListTask.allCases)
+            .listsSection(tasks: IListTask.allCases),
+            .appLifecycleTask(tasks: IAppLifecycleTask.allCases)
         ]
+        
         onStateChange?(.onTaskSectionsTableView(sectionsWithTasks))
     }
 }
