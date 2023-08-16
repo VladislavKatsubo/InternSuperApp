@@ -26,6 +26,8 @@ final class ScrollViewWithPinnedButtonViewController: UIViewController {
 private extension ScrollViewWithPinnedButtonViewController {
     // MARK: - Private methods
     func setupItems() {
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = Constants.title
         self.view.backgroundColor = .systemBackground
 
         setupScrollView()

@@ -21,13 +21,14 @@ struct CircularProgressBarResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
-            static let smoothProgressAnimateButtonText: String = "Animate smoothly* with Random Value"
-            static let zeroBasedProgressAnimateButtonText: String = "Animate zero based* with Random Value"
+            static let title: String = "8. Circular progress bar"
+            static let smoothProgressAnimateButtonText: String = "Animate smoothly*"
+            static let zeroBasedProgressAnimateButtonText: String = "Animate zero based*"
             static let progressAnimateButtonWidth: CGFloat = 320.0
             static let progressAnimateButtonHeight: CGFloat = 50.0
 
-            static let smoothAnimateProgressSubtitleText: String = "* fromValue = current progress"
-            static let zeroBasedAnimateProgressSubtitleText: String = "* fromValue = .zero"
+            static let smoothAnimateProgressSubtitleText: String = "* .fromValue = current progress"
+            static let zeroBasedAnimateProgressSubtitleText: String = "* .fromValue = .zero"
             static let subtitleLabelFont: UIFont = .systemFont(ofSize: 13.0, weight: .thin)
             static let subtitleLabelFontColor: UIColor = .gray
 

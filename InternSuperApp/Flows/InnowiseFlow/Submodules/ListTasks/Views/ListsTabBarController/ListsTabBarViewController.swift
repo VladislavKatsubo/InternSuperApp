@@ -12,6 +12,7 @@ final class ListsTabBarViewController: UITabBarController {
     private enum Constants {
         static let shadowOpacity: Float = 0.1
         static let shadowRadius: CGFloat = 3.0
+        static let title: String = "TabBarController w/ Lists"
     }
 
     private var viewModel: ListsTabBarViewModel?
@@ -29,6 +30,7 @@ final class ListsTabBarViewController: UITabBarController {
         tabBar.backgroundColor = UIColor.white
 
         navigationItem.largeTitleDisplayMode = .never
+        title = Constants.title
     }
 
     // MARK: - Configure

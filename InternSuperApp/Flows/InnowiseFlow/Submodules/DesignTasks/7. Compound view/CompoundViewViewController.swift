@@ -51,6 +51,8 @@ private extension CompoundViewViewController {
     }
 
     func setupItems() {
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = Constans.title
         self.view.backgroundColor = .systemBackground
         
         setupColorSwitchView()

@@ -22,7 +22,7 @@ struct CardCellResources {
     enum Constants {
 
         enum UI {
-
+            static let title: String = "Card"
         }
 
         enum Mocks {

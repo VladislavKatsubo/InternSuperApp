@@ -23,6 +23,7 @@ struct DynamicUIChangesResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "6. Dynamic UI changes"
             static let stackViewSpacing: CGFloat = 15.0
 
             enum UIChangeType: Equatable, CaseIterable {
@@ -33,8 +34,8 @@ struct DynamicUIChangesResources {
                 var title: String {
                     switch self {
                     case .hideShow: return "Hide/Show"
-                    case .addRemove: return "Add/Remove"
-                    case .alphaAddRemove: return "Alpha Add/Remove"
+                    case .addRemove: return "Add/Remove View"
+                    case .alphaAddRemove: return "Add/Remove Alpha"
                     }
                 }
 

@@ -24,8 +24,9 @@ final class EyedropperViewController: UIViewController {
 private extension EyedropperViewController {
     // MARK: - Private methods
     func setupItems() {
-        view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.prefersLargeTitles = false
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = Constants.title
+        self.view.backgroundColor = .systemBackground
 
         setupBackgroundView()
         setupRedContainerRectangleView()

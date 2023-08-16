@@ -43,7 +43,8 @@ private extension AsimmetricCollectionViewController {
     }
 
     func setupItems() {
-        view.backgroundColor = .systemBackground
+        self.title = Constants.title
+        self.view.backgroundColor = .systemBackground
 
         setupCollectionView()
     }

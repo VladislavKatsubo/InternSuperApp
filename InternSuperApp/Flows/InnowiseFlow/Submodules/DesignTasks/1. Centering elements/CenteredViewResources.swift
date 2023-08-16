@@ -28,6 +28,8 @@ struct CenteredViewResources {
                     .systemYellow
                 ]
             )
+            static let widthMultiplier: CGFloat = 0.95
+            static let title: String = "1. Centering elements"
         }
 
         enum Mocks {

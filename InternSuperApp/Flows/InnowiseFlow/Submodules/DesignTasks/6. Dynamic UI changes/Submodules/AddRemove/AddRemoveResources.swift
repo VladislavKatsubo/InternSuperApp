@@ -18,6 +18,7 @@ struct AddRemoveResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "Add/Remove View"
             static let imageViewSize: CGSize = .init(width: 300.0, height: 300.0)
             static let addButtonText: String = "Add"
             static let removeButtonText: String = "Remove"

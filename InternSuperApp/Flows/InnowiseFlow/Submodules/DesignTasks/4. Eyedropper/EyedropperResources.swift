@@ -21,6 +21,7 @@ struct EyedropperResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "4. Eyedropper"
             static let backgroundViewBorderColor: UIColor = UIColor(red: 33/255, green: 35/255, blue: 40/255, alpha: 1.0)
             static let backgroundViewColor: UIColor = .white
             static let backgroundViewBorderWidth: CGFloat = 1.0

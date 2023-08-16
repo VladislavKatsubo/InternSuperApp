@@ -23,7 +23,10 @@ class CenteredViewController: UIViewController {
 private extension CenteredViewController {
     // MARK: - Private methods
     func setupItems() {
-        view.backgroundColor = .systemBackground
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = Constants.title
+        self.view.backgroundColor = .systemBackground
+        
         setupColoredStackView()
         coloredStackView.configure(with: Constants.colors)
     }
@@ -35,7 +38,7 @@ private extension CenteredViewController {
         NSLayoutConstraint.activate([
             coloredStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             coloredStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            coloredStackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.95)
+            coloredStackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: Constants.widthMultiplier)
         ])
     }
 }

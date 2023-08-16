@@ -33,7 +33,8 @@ final class DynamicUIChangesViewController: UIViewController {
 private extension DynamicUIChangesViewController {
     // MARK: - Private methods
     func setupItems() {
-        view.backgroundColor = .systemBackground
+        self.title = Constants.title
+        self.view.backgroundColor = .systemBackground
 
         setupStackView()
         setupButtons()

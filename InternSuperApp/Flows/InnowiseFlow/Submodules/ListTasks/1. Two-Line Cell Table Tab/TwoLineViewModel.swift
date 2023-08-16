@@ -44,18 +44,6 @@ private extension TwoLineViewModel {
     }
 
     func setupTwoLineTableViewData() {
-        let users = UserFactory.generateUsers(30)
-
-        let models: [TwoLineTableViewCell.Model] = users.compactMap({
-            .init(
-                sex: $0.sex,
-                firstName: $0.firstName,
-                lastName: $0.lastName,
-                age: $0.age,
-                avatarImageURL: $0.squareAvatarUrl
-            )
-        })
-
-        self.onStateChange?(.onTwoLineTableView(models, imageManager))
+        self.onStateChange?(.onTwoLineTableView(Constants.models, imageManager))
     }
 }

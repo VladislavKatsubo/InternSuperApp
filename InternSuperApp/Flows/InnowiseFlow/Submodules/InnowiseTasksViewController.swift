@@ -45,9 +45,9 @@ private extension InnowiseTasksViewController {
     }
 
     func setupItems() {
-        title = "Pre-Internship Tasks"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        view.backgroundColor = .secondarySystemBackground
+        self.title = Constants.title
+        self.view.backgroundColor = .secondarySystemBackground
+        self.navigationController?.navigationBar.prefersLargeTitles = true
 
         setupTaskSectionsTableView()
     }

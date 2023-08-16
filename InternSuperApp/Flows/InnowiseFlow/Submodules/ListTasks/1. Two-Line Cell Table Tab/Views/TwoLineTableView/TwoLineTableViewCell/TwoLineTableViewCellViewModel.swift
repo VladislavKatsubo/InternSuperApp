@@ -15,7 +15,7 @@ protocol TwoLineTableViewCellViewModelProtocol {
     func cancelImageDownload()
 }
 
-final class TwoLineTableViewCellViewModel: TwoLineTableViewCellViewModelProtocol {
+class TwoLineTableViewCellViewModel: TwoLineTableViewCellViewModelProtocol {
 
     private var imageManager: ImageManagerProtocol?
     private var model: TwoLineTableViewCell.Model?

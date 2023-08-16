@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TwoLineTableViewCell: ITableViewCell {
+class TwoLineTableViewCell: ITableViewCell {
 
     private enum Constants {
         static let containerViewLeadingOffset: CGFloat = 40.0

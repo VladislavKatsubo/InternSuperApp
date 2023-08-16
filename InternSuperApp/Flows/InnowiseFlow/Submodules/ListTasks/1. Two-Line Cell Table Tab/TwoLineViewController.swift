@@ -44,7 +44,8 @@ private extension TwoLineViewController {
     }
 
     func setupItems() {
-        view.backgroundColor = .systemBackground
+        self.title = Constants.title
+        self.view.backgroundColor = .systemBackground
 
         setupTableView()
     }

@@ -21,11 +21,13 @@ struct ScrollViewWithPinnedButtonResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "2. ScrollView with PinnedButton"
+            
             static let colors: [UIColor] = .init(
                 [
                     .systemRed,
                     .systemYellow,
-//                    .systemPurple // Use it to test the case where there is more content than can fit on the screen.
+                    // .systemPurple // Use it to test the case where there is more content than can fit on the screen.
                 ]
             )
 

@@ -23,59 +23,59 @@ final class ListsTabBarViewModel {
         let items = handlers.controllers()
         var controllers: [UINavigationController] = []
 
-        if let usersTableViewController = items.usersTableView {
-            let usersTableView = UINavigationController(rootViewController: usersTableViewController)
-            usersTableView.tabBarItem = UITabBarItem(
-                title: nil,
-                image: UIImage(systemName: "sun.min"),
-                selectedImage: UIImage(systemName: "sun.min.fill")
+        if let usersTableView = items.usersTableView {
+            let usersTableViewController = UINavigationController(rootViewController: usersTableView)
+            usersTableViewController.tabBarItem = UITabBarItem(
+                title: "Two-Line",
+                image: UIImage(systemName: "list.bullet.rectangle.portrait"),
+                selectedImage: UIImage(systemName: "list.bullet.rectangle.portrait.fill")
             )
-            usersTableView.tabBarItem.imageInsets = Constants.imageInsets
-            controllers.append(usersTableView)
+            usersTableViewController.tabBarItem.imageInsets = Constants.imageInsets
+            controllers.append(usersTableViewController)
         }
         
-        if let usersCollectionViewController = items.usersCollectionView {
-            let usersCollectionView = UINavigationController(rootViewController: usersCollectionViewController)
-            usersCollectionView.tabBarItem = UITabBarItem(
-                title: nil,
-                image: UIImage(systemName: "sun.min"),
-                selectedImage: UIImage(systemName: "sun.min.fill")
+        if let usersCardCollectionView = items.usersCardCollectionView {
+            let usersCollectionViewController = UINavigationController(rootViewController: usersCardCollectionView)
+            usersCollectionViewController.tabBarItem = UITabBarItem(
+                title: "Card",
+                image: UIImage(systemName: "list.bullet.rectangle"),
+                selectedImage: UIImage(systemName: "list.bullet.rectangle.fill")
             )
-            usersCollectionView.tabBarItem.imageInsets = Constants.imageInsets
-            controllers.append(usersCollectionView)
+            usersCollectionViewController.tabBarItem.imageInsets = Constants.imageInsets
+            controllers.append(usersCollectionViewController)
         }
 
-        if let twoColumnUsersCollectionViewController = items.twoColumnUsersCollectionView {
-            let twoColumnUsersCollectionView = UINavigationController(rootViewController: twoColumnUsersCollectionViewController)
-            twoColumnUsersCollectionView.tabBarItem = UITabBarItem(
-                title: nil,
-                image: UIImage(systemName: "sun.min"),
-                selectedImage: UIImage(systemName: "sun.min.fill")
+        if let groceryCollectionView = items.groceryCollectionView {
+            let groceryCollectionViewController = UINavigationController(rootViewController: groceryCollectionView)
+            groceryCollectionViewController.tabBarItem = UITabBarItem(
+                title: "Collection",
+                image: UIImage(systemName: "fish"),
+                selectedImage: UIImage(systemName: "fish.fill")
             )
-            twoColumnUsersCollectionView.tabBarItem.imageInsets = Constants.imageInsets
-            controllers.append(twoColumnUsersCollectionView)
+            groceryCollectionViewController.tabBarItem.imageInsets = Constants.imageInsets
+            controllers.append(groceryCollectionViewController)
         }
 
-        if let variousCellsTableViewController = items.variousCellsTableView {
-            let variousCellsTableView = UINavigationController(rootViewController: variousCellsTableViewController)
-            variousCellsTableView.tabBarItem = UITabBarItem(
-                title: nil,
-                image: UIImage(systemName: "sun.min"),
-                selectedImage: UIImage(systemName: "sun.min.fill")
+        if let asimmetricCollectionView = items.asimmetricCollectionView {
+            let asimmetricCollectionViewController = UINavigationController(rootViewController: asimmetricCollectionView)
+            asimmetricCollectionViewController.tabBarItem = UITabBarItem(
+                title: "Composition",
+                image: UIImage(systemName: "align.horizontal.left"),
+                selectedImage: UIImage(systemName: "align.horizontal.right.fill")
             )
-            variousCellsTableView.tabBarItem.imageInsets = Constants.imageInsets
-            controllers.append(variousCellsTableView)
+            asimmetricCollectionViewController.tabBarItem.imageInsets = Constants.imageInsets
+            controllers.append(asimmetricCollectionViewController)
         }
 
-        if let mockLoadingTableViewController = items.mockLoadingTableView {
-            let mockLoadingTableView = UINavigationController(rootViewController: mockLoadingTableViewController)
-            mockLoadingTableView.tabBarItem = UITabBarItem(
-                title: nil,
-                image: UIImage(systemName: "sun.min"),
-                selectedImage: UIImage(systemName: "sun.min.fill")
+        if let progressView = items.progressView {
+            let progressViewController = UINavigationController(rootViewController: progressView)
+            progressViewController.tabBarItem = UITabBarItem(
+                title: "Progress",
+                image: UIImage(systemName: "arrow.triangle.2.circlepath.circle"),
+                selectedImage: UIImage(systemName: "arrow.triangle.2.circlepath.circle.fill")
             )
-            mockLoadingTableView.tabBarItem.imageInsets = Constants.imageInsets
-            controllers.append(mockLoadingTableView)
+            progressViewController.tabBarItem.imageInsets = Constants.imageInsets
+            controllers.append(progressViewController)
         }
 
         return controllers

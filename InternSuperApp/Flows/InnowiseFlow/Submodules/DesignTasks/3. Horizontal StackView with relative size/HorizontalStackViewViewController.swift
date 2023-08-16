@@ -17,13 +17,14 @@ final class HorizontalStackViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupItems()
-        navigationItem.largeTitleDisplayMode = .never
     }
 }
 
 private extension HorizontalStackViewViewController {
     // MARK: - Private methods
     func setupItems() {
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = Constants.title
         self.view.backgroundColor = .systemBackground
 
         setupStackView()

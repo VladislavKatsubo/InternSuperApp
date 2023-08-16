@@ -22,7 +22,7 @@ struct AsimmetricCollectionResources {
     enum Constants {
 
         enum UI {
-
+            static let title: String = "Composition"
         }
 
         enum Mocks {

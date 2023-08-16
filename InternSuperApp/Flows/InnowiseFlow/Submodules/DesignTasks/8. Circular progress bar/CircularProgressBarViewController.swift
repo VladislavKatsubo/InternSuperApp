@@ -46,6 +46,8 @@ private extension CircularProgressBarViewController {
         viewModel?.launch()
     }
     func setupItems() {
+        self.navigationItem.largeTitleDisplayMode = .never
+        self.title = Constants.title
         self.view.backgroundColor = .systemBackground
 
         setupVerticalStackView()

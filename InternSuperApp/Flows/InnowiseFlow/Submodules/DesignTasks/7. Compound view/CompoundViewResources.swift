@@ -23,6 +23,7 @@ struct CompoundViewResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "7. Compound view"
             static let previousButtonText: String = "<"
             static let nextButtonText: String = ">"
 

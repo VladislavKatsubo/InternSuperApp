@@ -33,7 +33,7 @@ struct InnowiseTasksResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
-
+            static let title: String = "Pre-Internship Tasks"
         }
 
         enum Mocks {

@@ -41,6 +41,7 @@ private extension HideShowViewController {
     }
 
     func setupItems() {
+        self.title = Constants.title
         self.setupPositiveActionButton(with: Constants.showButtonText) { [weak self] in
             self?.initialImageView.subviews.forEach({
                 $0.removeFromSuperview()

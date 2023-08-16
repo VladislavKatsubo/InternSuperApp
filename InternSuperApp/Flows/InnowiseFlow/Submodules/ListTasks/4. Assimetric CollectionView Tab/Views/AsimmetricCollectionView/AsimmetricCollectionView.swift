@@ -16,6 +16,9 @@ final class AsimmetricCollectionView: IView {
         static let sectionTopBottomInset: CGFloat = 8.0
 
         static let itemInset: CGFloat = 4.0
+
+        static let largeSectionWidthMultiplier: CGFloat = 0.7
+        static let smallSectionWidthMultiplier: CGFloat = 0.3
     }
 
     private var collectionView: ICollectionView?
@@ -166,11 +169,11 @@ private extension AsimmetricCollectionView {
 
         switch type {
         case .leading:
-            leadingGroupSizeMultiplier = 0.3
-            trailingGroupSizeWidthMultiplier = 0.7
+            leadingGroupSizeMultiplier = Constants.smallSectionWidthMultiplier
+            trailingGroupSizeWidthMultiplier = Constants.largeSectionWidthMultiplier
         case .trailing:
-            leadingGroupSizeMultiplier = 0.7
-            trailingGroupSizeWidthMultiplier = 0.3
+            leadingGroupSizeMultiplier = Constants.largeSectionWidthMultiplier
+            trailingGroupSizeWidthMultiplier = Constants.smallSectionWidthMultiplier
         }
 
         // MARK: Leading Item

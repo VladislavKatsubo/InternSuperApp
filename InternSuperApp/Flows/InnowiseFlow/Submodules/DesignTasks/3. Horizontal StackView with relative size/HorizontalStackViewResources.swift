@@ -21,6 +21,7 @@ struct HorizontalStackViewResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "3. Horizontal StackView with relative size"
             static let colorHeightWidth: [(UIColor, CGFloat, CGFloat)] = [
                 (.systemOrange, 0.50, 0.25),
                 (.systemRed, 0.85, 0.5),

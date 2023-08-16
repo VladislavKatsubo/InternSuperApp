@@ -16,6 +16,7 @@ struct HideShowResources {
     // MARK: - Constants
     enum Constants {
         enum UI {
+            static let title: String = "Hide/Show"
             static let imageViewSize: CGSize = .init(width: 300.0, height: 300.0)
             static let showButtonText: String = "Show"
             static let hideButtonText: String = "Hide"

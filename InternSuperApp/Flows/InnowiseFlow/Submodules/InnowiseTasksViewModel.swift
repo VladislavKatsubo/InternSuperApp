@@ -50,13 +50,11 @@ final class InnowiseTasksViewModel: InnowiseTasksViewModelProtocol {
         case .dynamicUIChanges: return self.designHandlers.onDynamicUIChanges()
         case .compoundView: return self.designHandlers.onCompoundView()
         case .circularProgressBar: return self.designHandlers.onCircularProgressBar()
-        case .none:
-            break
+        case .none: break
         }
         switch task as? IListTask {
         case .initialTask: self.listHandlers.onTabBarController()
-        case .none:
-            break
+        case .none: break
         }
     }
 }

@@ -45,7 +45,6 @@ private extension TaskSectionsTableViewCell {
         addSubview(containerView)
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.backgroundColor = .white
-//        containerView.layer.cornerRadius = bounds.height / 8.0
 
         NSLayoutConstraint.activate([
             containerView.topAnchor.constraint(equalTo: topAnchor),

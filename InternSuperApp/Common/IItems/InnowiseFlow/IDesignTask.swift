@@ -20,11 +20,11 @@ enum IDesignTask: InnowiseTaskProtocol, Equatable, CaseIterable {
 
         case .centeringElements: return "Centering elements"
         case .scrollViewWithPinnedButton: return "ScrollView with pinned button"
-        case .horizontalStackViewRelativeSizes: return "Horizontal StackView w/ Relative Sizes"
+        case .horizontalStackViewRelativeSizes: return "Horizontal StackView w/ relative sizes"
         case .eyedropper: return "Eyedropper"
-        case .customLayout: return "Custom Layout"
+        case .customLayout: return "Custom layout"
         case .dynamicUIChanges: return "Dynamic UI changes"
-        case .compoundView: return "Compound View w/ colors"
+        case .compoundView: return "CompoundView w/ colors"
         case .circularProgressBar: return "Circular progress bar"
         }
     }

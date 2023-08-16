@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TwoLineTableView: IView {
+class TwoLineTableView: IView {
 
     private enum Constants {
         static let rowHeight: CGFloat = 112.0
@@ -28,6 +28,16 @@ final class TwoLineTableView: IView {
         self.userModels = models
         self.imageManager = imageManager
         self.tableView.reloadData()
+    }
+
+    // MARK: - Public methods
+    func removeData() {
+        self.userModels.removeAll()
+        self.tableView.reloadData()
+    }
+
+    func setRefreshControl(with refreshControl: UIRefreshControl) {
+        self.tableView.refreshControl = refreshControl
     }
 }
 

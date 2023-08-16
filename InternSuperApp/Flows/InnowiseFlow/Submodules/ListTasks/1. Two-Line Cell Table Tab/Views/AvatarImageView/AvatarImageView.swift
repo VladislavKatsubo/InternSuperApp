@@ -83,7 +83,7 @@ private extension AvatarImageView {
             self.layer.cornerRadius = bounds.width / 2.0
             self.layer.masksToBounds = true
         case .square:
-            self.layer.cornerRadius = 0
+            self.layer.cornerRadius = .zero
         }
     }
 }

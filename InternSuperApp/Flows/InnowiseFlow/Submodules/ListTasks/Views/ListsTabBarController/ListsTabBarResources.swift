@@ -10,10 +10,10 @@ import UIKit
 struct ListsTabBarResources {
     struct ItemController {
         var usersTableView: UIViewController?
-        var usersCollectionView: UIViewController?
-        var twoColumnUsersCollectionView: UIViewController?
-        var variousCellsTableView: UIViewController?
-        var mockLoadingTableView: UIViewController?
+        var usersCardCollectionView: UIViewController?
+        var groceryCollectionView: UIViewController?
+        var asimmetricCollectionView: UIViewController?
+        var progressView: UIViewController?
     }
 
     struct Handlers {

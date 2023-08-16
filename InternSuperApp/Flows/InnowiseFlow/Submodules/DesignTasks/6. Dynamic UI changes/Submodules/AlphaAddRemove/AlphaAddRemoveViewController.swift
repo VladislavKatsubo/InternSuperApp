@@ -41,6 +41,7 @@ private extension AlphaAddRemoveViewController {
     }
 
     func setupItems() {
+        self.title = Constants.title
         self.setupPositiveActionButton(with: Constants.addButtonText) { [weak self] in
             self?.animateAlphaChange(change: .increase)
         }
