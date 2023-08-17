@@ -67,7 +67,6 @@ private extension RecommendationsCountView {
     }
 
     func setupRecommendedLabel() {
-//        recommendedLabel.font = Constants.labelFont
         recommendedLabel.textColor = Constants.labelFontColor
         recommendedLabel.adjustsFontSizeToFitWidth = true
         recommendedLabel.minimumScaleFactor = 0.3
@@ -75,7 +74,6 @@ private extension RecommendationsCountView {
     }
 
     func setupCounterLabel() {
-//        counterLabel.font = Constants.labelFont
         counterLabel.textColor = Constants.labelFontColor
         counterLabel.adjustsFontSizeToFitWidth = true
         counterLabel.minimumScaleFactor = 0.3

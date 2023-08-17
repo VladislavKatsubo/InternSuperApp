@@ -15,8 +15,6 @@ final class AnimateProgressButton: IButton {
         static let cornerRadius: CGFloat = 20.0
         static let borderWidth: CGFloat = 3.0
         static let borderColor: UIColor = .systemTeal
-
-        //        static let titleLabelFont: UIFont = .systemFont(ofSize: 16.0, weight: .semibold)
     }
 
     override var isHighlighted: Bool {
