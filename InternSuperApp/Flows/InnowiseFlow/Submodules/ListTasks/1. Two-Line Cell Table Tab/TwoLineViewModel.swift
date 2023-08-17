@@ -25,10 +25,10 @@ final class TwoLineViewModel: TwoLineViewModelProtocol {
     var onStateChange: ((TwoLineResources.State) -> Void)?
 
     // MARK: - Init
-    init(context: AppContext, handlers: TwoLineResources.Handlers) {
+    init(context: AppContext, handlers: TwoLineResources.Handlers, imageManager: ImageManagerProtocol) {
         self.context = context
         self.handlers = handlers
-        self.imageManager = context.imageManager
+        self.imageManager = imageManager
     }
 
     // MARK: - Public methods

@@ -40,8 +40,8 @@ extension MainFlow {
     // MARK: - Flows
     func makeInnowiseFlow() -> UIViewController {
         innowiseFlow = InnowiseFlow(navigator: InnowiseFlowNavigator())
-        guard let vc = innowiseFlow?.makeStartFlow() else { return .init() }
+        guard let innowiseViewController = innowiseFlow?.makeStartFlow() else { return .init() }
 
-        return vc
+        return innowiseViewController
     }
 }

@@ -23,10 +23,13 @@ struct CounterResources {
 
         enum UI {
             static let title: String = "CounterView"
+            static let counterViewWidthMultiplier: CGFloat = 0.90
         }
 
         enum Mocks {
-
+            static let updateValueForEnterBackground: CGFloat = 5.0
+            static let updateValueForEnterForeground: CGFloat = 2.0
+            static let negativeTimeDifferenceMultiplier: CGFloat = -2.0
         }
     }
 }

@@ -25,10 +25,10 @@ final class CardCellViewModel: CardCellViewModelProtocol {
     var onStateChange: ((CardCellResources.State) -> Void)?
 
     // MARK: - Init
-    init(context: AppContext, handlers: CardCellResources.Handlers) {
+    init(context: AppContext, handlers: CardCellResources.Handlers, imageManager: ImageManagerProtocol) {
         self.context = context
         self.handlers = handlers
-        self.imageManager = context.imageManager
+        self.imageManager = imageManager
     }
 
     // MARK: - Public methods

@@ -15,7 +15,7 @@ struct UpdateCounterResources {
 
     // MARK: - States
     enum State {
-
+        case onTitle(String)
     }
 
     // MARK: - Constants
@@ -33,6 +33,7 @@ struct UpdateCounterResources {
 
         enum Mocks {
             static let counterValueForUpdate: CGFloat = 10.0
+            static let title: String = "UpdateCounter"
         }
     }
 }

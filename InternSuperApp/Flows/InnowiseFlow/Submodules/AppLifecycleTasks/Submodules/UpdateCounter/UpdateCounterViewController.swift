@@ -37,14 +37,15 @@ private extension UpdateCounterViewController {
             guard let self = self else { return }
 
             switch state {
-                
+            case .onTitle(let title):
+                self.title = title
             }
         }
         viewModel?.launch()
     }
 
     func setupItems() {
-        view.backgroundColor = .systemBackground
+        self.view.backgroundColor = .systemBackground
 
         setupStackView()
         setupUpdateButton()

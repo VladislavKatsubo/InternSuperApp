@@ -13,6 +13,8 @@ protocol CounterViewModelProtocol {
 
     func launch()
     func didTapTransitionButton()
+    func appDidEnterBackground()
+    func appWillEnterForeground()
 }
 
 final class CounterViewModel: CounterViewModelProtocol {
@@ -24,6 +26,7 @@ final class CounterViewModel: CounterViewModelProtocol {
     private let dataService: AppCounterProtocol
 
     var onStateChange: ((CounterResources.State) -> Void)?
+    var backgroundTimestamp: Date?
 
     // MARK: - Init
     init(context: AppContext, handlers: CounterResources.Handlers) {
@@ -40,6 +43,22 @@ final class CounterViewModel: CounterViewModelProtocol {
     func didTapTransitionButton() {
         self.handlers.onUpdateCounterView()
     }
+
+    func appDidEnterBackground() {
+        backgroundTimestamp = Date()
+
+        updateCounter(by: Constants.updateValueForEnterBackground)
+    }
+
+    func appWillEnterForeground() {
+        guard let backgroundTimestamp = backgroundTimestamp else { return }
+
+        let timeDifference = Date().timeIntervalSince(backgroundTimestamp) / 60
+        updateCounter(by: Constants.updateValueForEnterForeground)
+
+        guard timeDifference >= 1 else { return }
+        updateCounter(by: Constants.negativeTimeDifferenceMultiplier * CGFloat(timeDifference))
+    }
 }
 
 private extension CounterViewModel {
@@ -50,6 +69,15 @@ private extension CounterViewModel {
 
     func setupCounterViewData() {
         guard let counterValue: CGFloat = dataService.getCounterValue() else { return }
+
+        onStateChange?(.onUpdateCounter(counterValue))
+    }
+
+    func updateCounter(by value: CGFloat) {
+        guard var counterValue: CGFloat = dataService.getCounterValue() else { return }
+        counterValue += value
+        dataService.setCounterValue(with: counterValue)
+
         onStateChange?(.onUpdateCounter(counterValue))
     }
 }

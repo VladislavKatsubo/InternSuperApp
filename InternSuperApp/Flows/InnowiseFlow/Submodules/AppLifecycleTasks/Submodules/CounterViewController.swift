@@ -24,7 +24,13 @@ final class CounterViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        addNotificationObservers()
         setupViewModel()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        removeNotificationObservers()
     }
 
     // MARK: - Configure
@@ -48,7 +54,8 @@ private extension CounterViewController {
     }
 
     func setupItems() {
-        view.backgroundColor = .systemBackground
+        self.title = Constants.title
+        self.view.backgroundColor = .systemBackground
 
         setupCounterView()
     }
@@ -64,7 +71,47 @@ private extension CounterViewController {
         NSLayoutConstraint.activate([
             counterView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             counterView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            counterView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.90),
+            counterView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: Constants.counterViewWidthMultiplier),
         ])
+    }
+}
+
+private extension CounterViewController {
+    // MARK: - NotificationCenter
+    func addNotificationObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appDidEnterBackground),
+            name: UIApplication.didEnterBackgroundNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appWillEnterForeground),
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil)
+    }
+
+    func removeNotificationObservers() {
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIApplication.didEnterBackgroundNotification,
+            object: nil
+        )
+        NotificationCenter.default.removeObserver(
+            self,
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil
+        )
+    }
+
+    @objc
+    func appDidEnterBackground() {
+        self.viewModel?.appDidEnterBackground()
+    }
+
+    @objc
+    func appWillEnterForeground() {
+        self.viewModel?.appWillEnterForeground()
     }
 }

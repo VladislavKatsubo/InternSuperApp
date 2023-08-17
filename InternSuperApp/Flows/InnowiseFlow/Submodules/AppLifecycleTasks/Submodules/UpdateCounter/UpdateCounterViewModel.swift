@@ -35,7 +35,11 @@ final class UpdateCounterViewModel: UpdateCounterViewModelProtocol {
 
     // MARK: - Public methods
     func launch() {
+        setupViewControllerTitle()
+    }
 
+    func setupViewControllerTitle() {
+        onStateChange?(.onTitle(Constants.title))
     }
 
     func didTapUpdateButton() {

@@ -27,11 +27,10 @@ final class ProgressViewViewModel: ProgressViewViewModelProtocol {
     var onStateChange: ((ProgressViewResources.State) -> Void)?
 
     // MARK: - Init
-    init(context: AppContext, handlers: ProgressViewResources.Handlers) {
+    init(context: AppContext, handlers: ProgressViewResources.Handlers, imageManager: ImageManagerProtocol) {
         self.context = context
         self.handlers = handlers
-
-        self.imageManager = context.imageManager
+        self.imageManager = imageManager
     }
 
     // MARK: - Public methods

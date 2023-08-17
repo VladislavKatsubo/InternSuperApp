@@ -10,7 +10,8 @@ import UIKit
 final class TwoLineFactory {
     func createController(handlers: TwoLineResources.Handlers) -> UIViewController {
         let context: AppContext = AppDelegate.shared.context
-        let viewModel = TwoLineViewModel(context: context, handlers: handlers)
+        let imageManager = ServiceFactory.createImageManager()
+        let viewModel = TwoLineViewModel(context: context, handlers: handlers, imageManager: imageManager)
         let viewController = TwoLineViewController()
 
         viewController.configure(viewModel: viewModel)

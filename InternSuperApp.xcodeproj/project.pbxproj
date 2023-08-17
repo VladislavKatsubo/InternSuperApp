@@ -163,6 +163,7 @@
 		0DAC67402A8CFE9F00FC88B4 /* AppDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC673F2A8CFE9F00FC88B4 /* AppDataService.swift */; };
 		0DAC67442A8CFF1A00FC88B4 /* AppDataService+Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC67432A8CFF1A00FC88B4 /* AppDataService+Counter.swift */; };
 		0DAC67462A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC67452A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png */; };
+		0DAC67482A8E2A0F00FC88B4 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC67472A8E2A0F00FC88B4 /* ServiceFactory.swift */; };
 		0DCDAC4F2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */; };
 		0DCDAC502A8A297F00F4A29B /* AsimmetricCollectionResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */; };
 		0DCDAC512A8A297F00F4A29B /* AsimmetricCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */; };
@@ -382,6 +383,7 @@
 		0DAC673F2A8CFE9F00FC88B4 /* AppDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataService.swift; sourceTree = "<group>"; };
 		0DAC67432A8CFF1A00FC88B4 /* AppDataService+Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDataService+Counter.swift"; sourceTree = "<group>"; };
 		0DAC67452A8D051900FC88B4 /* AppLifecycle 2. AppDelegate Updates.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppLifecycle 2. AppDelegate Updates.png"; sourceTree = "<group>"; };
+		0DAC67472A8E2A0F00FC88B4 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		0DCDAC4B2A8A297F00F4A29B /* AsimmetricCollectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionFactory.swift; sourceTree = "<group>"; };
 		0DCDAC4C2A8A297F00F4A29B /* AsimmetricCollectionResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionResources.swift; sourceTree = "<group>"; };
 		0DCDAC4D2A8A297F00F4A29B /* AsimmetricCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsimmetricCollectionViewController.swift; sourceTree = "<group>"; };
@@ -685,13 +687,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0D3270602A4C61EA00735EA4 /* Network Layer */ = {
+		0D3270602A4C61EA00735EA4 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				0D3270612A4C621200735EA4 /* ImageManager.swift */,
 				0D3270632A4C622100735EA4 /* NetworkManager.swift */,
+				0D3270612A4C621200735EA4 /* ImageManager.swift */,
 			);
-			path = "Network Layer";
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 		0D3270672A4C62C500735EA4 /* Views */ = {
@@ -933,7 +935,6 @@
 				0DA840852A6D40B800BA8F03 /* IItems */,
 				0D21209E2A45C78B00CCB77A /* Helpers */,
 				0D52A93E2A4215930062347D /* Extensions */,
-				0D3270602A4C61EA00735EA4 /* Network Layer */,
 				0DCDACCB2A8CDC3C00F4A29B /* Services */,
 				0DA8402F2A69000300BA8F03 /* Context */,
 				0DA840302A69000D00BA8F03 /* Navigator */,
@@ -1160,6 +1161,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0DAC67492A8E2A3300FC88B4 /* UserDefaultsService */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDACCC2A8CDD1700F4A29B /* UserDefaultsService.swift */,
+			);
+			path = UserDefaultsService;
+			sourceTree = "<group>";
+		};
 		0DCDAC482A8A293400F4A29B /* 4. Assimetric CollectionView Tab */ = {
 			isa = PBXGroup;
 			children = (
@@ -1323,8 +1332,10 @@
 		0DCDACCB2A8CDC3C00F4A29B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0D3270602A4C61EA00735EA4 /* NetworkService */,
 				0DAC67412A8CFF0200FC88B4 /* AppDataService */,
-				0DCDACCC2A8CDD1700F4A29B /* UserDefaultsService.swift */,
+				0DAC67492A8E2A3300FC88B4 /* UserDefaultsService */,
+				0DAC67472A8E2A0F00FC88B4 /* ServiceFactory.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1682,6 +1693,7 @@
 				0DCDAC712A8B7ADE00F4A29B /* ProgressViewResources.swift in Sources */,
 				0DA840612A6C4A6400BA8F03 /* ITableView.swift in Sources */,
 				0D21209B2A44B76600CCB77A /* FollowButton.swift in Sources */,
+				0DAC67482A8E2A0F00FC88B4 /* ServiceFactory.swift in Sources */,
 				0D49D4AC2A7A2D9D00EAF97E /* TwoLineTableViewCell+Model.swift in Sources */,
 				0DAC67442A8CFF1A00FC88B4 /* AppDataService+Counter.swift in Sources */,
 				0D3270622A4C621200735EA4 /* ImageManager.swift in Sources */,
